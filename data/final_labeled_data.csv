@@ -1,0 +1,1430 @@
+﻿review_text,rating,word_count,is_fake,is_duplicate,emojis,sentiment,scores,compound,label,review_len
+Nice product for family of 4,4.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.588, 'pos': 0.412, 'compound': 0.4215}",0.4215,2,6
+Not Good product,1.0,3,0,1,,Negative,"{'neg': 0.546, 'neu': 0.454, 'pos': 0.0, 'compound': -0.3412}",-0.3412,0,3
+Works best with PPPoE type cable internet RJ45,5.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.625, 'pos': 0.375, 'compound': 0.6369}",0.6369,2,8
+nice,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.4215}",0.4215,2,1
+Sharp upper edges.,1.0,3,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,3
+Excellent Machine,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.213, 'pos': 0.787, 'compound': 0.5719}",0.5719,2,2
+Very hard ball,2.0,3,0,1,,Negative,"{'neg': 0.458, 'neu': 0.542, 'pos': 0.0, 'compound': -0.1761}",-0.1761,0,3
+Damaged,2.0,1,0,1,,Negative,"{'neg': 1.0, 'neu': 0.0, 'pos': 0.0, 'compound': -0.4404}",-0.4404,0,1
+Superb product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+high class speakers,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+OVER PRICED AT FLIP KART CHECK OUT RATE IN OTHER ONLINE STORES,3.0,12,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,12
+ITS WHAT YOU NEED IN KITCHEN,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+Philips HR 1832,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+Very satisfactory,3.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.264, 'pos': 0.736, 'compound': 0.4201}",0.4201,2,2
+Best Product......Realy Nice,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.125, 'pos': 0.875, 'compound': 0.7906}",0.7906,2,3
+"खूपच भारी product आहे, value for money!",5.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 0.69, 'pos': 0.31, 'compound': 0.4003}",0.4003,2,7
+"Look classy, elegant, convenient with timer",5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.4, 'pos': 0.6, 'compound': 0.7184}",0.7184,2,6
+Performs what it was designed for..,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+power grinder,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Expected a better product,2.0,4,0,1,,Negative,"{'neg': 0.0, 'neu': 0.408, 'pos': 0.592, 'compound': 0.4404}",0.4404,0,4
+Perfect product! Awesome Dishwasher at affordable cost,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.382, 'pos': 0.618, 'compound': 0.8439}",0.8439,2,7
+Good Service,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Bahut achcha hai,3.0,3,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,3
+"Good Product, NOT GREAT",3.0,4,0,1,,Negative,"{'neg': 0.439, 'neu': 0.229, 'pos': 0.332, 'compound': -0.235}",-0.235,0,4
+"Versatile, simple and a performer",5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+The best for the price range in the market,4.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 0.656, 'pos': 0.344, 'compound': 0.6369}",0.6369,2,9
+Good service,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Optimal for small family,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.545, 'pos': 0.455, 'compound': 0.3612}",0.3612,2,4
+Upgrade your network!!!,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+Good Quality Product and Good Option for some one Gift.,5.0,10,0,1,,Positive,"{'neg': 0.0, 'neu': 0.446, 'pos': 0.554, 'compound': 0.8271}",0.8271,2,10
+worst football ever..!!  good service by flipkart:),2.0,7,0,1,,Negative,"{'neg': 0.372, 'neu': 0.397, 'pos': 0.23, 'compound': -0.4184}",-0.4184,0,7
+Neptune VX Dishwasher,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+Excellent range,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.213, 'pos': 0.787, 'compound': 0.5719}",0.5719,2,2
+Outstanding.,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.6124}",0.6124,2,1
+Wonderful Fridge.,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.213, 'pos': 0.787, 'compound': 0.5719}",0.5719,2,2
+A perfect Deepawali Gift for my Mom,4.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.377, 'pos': 0.623, 'compound': 0.765}",0.765,2,7
+Brilliant,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.5859}",0.5859,2,1
+At this price point this the cheaper and durable..,4.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,9
+I am very satisfied with this purchase! The product is of great quality and the delivery was prompt. 😍👍🚚,5.0,19,0,0,😍👍🚚,Positive,"{'neg': 0.0, 'neu': 0.681, 'pos': 0.319, 'compound': 0.8169}",0.8169,2,19
+Highly priced for the kind of stuff offered,2.0,8,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,8
+Nice product in this price.,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.588, 'pos': 0.412, 'compound': 0.4215}",0.4215,2,5
+product is good for under 500 rupees.,4.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.674, 'pos': 0.326, 'compound': 0.4404}",0.4404,2,7
+Average Sound Bar,3.0,3,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,3
+Nice Product!!!!,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.201, 'pos': 0.799, 'compound': 0.6083}",0.6083,2,2
+"बहुत उपयोगी है, डेली यूज के लिए बेस्ट।",5.0,8,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,8
+Faulty at times. multiple needles broke,2.0,6,0,1,,Negative,"{'neg': 0.56, 'neu': 0.44, 'pos': 0.0, 'compound': -0.6249}",-0.6249,0,6
+Useless product,1.0,2,0,1,,Negative,"{'neg': 0.737, 'neu': 0.263, 'pos': 0.0, 'compound': -0.4215}",-0.4215,0,2
+Average product,3.0,2,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,2
+Nice to see this Product in Very Less Rate,5.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 0.741, 'pos': 0.259, 'compound': 0.4215}",0.4215,2,9
+So little juice and so much of waste.,5.0,8,0,1,,Positive,"{'neg': 0.304, 'neu': 0.696, 'pos': 0.0, 'compound': -0.4703}",-0.4703,2,8
+FLIPKART'S SERVICE IS VERY GOOD AND SATISFACTORY.,4.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.456, 'pos': 0.544, 'compound': 0.7146}",0.7146,2,7
+Nice,3.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.4215}",0.4215,2,1
+Great experience with IFB Dishwasher,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.494, 'pos': 0.506, 'compound': 0.6249}",0.6249,2,5
+A must have gadget for a smart home,5.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.649, 'pos': 0.351, 'compound': 0.4019}",0.4019,2,8
+Good. Bt bowls are too short,3.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.633, 'pos': 0.367, 'compound': 0.4404}",0.4404,2,6
+Very Good Microwave oven,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.484, 'pos': 0.516, 'compound': 0.4927}",0.4927,2,4
+"1) Product quality = 2 stars, Delivery = 5 stars",2.0,10,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,10
+Excellent quality and great value for money! 😍💰,5.0,8,0,0,😍💰,Positive,"{'neg': 0.0, 'neu': 0.323, 'pos': 0.677, 'compound': 0.8883}",0.8883,2,8
+Good camera kit,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.408, 'pos': 0.592, 'compound': 0.4404}",0.4404,2,3
+Perfect product! can recommend to others,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.381, 'pos': 0.619, 'compound': 0.7574}",0.7574,2,6
+Wondeful purchase. Very good experience until now.,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.653, 'pos': 0.347, 'compound': 0.4927}",0.4927,2,7
+Price Value,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.294, 'pos': 0.706, 'compound': 0.34}",0.34,2,2
+Useless Product,1.0,2,0,1,,Negative,"{'neg': 0.737, 'neu': 0.263, 'pos': 0.0, 'compound': -0.4215}",-0.4215,0,2
+NICE YAAR,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.263, 'pos': 0.737, 'compound': 0.4215}",0.4215,2,2
+VFM - Primarily designed to move away from Cable,4.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,9
+Great Power Bank From Mi,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.494, 'pos': 0.506, 'compound': 0.6249}",0.6249,2,5
+Same as google home mni,1.0,5,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,5
+"खूपच छान उत्पादन आहे, मला खूप आवडलं.",5.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+Great Purchase,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+rubbish,2.0,1,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,1
+"Good looks, good installation service, but weak material.",4.0,8,0,1,,Positive,"{'neg': 0.302, 'neu': 0.392, 'pos': 0.306, 'compound': -0.2382}",-0.2382,2,8
+Neat design and good outcome.,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.337, 'pos': 0.663, 'compound': 0.7096}",0.7096,2,5
+Worst experience ever! DO NOT BUY,1.0,6,0,1,,Negative,"{'neg': 0.468, 'neu': 0.532, 'pos': 0.0, 'compound': -0.6588}",-0.6588,0,6
+Quality product from philips,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+LG 20 L solo Microwave Oven is really good,4.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 0.687, 'pos': 0.313, 'compound': 0.4927}",0.4927,2,9
+GOOD..,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+not at its brand level.,1.0,5,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,5
+Seems little low power of motor,2.0,6,0,1,,Negative,"{'neg': 0.265, 'neu': 0.735, 'pos': 0.0, 'compound': -0.204}",-0.204,0,6
+Decent product.,3.0,2,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,2
+"पैकेजिंग खराब थी, बॉक्स फटा हुआ था।",1.0,7,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,7
+best ball ever....,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.323, 'pos': 0.677, 'compound': 0.6369}",0.6369,2,3
+Great Product!,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.185, 'pos': 0.815, 'compound': 0.6588}",0.6588,2,2
+Not so efficient,3.0,3,0,1,,Negative,"{'neg': 0.56, 'neu': 0.44, 'pos': 0.0, 'compound': -0.3713}",-0.3713,0,3
+Happy it is working well.,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.341, 'pos': 0.659, 'compound': 0.7003}",0.7003,2,5
+Excellent Product By Philips,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.448, 'pos': 0.552, 'compound': 0.5719}",0.5719,2,4
+Good choice! But bad installation.,4.0,5,0,1,,Positive,"{'neg': 0.505, 'neu': 0.3, 'pos': 0.195, 'compound': -0.6239}",-0.6239,2,5
+Stop Working With in ONE MONTH of Usage,1.0,8,0,1,,Negative,"{'neg': 0.239, 'neu': 0.761, 'pos': 0.0, 'compound': -0.296}",-0.296,0,8
+Nice buy for a family of 4.,4.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.641, 'pos': 0.359, 'compound': 0.4215}",0.4215,2,7
+Strong but height is too short for TV base,4.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 0.788, 'pos': 0.212, 'compound': 0.2846}",0.2846,2,9
+Compare to other router it is really good.,4.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.687, 'pos': 0.313, 'compound': 0.4927}",0.4927,2,8
+Mixer Review,2.0,2,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,2
+Awesome purchase at this price,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.494, 'pos': 0.506, 'compound': 0.6249}",0.6249,2,5
+Best router and AP,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.417, 'pos': 0.583, 'compound': 0.6369}",0.6369,2,4
+Simply Ordinary,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Reliable and easy to use very good job bajaj...,5.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 0.535, 'pos': 0.465, 'compound': 0.7264}",0.7264,2,9
+Nice TV,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.263, 'pos': 0.737, 'compound': 0.4215}",0.4215,2,2
+very good,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.238, 'pos': 0.762, 'compound': 0.4927}",0.4927,2,2
+Value-for-money,4.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+"Bad Decision of buying plastic bucket, cheap material",1.0,8,0,1,,Negative,"{'neg': 0.333, 'neu': 0.667, 'pos': 0.0, 'compound': -0.5423}",-0.5423,0,8
+Very Goodreat product,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+"The motor is good, but the engineering is terrible",2.0,9,0,1,,Negative,"{'neg': 0.317, 'neu': 0.534, 'pos': 0.149, 'compound': -0.4939}",-0.4939,0,9
+Flipkart is BRILLIANT but Bajaj is BAD,3.0,7,0,1,,Negative,"{'neg': 0.43, 'neu': 0.367, 'pos': 0.203, 'compound': -0.6228}",-0.6228,0,7
+Awesome !,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.6588}",0.6588,2,2
+"Average product, can be better 😕",3.0,6,0,0,😕,Positive,"{'neg': 0.0, 'neu': 0.58, 'pos': 0.42, 'compound': 0.4404}",0.4404,2,6
+Okay TV,3.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.345, 'pos': 0.655, 'compound': 0.2263}",0.2263,2,2
+Excellent juicer,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.213, 'pos': 0.787, 'compound': 0.5719}",0.5719,2,2
+Worth each penny,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.513, 'pos': 0.487, 'compound': 0.2263}",0.2263,2,3
+हेल्थ साठी खूप चांगलं आहे.,5.0,5,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Awesome Soundbar,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+Beautiful design !!!,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.295, 'pos': 0.705, 'compound': 0.6981}",0.6981,2,3
+expensive,2.0,1,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,1
+Bajaj FX 11,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+Great Product with reliability of Bajaj.,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.549, 'pos': 0.451, 'compound': 0.6249}",0.6249,2,6
+Unclear Specifications,1.0,2,0,1,,Negative,"{'neg': 0.667, 'neu': 0.333, 'pos': 0.0, 'compound': -0.25}",-0.25,0,2
+Excellent product as well as delivery service,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.463, 'pos': 0.537, 'compound': 0.7003}",0.7003,2,7
+Go for it.,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+Good purchase!,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.239, 'pos': 0.761, 'compound': 0.4926}",0.4926,2,2
+Quality,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+Reviewing after an year of use,3.0,6,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,6
+Great in style juices like a boss,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.377, 'pos': 0.623, 'compound': 0.765}",0.765,2,7
+Low Quality,1.0,2,0,1,,Negative,"{'neg': 0.677, 'neu': 0.323, 'pos': 0.0, 'compound': -0.2732}",-0.2732,0,2
+Quality product and great service from flipkart,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.594, 'pos': 0.406, 'compound': 0.6249}",0.6249,2,7
+Nice product from IFB,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.517, 'pos': 0.483, 'compound': 0.4215}",0.4215,2,4
+Nice Trendy and easy to Carry,4.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.412, 'pos': 0.588, 'compound': 0.6908}",0.6908,2,6
+Shameful act of lying about product features.,1.0,7,0,1,,Negative,"{'neg': 0.569, 'neu': 0.431, 'pos': 0.0, 'compound': -0.765}",-0.765,0,7
+Worth every penny!!,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.446, 'pos': 0.554, 'compound': 0.3578}",0.3578,2,3
+A wonderful product!!!,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.179, 'pos': 0.821, 'compound': 0.6784}",0.6784,2,3
+Awesome buy ! Value for money,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.306, 'pos': 0.694, 'compound': 0.7777}",0.7777,2,6
+Fabulous!,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.5707}",0.5707,2,1
+100% Satisfied from the Product.,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.588, 'pos': 0.412, 'compound': 0.4215}",0.4215,2,5
+Crompton ozone 75 desert air cooler,4.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+Pretty good product,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.141, 'pos': 0.859, 'compound': 0.7269}",0.7269,2,3
+"खूप छान product आहे, value for money!",5.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 0.69, 'pos': 0.31, 'compound': 0.4003}",0.4003,2,7
+Got a good router after doing a lot of research!,5.0,10,0,1,,Positive,"{'neg': 0.0, 'neu': 0.687, 'pos': 0.313, 'compound': 0.4926}",0.4926,2,10
+not detecting in my printer it is too bad,1.0,9,0,1,,Negative,"{'neg': 0.304, 'neu': 0.696, 'pos': 0.0, 'compound': -0.5423}",-0.5423,0,9
+Decent quality,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Not recommended at allused product,1.0,5,0,1,,Negative,"{'neg': 0.285, 'neu': 0.715, 'pos': 0.0, 'compound': -0.1511}",-0.1511,0,5
+damage product delivery and quality is very poor,1.0,8,0,1,,Negative,"{'neg': 0.524, 'neu': 0.476, 'pos': 0.0, 'compound': -0.7645}",-0.7645,0,8
+Good machine but hidden cost not mention.,3.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.755, 'pos': 0.245, 'compound': 0.2382}",0.2382,2,7
+चार्जिंग में बहुत टाइम लेता है यह फोन।,2.0,8,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,8
+worth for money,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.513, 'pos': 0.487, 'compound': 0.2263}",0.2263,2,3
+Best Choice,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.192, 'pos': 0.808, 'compound': 0.6369}",0.6369,2,2
+Value to Money (Smile)...!!!,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.478, 'pos': 0.522, 'compound': 0.5067}",0.5067,2,4
+Best in class refrigerator,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.417, 'pos': 0.583, 'compound': 0.6369}",0.6369,2,4
+Perfect for video editing but not for general users,4.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 0.773, 'pos': 0.227, 'compound': 0.3291}",0.3291,2,9
+Wonderful..! I highly recommend.,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.393, 'pos': 0.607, 'compound': 0.474}",0.474,2,4
+Ok for unbreakable stuff,2.0,4,0,1,,Negative,"{'neg': 0.0, 'neu': 0.577, 'pos': 0.423, 'compound': 0.296}",0.296,0,4
+Ultimate security.,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.294, 'pos': 0.706, 'compound': 0.34}",0.34,2,2
+Good look,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Best but not worth in this range,3.0,7,0,1,,Positive,"{'neg': 0.208, 'neu': 0.521, 'pos': 0.271, 'compound': 0.1533}",0.1533,2,7
+terrific purchase,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.244, 'pos': 0.756, 'compound': 0.4767}",0.4767,2,2
+Feel Worst Experience,1.0,3,0,1,,Negative,"{'neg': 0.672, 'neu': 0.328, 'pos': 0.0, 'compound': -0.6249}",-0.6249,0,3
+Best Product in Best Price,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.263, 'pos': 0.737, 'compound': 0.8555}",0.8555,2,5
+Monster !!,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Really bad product,1.0,3,0,1,,Negative,"{'neg': 0.655, 'neu': 0.345, 'pos': 0.0, 'compound': -0.5849}",-0.5849,0,3
+I am very satisfied with this purchase! The product is of great quality and the delivery was prompt. 😍👍🚚,5.0,19,0,0,😍👍🚚,Positive,"{'neg': 0.0, 'neu': 0.681, 'pos': 0.319, 'compound': 0.8169}",0.8169,2,19
+kinda disapointed,3.0,2,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,2
+Decent product,3.0,2,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,2
+Old product and have scratch on face,1.0,7,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,7
+या किमतीत यापेक्षा चांगलं काहीच मिळणार नाही.,5.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+Keep it up.,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+Eureka Forbes Trendy Zip Dry Vacuum Cleaner,3.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.779, 'pos': 0.221, 'compound': 0.1779}",0.1779,2,7
+awesome product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+chepest Cardtige,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+improper sync between audio and video.audio is being delayed,1.0,9,0,1,,Negative,"{'neg': 0.192, 'neu': 0.808, 'pos': 0.0, 'compound': -0.2263}",-0.2263,0,9
+"सर्वश्रेष्ठ प्रोडक्ट, ५ स्टार रेटिंग!",5.0,5,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Entry Level DSLR.,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+Good product in repeating wifi but not the speed of host net,2.0,12,0,1,,Negative,"{'neg': 0.0, 'neu': 0.849, 'pos': 0.151, 'compound': 0.2382}",0.2382,0,12
+Nice Camera,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.263, 'pos': 0.737, 'compound': 0.4215}",0.4215,2,2
+Worst product ever,1.0,3,0,1,,Negative,"{'neg': 0.672, 'neu': 0.328, 'pos': 0.0, 'compound': -0.6249}",-0.6249,0,3
+"डिस्काउंट मध्ये मिळालं, मस्त डील होती.",5.0,6,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+Good Product & Lowest Price ever only @ Flipkart,5.0,9,0,1,,Positive,"{'neg': 0.248, 'neu': 0.476, 'pos': 0.276, 'compound': 0.0772}",0.0772,2,9
+Four Stars,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+happy with the product and flipcart service.,4.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.619, 'pos': 0.381, 'compound': 0.5719}",0.5719,2,7
+BAJAJ DX 2 L/W 600,4.0,5,0,1,,Positive,"{'neg': 0.612, 'neu': 0.388, 'pos': 0.0, 'compound': -0.694}",-0.694,2,5
+Poor value for money.,3.0,4,0,1,,Negative,"{'neg': 0.413, 'neu': 0.267, 'pos': 0.32, 'compound': -0.1779}",-0.1779,0,4
+Good product under budget,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,4
+इस्तेमाल करने में आसान और हल्का है।,4.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+स्पेस खूप कमी आहे आतमध्ये.,2.0,5,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,5
+Poor,1.0,1,0,1,,Negative,"{'neg': 1.0, 'neu': 0.0, 'pos': 0.0, 'compound': -0.4767}",-0.4767,0,1
+don't buy,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+We got rid of the maid right away *****,5.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,9
+Catvision settop box,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+Good cooler,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+awwwwwwwwsome Ã°ÂÂÂ,5.0,2,1,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+हमेशा की तरह बेस्ट सर्विस और प्रोडक्ट।,5.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+Nice Product and very fast delivery,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.641, 'pos': 0.359, 'compound': 0.4215}",0.4215,2,6
+Brilliant (Must have product in kitchen),5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.568, 'pos': 0.432, 'compound': 0.5859}",0.5859,2,6
+Good buy,3.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Nice Mixer,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.263, 'pos': 0.737, 'compound': 0.4215}",0.4215,2,2
+Highly recommended....,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Good Router!!!,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.209, 'pos': 0.791, 'compound': 0.5826}",0.5826,2,2
+Switch has stopped working,1.0,4,0,1,,Negative,"{'neg': 0.388, 'neu': 0.612, 'pos': 0.0, 'compound': -0.2263}",-0.2263,0,4
+Wonderful product and quick delivery.,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.519, 'pos': 0.481, 'compound': 0.5719}",0.5719,2,5
+Worst experience ever!,1.0,3,0,1,,Negative,"{'neg': 0.687, 'neu': 0.313, 'pos': 0.0, 'compound': -0.6588}",-0.6588,0,3
+Genunie product worth the money!!!,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.59, 'pos': 0.41, 'compound': 0.4168}",0.4168,2,5
+Artesia Folding Sheesham Wood Relaxing Chair,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.61, 'pos': 0.39, 'compound': 0.4939}",0.4939,2,6
+Best product for the price,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.488, 'pos': 0.512, 'compound': 0.6369}",0.6369,2,5
+Nice product,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.263, 'pos': 0.737, 'compound': 0.4215}",0.4215,2,2
+poor installation & demo,4.0,4,0,1,,Positive,"{'neg': 0.608, 'neu': 0.392, 'pos': 0.0, 'compound': -0.4767}",-0.4767,2,4
+availability,1.0,1,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,1
+Only one RAM slot,3.0,4,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,4
+Thank u filipkart,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.286, 'pos': 0.714, 'compound': 0.3612}",0.3612,2,3
+"आंख बंद करके खरीद लो, बेस्ट है।",5.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+"डिस्काउंट में मिला, पैसा वसूल डील थी।",5.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+Capacity is too low,2.0,4,0,1,,Negative,"{'neg': 0.412, 'neu': 0.588, 'pos': 0.0, 'compound': -0.2732}",-0.2732,0,4
+one of the best inverter,3.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.488, 'pos': 0.512, 'compound': 0.6369}",0.6369,2,5
+Brilliantly ball,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.2, 'pos': 0.8, 'compound': 0.6124}",0.6124,2,2
+"Best in its class, borderless with IPS Panel.",5.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.625, 'pos': 0.375, 'compound': 0.6369}",0.6369,2,8
+Thik hi hai,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+Nice Product....,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.263, 'pos': 0.737, 'compound': 0.4215}",0.4215,2,2
+Absolute rubbish!NOT GOOD,1.0,3,0,1,,Negative,"{'neg': 0.0, 'neu': 0.338, 'pos': 0.662, 'compound': 0.6027}",0.6027,0,3
+awwwwwwwwsome ÃÂ°ÃÂÃÂÃÂ,5.0,2,1,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Good but expensive 💸🤔,3.0,4,0,0,💸🤔,Positive,"{'neg': 0.0, 'neu': 0.606, 'pos': 0.394, 'compound': 0.2382}",0.2382,2,4
+Super! Great deal and quality,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.266, 'pos': 0.734, 'compound': 0.8516}",0.8516,2,5
+Just wow! Great Product,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.8478}",0.8478,2,4
+Fantastic,4.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.5574}",0.5574,2,1
+BEST PRODUCT AND BEST BUY,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.263, 'pos': 0.737, 'compound': 0.8555}",0.8555,2,5
+Very usefull Product,3.0,3,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,3
+Go for it without any second thoughts!,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+"साधा प्रॉडक्ट आहे, काही खास नाही.",3.0,6,0,0,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,6
+Good for the price,3.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,4
+50 - 50,3.0,3,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,3
+Does it's job,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+Disappointed,4.0,1,0,1,,Positive,"{'neg': 1.0, 'neu': 0.0, 'pos': 0.0, 'compound': -0.4767}",-0.4767,2,1
+Excellent product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.213, 'pos': 0.787, 'compound': 0.5719}",0.5719,2,2
+Happy with it,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.351, 'pos': 0.649, 'compound': 0.5719}",0.5719,2,3
+"Value for money, highly recommended! 😊👍",5.0,6,0,0,😊👍,Positive,"{'neg': 0.0, 'neu': 0.455, 'pos': 0.545, 'compound': 0.5838}",0.5838,2,6
+Worth,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.2263}",0.2263,2,1
+बैटरी बैकअप बहुत कम है इसका।,2.0,6,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,6
+SUPERB,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.6249}",0.6249,2,1
+"Big, sturdy, worth the price",5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.678, 'pos': 0.322, 'compound': 0.2263}",0.2263,2,5
+Awesome M1 chip air,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.423, 'pos': 0.577, 'compound': 0.6249}",0.6249,2,4
+Value for money product,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.556, 'pos': 0.444, 'compound': 0.34}",0.34,2,4
+Good product. Recommended,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.175, 'pos': 0.825, 'compound': 0.5719}",0.5719,2,3
+"Easy to assemble, super comfortable!",5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.161, 'pos': 0.839, 'compound': 0.8858}",0.8858,2,5
+Awesome Product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+Good product by Hero,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.235, 'pos': 0.765, 'compound': 0.7579}",0.7579,2,4
+Great product.,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+वापरण्यास सोपे आणि हलके आहे.,4.0,5,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Feedback,4.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+Stop selling this. and stop buying this.,1.0,7,0,1,,Negative,"{'neg': 0.468, 'neu': 0.532, 'pos': 0.0, 'compound': -0.5267}",-0.5267,0,7
+Received broken plate and bowl,2.0,5,0,1,,Negative,"{'neg': 0.437, 'neu': 0.563, 'pos': 0.0, 'compound': -0.4767}",-0.4767,0,5
+Every Penny Worth for this Product Awesome Product @ Awesome,5.0,10,0,1,,Positive,"{'neg': 0.0, 'neu': 0.373, 'pos': 0.627, 'compound': 0.8779}",0.8779,2,10
+This Product is very good and Taste Enhancer works perfect..,5.0,10,0,1,,Positive,"{'neg': 0.0, 'neu': 0.738, 'pos': 0.262, 'compound': 0.4927}",0.4927,2,10
+Best one at this price range,4.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.543, 'pos': 0.457, 'compound': 0.6369}",0.6369,2,6
+Excellent service from Flipkart,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.448, 'pos': 0.552, 'compound': 0.5719}",0.5719,2,4
+"बढ़िया काम कर रहा है, highly recommended!",5.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 0.716, 'pos': 0.284, 'compound': 0.3367}",0.3367,2,7
+"एकदम झकास, बहुत बढ़िया लगा!",5.0,5,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Good choice always,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.408, 'pos': 0.592, 'compound': 0.4404}",0.4404,2,3
+Insurance more charges paid .,3.0,5,0,1,,Negative,"{'neg': 0.444, 'neu': 0.556, 'pos': 0.0, 'compound': -0.3384}",-0.3384,0,5
+"डिस्प्ले चांगला नाही, डोळ्यांना त्रास होतो.",2.0,6,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,6
+Good Product Quick Delivery,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,4
+"Mixing, Grinding, chopping FANTASTIC. Shredding not so GREAT",3.0,8,0,1,,Negative,"{'neg': 0.318, 'neu': 0.396, 'pos': 0.286, 'compound': -0.1239}",-0.1239,0,8
+Nice product with free installation service,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.396, 'pos': 0.604, 'compound': 0.7269}",0.7269,2,6
+EXCELLENT PRODUCT FROM AGARO,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.448, 'pos': 0.552, 'compound': 0.5719}",0.5719,2,4
+Very bad. It got burnt from the inside after 2 times.,1.0,11,0,1,,Negative,"{'neg': 0.296, 'neu': 0.704, 'pos': 0.0, 'compound': -0.5849}",-0.5849,0,11
+Product changed,1.0,2,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,2
+Happy wife,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.213, 'pos': 0.787, 'compound': 0.5719}",0.5719,2,2
+Not a premium product...,3.0,4,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,4
+Awesome product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+Pls refund the amount and take your machine back,1.0,9,0,1,,Negative,"{'neg': 0.0, 'neu': 0.86, 'pos': 0.14, 'compound': 0.0772}",0.0772,0,9
+"Recommended, Nice Product, Fast Delivery. Worth for money.",5.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.435, 'pos': 0.565, 'compound': 0.6705}",0.6705,2,8
+ठीक है पर लंबे समय तक चलेगा या नहीं पता नहीं।,3.0,11,0,0,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,11
+BEST PRODUCT ! BEST PRICE ! JUST  GO FOR IT !,5.0,11,0,1,,Positive,"{'neg': 0.0, 'neu': 0.393, 'pos': 0.607, 'compound': 0.8827}",0.8827,2,11
+inalsa food processor,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+"Not DIY, buy at your own discretion",2.0,7,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,7
+okay,3.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.2263}",0.2263,2,1
+"नेक्स्ट डे डिलिव्हरी मिळाली, अमेझिंग!",5.0,5,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Superb!,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.6588}",0.6588,2,1
+वॉरंटी कार्ड साथ में नहीं मिला।,2.0,6,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,6
+Good Grinder,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+"Worst experience, काम नाही करत हे नीट, don't buy.",1.0,9,0,0,,Negative,"{'neg': 0.339, 'neu': 0.661, 'pos': 0.0, 'compound': -0.6249}",-0.6249,0,9
+West money,1.0,2,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,2
+Bad choice,2.0,2,0,1,,Negative,"{'neg': 0.778, 'neu': 0.222, 'pos': 0.0, 'compound': -0.5423}",-0.5423,0,2
+Waste of money,1.0,3,0,1,,Negative,"{'neg': 0.583, 'neu': 0.417, 'pos': 0.0, 'compound': -0.4215}",-0.4215,0,3
+Literally life changing!,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+Not worth the money. The quality is poor and it stopped working after a week. 😞💔,2.0,16,0,0,😞💔,Negative,"{'neg': 0.357, 'neu': 0.643, 'pos': 0.0, 'compound': -0.6874}",-0.6874,0,16
+Good toy.,3.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Heating Issue,2.0,2,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,2
+Awesome purchase,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+बटण नीट काम करत नाहीत.,2.0,5,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,5
+Very useful product,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.385, 'pos': 0.615, 'compound': 0.4927}",0.4927,2,3
+Wonderful milton no-1 brond superb,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.278, 'pos': 0.722, 'compound': 0.8316}",0.8316,2,5
+"खूपच खराब प्रॉडक्ट, पैसे वाया गेले! 👎",1.0,7,0,0,👎,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,7
+Not worth the price. The quality is poor and it broke after a week of use. 😞💔,2.0,17,0,0,😞💔,Negative,"{'neg': 0.368, 'neu': 0.632, 'pos': 0.0, 'compound': -0.7626}",-0.7626,0,17
+Pretty good but non steady due to length mismatch of legs.,4.0,11,0,1,,Positive,"{'neg': 0.0, 'neu': 0.69, 'pos': 0.31, 'compound': 0.4678}",0.4678,2,11
+grind to your hearts content,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Worthless,1.0,1,0,1,,Negative,"{'neg': 1.0, 'neu': 0.0, 'pos': 0.0, 'compound': -0.4404}",-0.4404,0,1
+Biggest mistake of my life!,1.0,5,0,1,,Negative,"{'neg': 0.402, 'neu': 0.598, 'pos': 0.0, 'compound': -0.4003}",-0.4003,0,5
+Best buy. Perfect for daily needs,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.336, 'pos': 0.664, 'compound': 0.836}",0.836,2,6
+PTZ Camera,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Good and easy to use.,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.341, 'pos': 0.659, 'compound': 0.7003}",0.7003,2,5
+Excellent. Must Buy,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.351, 'pos': 0.649, 'compound': 0.5719}",0.5719,2,3
+Super! quality,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.193, 'pos': 0.807, 'compound': 0.636}",0.636,2,2
+Good product,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Over all good product,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,4
+"Mind blowing Machine with all in(Mixing, Chopping, Grinding)",5.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,8
+Nice Juicer.,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.263, 'pos': 0.737, 'compound': 0.4215}",0.4215,2,2
+CHEATED,1.0,1,0,1,,Negative,"{'neg': 1.0, 'neu': 0.0, 'pos': 0.0, 'compound': -0.5106}",-0.5106,0,1
+Best Choice Dry-Iron for Hostel and/or PG students,5.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.625, 'pos': 0.375, 'compound': 0.6369}",0.6369,2,8
+Absolute rubbish!,1.0,2,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,2
+Product & Delivery was awsome but for demo we have to pay,4.0,12,0,1,,Positive,"{'neg': 0.138, 'neu': 0.862, 'pos': 0.0, 'compound': -0.1531}",-0.1531,2,12
+Good 360 rotation product,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,4
+Almost Good,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.277, 'pos': 0.723, 'compound': 0.3832}",0.3832,2,2
+"Ekdam bakwas quality, paise fukat gele 😡👎",1.0,7,0,0,😡👎,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,7
+GOOD PRICE ...EXCELLENT PRODUCT,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,4
+My Dishwasher- Neptune VX,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+Nice for kids and teens !!,4.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.596, 'pos': 0.404, 'compound': 0.5242}",0.5242,2,6
+"A good, reliable, Sine wave invertor.",4.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.58, 'pos': 0.42, 'compound': 0.4404}",0.4404,2,6
+Customer Support not available.,1.0,4,0,1,,Negative,"{'neg': 0.0, 'neu': 0.526, 'pos': 0.474, 'compound': 0.4019}",0.4019,0,4
+Gud quality by Bajaj and Packing is also very gud by Flipkart.,3.0,12,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,12
+Not recommended at all | Worst Product cheap quality,1.0,9,0,1,,Negative,"{'neg': 0.487, 'neu': 0.513, 'pos': 0.0, 'compound': -0.69}",-0.69,0,9
+A good handy 4k media streamer with few problems,3.0,9,0,1,,Positive,"{'neg': 0.233, 'neu': 0.517, 'pos': 0.25, 'compound': 0.0516}",0.0516,2,9
+Packing itself was in doubtful state. not working at all.,1.0,10,0,1,,Negative,"{'neg': 0.211, 'neu': 0.789, 'pos': 0.0, 'compound': -0.34}",-0.34,0,10
+Easy to clean and good to use,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.32, 'pos': 0.68, 'compound': 0.8176}",0.8176,2,7
+Woww Product...,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+"Poor Quality, Don't Waste Your Money !",1.0,7,0,1,,Negative,"{'neg': 0.349, 'neu': 0.411, 'pos': 0.24, 'compound': -0.264}",-0.264,0,7
+Excellent laptop!,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.2, 'pos': 0.8, 'compound': 0.6114}",0.6114,2,2
+good entrylevel product,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.408, 'pos': 0.592, 'compound': 0.4404}",0.4404,2,3
+Must Buy.......,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+"एकदम ओरिजिनल है, क्वालिटी बहुत भारी है।",5.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+not a great product comparing to its price,3.0,8,0,1,,Negative,"{'neg': 0.354, 'neu': 0.646, 'pos': 0.0, 'compound': -0.5096}",-0.5096,0,8
+awesome,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.6249}",0.6249,2,1
+Priced good!,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.239, 'pos': 0.761, 'compound': 0.4926}",0.4926,2,2
+"काफी समय से ढूंढ रहा था, फाइनली मिल गया!",5.0,9,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,9
+Worth for Money..,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.513, 'pos': 0.487, 'compound': 0.2263}",0.2263,2,3
+Good for simple work and medium gaming,4.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.674, 'pos': 0.326, 'compound': 0.4404}",0.4404,2,7
+Consistent performer,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+"वजन खूप जास्त आहे, पकडायला त्रास होतो.",2.0,7,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,7
+Awesome deal!!,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.176, 'pos': 0.824, 'compound': 0.6892}",0.6892,2,2
+Easy to setup,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.408, 'pos': 0.592, 'compound': 0.4404}",0.4404,2,3
+Bad product really disappointed,1.0,4,0,1,,Negative,"{'neg': 0.775, 'neu': 0.225, 'pos': 0.0, 'compound': -0.7841}",-0.7841,0,4
+Moderate,2.0,1,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,1
+"सर्व्हिस खूप स्लो आहे, डिलिव्हरी उशिरा मिळाली.",2.0,7,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,7
+marvelous,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.5994}",0.5994,2,1
+"Not very sturdy, low height.",1.0,5,0,1,,Negative,"{'neg': 0.0, 'neu': 0.664, 'pos': 0.336, 'compound': 0.2547}",0.2547,0,5
+प्रोडक्ट पर खरोंच के निशान थे।,2.0,6,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,6
+Good cycle,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+amazing coloured prints. :),4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.227, 'pos': 0.773, 'compound': 0.7783}",0.7783,2,4
+Go For It,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+Nice one,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.263, 'pos': 0.737, 'compound': 0.4215}",0.4215,2,2
+delivery was one day late,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+best routes,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.192, 'pos': 0.808, 'compound': 0.6369}",0.6369,2,2
+wonderful little microwave,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.351, 'pos': 0.649, 'compound': 0.5719}",0.5719,2,3
+Same as b4,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+mind blowing,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+supports win8.1 and cable broadband,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.615, 'pos': 0.385, 'compound': 0.3612}",0.3612,2,5
+Great Buy,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+"नक्कीच घ्या, डोळे झाकून विश्वास ठेवा.",5.0,6,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+Cheated by Flipkart on price,4.0,5,0,1,,Positive,"{'neg': 0.452, 'neu': 0.548, 'pos': 0.0, 'compound': -0.5106}",-0.5106,2,5
+FLIPKART - TRULY GREAT,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.125, 'pos': 0.875, 'compound': 0.7906}",0.7906,2,4
+Good Furniture,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+EXCELLENT IN TERMS OF COMPATIBILITY & PERFORMANCE.,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.575, 'pos': 0.425, 'compound': 0.5719}",0.5719,2,7
+Cool Cooler for Extreme Summer heat,4.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.685, 'pos': 0.315, 'compound': 0.3182}",0.3182,2,6
+बटन ठीक से काम नहीं कर रहे हैं।,2.0,8,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,8
+Does the JOB,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+Work Table for Office,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+Don't waste your money.,1.0,4,0,1,,Negative,"{'neg': 0.0, 'neu': 0.563, 'pos': 0.437, 'compound': 0.3252}",0.3252,0,4
+Super Product... delivered in less than 24 hours,5.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.642, 'pos': 0.358, 'compound': 0.5994}",0.5994,2,8
+Nice Convention Microwave Oven @8000,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.588, 'pos': 0.412, 'compound': 0.4215}",0.4215,2,5
+Picture settings not getting applied to HDMI / AV input,4.0,10,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,10
+Delightful product,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.208, 'pos': 0.792, 'compound': 0.5859}",0.5859,2,2
+Good Seller and Genuine Ink,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.58, 'pos': 0.42, 'compound': 0.4404}",0.4404,2,5
+Worst Delivery Flipkart,1.0,3,0,1,,Negative,"{'neg': 0.672, 'neu': 0.328, 'pos': 0.0, 'compound': -0.6249}",-0.6249,0,3
+Economic and Easy to Operate- Recommended .,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.46, 'pos': 0.54, 'compound': 0.5719}",0.5719,2,7
+Great brand - More than 6 years,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.494, 'pos': 0.506, 'compound': 0.6249}",0.6249,2,7
+"Met Expectations, Clean Dishes, Low Noise, Economical",5.0,7,0,1,,Positive,"{'neg': 0.214, 'neu': 0.51, 'pos': 0.276, 'compound': 0.1531}",0.1531,2,7
+Veryy poor.....,1.0,2,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,2
+Purchased the product on 24th got delivered on 30th septembe,3.0,10,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,10
+Fantastic Product and Excellent delivery from Flipkart.,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.407, 'pos': 0.593, 'compound': 0.8074}",0.8074,2,7
+Perfect for a small home,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.448, 'pos': 0.552, 'compound': 0.5719}",0.5719,2,5
+Worst and Useless without Installation,1.0,5,0,1,,Negative,"{'neg': 0.697, 'neu': 0.303, 'pos': 0.0, 'compound': -0.7845}",-0.7845,0,5
+Excellent Juicer,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.213, 'pos': 0.787, 'compound': 0.5719}",0.5719,2,2
+"मस्त आहे, colors are very vibrant, go for it!",4.0,9,0,0,,Positive,"{'neg': 0.0, 'neu': 0.668, 'pos': 0.332, 'compound': 0.6105}",0.6105,2,9
+Awsome product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Terrific purchase,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.244, 'pos': 0.756, 'compound': 0.4767}",0.4767,2,2
+Very functional,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Acceptable,3.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.3182}",0.3182,2,1
+This is the real thermos,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+"Good in performance, but need improvement in design.",4.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.502, 'pos': 0.498, 'compound': 0.714}",0.714,2,8
+IT PERFORMS GREAT,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.328, 'pos': 0.672, 'compound': 0.6249}",0.6249,2,3
+Very Good product,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.385, 'pos': 0.615, 'compound': 0.4927}",0.4927,2,3
+Best in the budget.,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.417, 'pos': 0.583, 'compound': 0.6369}",0.6369,2,4
+V-guard,4.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+Hated it! This Tv has issues with connecting  to Wifi .,1.0,11,0,1,,Negative,"{'neg': 0.333, 'neu': 0.667, 'pos': 0.0, 'compound': -0.6696}",-0.6696,0,11
+:),5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.4588}",0.4588,2,1
+Cools well but the User Manual can be improved,4.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 0.551, 'pos': 0.449, 'compound': 0.6908}",0.6908,2,9
+Must buy! its Awesome excellent features.,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.331, 'pos': 0.669, 'compound': 0.8439}",0.8439,2,6
+Expected a better product.,2.0,4,0,1,,Negative,"{'neg': 0.0, 'neu': 0.408, 'pos': 0.592, 'compound': 0.4404}",0.4404,0,4
+Loving it,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.204, 'pos': 0.796, 'compound': 0.5994}",0.5994,2,2
+6 months usage review.,3.0,4,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,4
+Value for money & good product,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.361, 'pos': 0.639, 'compound': 0.6486}",0.6486,2,6
+Great build quality & features. But unreliable,3.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.662, 'pos': 0.338, 'compound': 0.3716}",0.3716,2,7
+हेल्थ के लिए बहुत फायदेमंद है यह।,5.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+Absolute rubbish! Waste of Money. Very Very BAD,1.0,8,0,1,,Negative,"{'neg': 0.568, 'neu': 0.432, 'pos': 0.0, 'compound': -0.8358}",-0.8358,0,8
+Thin wire,1.0,2,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,2
+कीमत थोड़ी ज्यादा है पर काम अच्छा है।,4.0,8,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,8
+Smart inverter!,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.251, 'pos': 0.749, 'compound': 0.4574}",0.4574,2,2
+Delightful and nice to have this product.,4.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.431, 'pos': 0.569, 'compound': 0.765}",0.765,2,7
+Better than expected,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.408, 'pos': 0.592, 'compound': 0.4404}",0.4404,2,3
+Great Experience,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+"Quality khupach ghan aahe, don't buy 🤮",1.0,7,0,0,🤮,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,7
+Terrific product for the price,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.563, 'pos': 0.437, 'compound': 0.4767}",0.4767,2,5
+"Except for Sound and Battery, all is good.",4.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.707, 'pos': 0.293, 'compound': 0.4404}",0.4404,2,8
+Worth buying,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.345, 'pos': 0.655, 'compound': 0.2263}",0.2263,2,2
+Excellent Product at Reasonable Price,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.519, 'pos': 0.481, 'compound': 0.5719}",0.5719,2,5
+Came with broken cover.,2.0,4,0,1,,Negative,"{'neg': 0.508, 'neu': 0.492, 'pos': 0.0, 'compound': -0.4767}",-0.4767,0,4
+Excellent Product in the given price range,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.619, 'pos': 0.381, 'compound': 0.5719}",0.5719,2,7
+Worried of recieving defective product but thanks to flipkart for replacing it with a brand new model of Bajaj FX11 FP,5.0,21,0,1,,Positive,"{'neg': 0.145, 'neu': 0.697, 'pos': 0.158, 'compound': 0.3182}",0.3182,2,21
+"The product is decent, but the delivery was delayed by a week. 🚚⌛",3.0,13,0,0,🚚⌛,Negative,"{'neg': 0.176, 'neu': 0.824, 'pos': 0.0, 'compound': -0.3291}",-0.3291,0,13
+Excellent Product!!,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.189, 'pos': 0.811, 'compound': 0.6467}",0.6467,2,2
+Appropriate size and good quality.,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.58, 'pos': 0.42, 'compound': 0.4404}",0.4404,2,5
+"नक्कीच शिफारस करेन, उत्तम दर्जा.",5.0,5,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Great,4.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.6249}",0.6249,2,1
+Its not a cooler its Ac cooler,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+Worst product,1.0,2,0,1,,Negative,"{'neg': 0.804, 'neu': 0.196, 'pos': 0.0, 'compound': -0.6249}",-0.6249,0,2
+Awesome product within this price range.,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.549, 'pos': 0.451, 'compound': 0.6249}",0.6249,2,6
+Poor Product Quality,2.0,3,0,1,,Negative,"{'neg': 0.608, 'neu': 0.392, 'pos': 0.0, 'compound': -0.4767}",-0.4767,0,3
+"दुसरीकडे स्वस्त मिळतंय, इथे महाग आहे.",2.0,6,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,6
+Good Quality Product,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.408, 'pos': 0.592, 'compound': 0.4404}",0.4404,2,3
+Very much satisfied with the product.,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.619, 'pos': 0.381, 'compound': 0.4728}",0.4728,2,6
+"अगले ही दिन डिलीवरी मिल गई, शानदार!",5.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+One Star,1.0,2,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,2
+Cooker brand,1.0,2,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,2
+Low quality,1.0,2,0,1,,Negative,"{'neg': 0.677, 'neu': 0.323, 'pos': 0.0, 'compound': -0.2732}",-0.2732,0,2
+"Not working,Misguiding Rating.",1.0,3,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,3
+Nice entry level DSLR,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.517, 'pos': 0.483, 'compound': 0.4215}",0.4215,2,4
+"Best,M happy with it",5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.448, 'pos': 0.552, 'compound': 0.5719}",0.5719,2,4
+Good Experience,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Worth every dime..,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.513, 'pos': 0.487, 'compound': 0.2263}",0.2263,2,3
+WORST FOOTBALL,1.0,2,0,1,,Negative,"{'neg': 0.804, 'neu': 0.196, 'pos': 0.0, 'compound': -0.6249}",-0.6249,0,2
+Product = 10/10,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+"मुझे यह बहुत पसंद आया, थैंक्स फ्लिपकार्ट!",5.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+"खूप ओरिजनल वाटतंय, क्वालिटी भारी आहे.",5.0,6,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+Amazing product at cheap price,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.513, 'pos': 0.487, 'compound': 0.5859}",0.5859,2,5
+Damaged product,1.0,2,0,1,,Negative,"{'neg': 0.744, 'neu': 0.256, 'pos': 0.0, 'compound': -0.4404}",-0.4404,0,2
+Product is proportionate to the cost,4.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+Very bad product,1.0,3,0,1,,Negative,"{'neg': 0.655, 'neu': 0.345, 'pos': 0.0, 'compound': -0.5849}",-0.5849,0,3
+The best product for Flipkart,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.488, 'pos': 0.512, 'compound': 0.6369}",0.6369,2,5
+Economical Feature phone with good functionality,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.633, 'pos': 0.367, 'compound': 0.4404}",0.4404,2,6
+Just Go for it,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+Utterly disspointed with Taste,1.0,4,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,4
+Average ball,3.0,2,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,2
+Good Product at Great Price,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.3, 'pos': 0.7, 'compound': 0.7906}",0.7906,2,5
+Very good,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.238, 'pos': 0.762, 'compound': 0.4927}",0.4927,2,2
+Affordable as well as very very portable vacuum cleaner,5.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 0.633, 'pos': 0.367, 'compound': 0.4703}",0.4703,2,9
+"क्वालिटी बहुत अच्छी है, मैं खुश हूँ।",5.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+The Best In the Class,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.488, 'pos': 0.512, 'compound': 0.6369}",0.6369,2,5
+Ideal for Beginners,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.37, 'pos': 0.63, 'compound': 0.5267}",0.5267,2,3
+NO PROBLEM WITH THIS PRODUCT,5.0,5,0,1,,Positive,"{'neg': 0.62, 'neu': 0.38, 'pos': 0.0, 'compound': -0.5994}",-0.5994,2,5
+Good Quality and Value-for-money,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,4
+Don't Buy,1.0,2,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,2
+Wow product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.208, 'pos': 0.792, 'compound': 0.5859}",0.5859,2,2
+Good product in budget,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,4
+GOOD,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.4404}",0.4404,2,1
+Classy product for gifting,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,4
+Great product. must buy it...,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.494, 'pos': 0.506, 'compound': 0.6249}",0.6249,2,5
+Flipkart.. The Best.,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.323, 'pos': 0.677, 'compound': 0.6369}",0.6369,2,3
+Just go fot it if you want decent gaming keyboard in budget,4.0,12,0,1,,Positive,"{'neg': 0.0, 'neu': 0.894, 'pos': 0.106, 'compound': 0.0772}",0.0772,2,12
+Microtek,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+"मस्त आहे, दर्जा खूप चांगला आहे.",5.0,6,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+Amazing Good for Its price,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.309, 'pos': 0.691, 'compound': 0.7717}",0.7717,2,5
+Nice.,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.4215}",0.4215,2,1
+"अच्छी डील है, मैं संतुष्ट हूँ।",5.0,6,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+"""Wise deal for the price""",5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.563, 'pos': 0.437, 'compound': 0.4767}",0.4767,2,5
+Happy with product,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.351, 'pos': 0.649, 'compound': 0.5719}",0.5719,2,3
+awesome but quite hard,4.0,4,0,1,,Positive,"{'neg': 0.31, 'neu': 0.304, 'pos': 0.387, 'compound': 0.1307}",0.1307,2,4
+"nice product, but color was different than shown 😕",4.0,9,0,0,😕,Positive,"{'neg': 0.0, 'neu': 0.787, 'pos': 0.213, 'compound': 0.2263}",0.2263,2,9
+"काम नीट करत नाही, वेळ वाया गेला.",1.0,7,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,7
+Boat Soundbar,3.0,2,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,2
+Choose Another washing machine  better if you choose samsung,2.0,9,0,1,,Negative,"{'neg': 0.0, 'neu': 0.734, 'pos': 0.266, 'compound': 0.4404}",0.4404,0,9
+Good Power Bank,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.408, 'pos': 0.592, 'compound': 0.4404}",0.4404,2,3
+Overpriced,1.0,1,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,1
+D-Link DIR-615 Wireless N 300 Router,4.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+Best aqua guard at affordable price,4.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.543, 'pos': 0.457, 'compound': 0.6369}",0.6369,2,6
+Great looks mixer but worst designed jars,1.0,7,0,1,,Negative,"{'neg': 0.428, 'neu': 0.379, 'pos': 0.193, 'compound': -0.6249}",-0.6249,0,7
+Excellent quality at a low price,5.0,6,0,1,,Positive,"{'neg': 0.239, 'neu': 0.341, 'pos': 0.42, 'compound': 0.3818}",0.3818,2,6
+Not starting after 1 month after purchage.,2.0,7,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,7
+"आवाज खूप स्पष्ट आहे, बेस्ट स्पीकर.",5.0,6,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+Fantastic Air cooler in affordable price,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.581, 'pos': 0.419, 'compound': 0.5574}",0.5574,2,6
+Very sleep and sharp,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+Excellent Iron Box for cheap Price.,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.575, 'pos': 0.425, 'compound': 0.5719}",0.5719,2,6
+Best buy at this point in time (October 2021),5.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 0.656, 'pos': 0.344, 'compound': 0.6369}",0.6369,2,9
+Best smartphone under 10k.,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.417, 'pos': 0.583, 'compound': 0.6369}",0.6369,2,4
+Unsatisfactory took 11 days to deliver,1.0,6,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,6
+Best product thanks flipkart,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.22, 'pos': 0.78, 'compound': 0.7964}",0.7964,2,4
+i m in love with it,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.417, 'pos': 0.583, 'compound': 0.6369}",0.6369,2,6
+Very useful,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.238, 'pos': 0.762, 'compound': 0.4927}",0.4927,2,2
+Canon Best always,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.323, 'pos': 0.677, 'compound': 0.6369}",0.6369,2,3
+Fabulous!Awesome smart home device with display. Love it.,5.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.455, 'pos': 0.545, 'compound': 0.8016}",0.8016,2,8
+"रंग आणि डिझाइन भारी आहे, एकदम मस्त!",5.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+Little Wonder,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Amazing product! 😍 love it.,5.0,5,0,0,😍,Positive,"{'neg': 0.0, 'neu': 0.194, 'pos': 0.806, 'compound': 0.8516}",0.8516,2,5
+Awesome DSLR Camera!,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.313, 'pos': 0.687, 'compound': 0.6588}",0.6588,2,3
+2 Thumbs up !!,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+इस बजट में इससे अच्छा कुछ नहीं मिलेगा।,5.0,8,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,8
+Goodwill,4.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+किंमत जास्त आहे पण प्रॉडक्ट चांगलं आहे.,4.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+Amazing!,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.6239}",0.6239,2,1
+Super products,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.204, 'pos': 0.796, 'compound': 0.5994}",0.5994,2,2
+okay product,3.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.345, 'pos': 0.655, 'compound': 0.2263}",0.2263,2,2
+Nice product but installation part was week.,4.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.759, 'pos': 0.241, 'compound': 0.2263}",0.2263,2,7
+Performance of Bajaj FX 7,1.0,5,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,5
+Canon black ink cartridge,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+Just okayTV is good but delivery guy behavior was not good.,3.0,11,0,1,,Positive,"{'neg': 0.0, 'neu': 0.608, 'pos': 0.392, 'compound': 0.7003}",0.7003,2,11
+Satisfied with the camera,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.517, 'pos': 0.483, 'compound': 0.4215}",0.4215,2,4
+Best of Microwave oven at this price range,5.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.625, 'pos': 0.375, 'compound': 0.6369}",0.6369,2,8
+"VERY BAD PRODUCT , DONT BUY THIS",1.0,7,0,1,,Negative,"{'neg': 0.431, 'neu': 0.569, 'pos': 0.0, 'compound': -0.5849}",-0.5849,0,7
+Loooong Lasting,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Average Product,3.0,2,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,2
+A good water purifier in budget with good aftersale service,4.0,10,0,1,,Positive,"{'neg': 0.0, 'neu': 0.547, 'pos': 0.453, 'compound': 0.7003}",0.7003,2,10
+Good quality product,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.408, 'pos': 0.592, 'compound': 0.4404}",0.4404,2,3
+Not working,1.0,2,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,2
+IFB DISHWASHER AMAZING PRODUCT,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.441, 'pos': 0.559, 'compound': 0.5859}",0.5859,2,4
+Product accha nahi hai 😡,2.0,5,0,0,😡,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,5
+A Good Buy,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,3
+not good gx1,2.0,3,0,1,,Negative,"{'neg': 0.546, 'neu': 0.454, 'pos': 0.0, 'compound': -0.3412}",-0.3412,0,3
+Fair Enough,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.303, 'pos': 0.697, 'compound': 0.3182}",0.3182,2,2
+Does not work at all! 💀🚫,1.0,6,0,0,💀🚫,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,6
+Utterly Disappointed !!!,1.0,3,0,1,,Negative,"{'neg': 0.681, 'neu': 0.319, 'pos': 0.0, 'compound': -0.645}",-0.645,0,3
+CHEATING,1.0,1,0,1,,Negative,"{'neg': 1.0, 'neu': 0.0, 'pos': 0.0, 'compound': -0.5574}",-0.5574,0,1
+A good product,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,3
+Awesome juicer from philips,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.423, 'pos': 0.577, 'compound': 0.6249}",0.6249,2,4
+Good quality dinner set,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,4
+Need to check,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+Must buy! Cool product,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.536, 'pos': 0.464, 'compound': 0.3802}",0.3802,2,4
+Good buy a genuine cartridge,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,5
+Just Good,3.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+"Great Product, but MADE IN CHINA. False info by Flipkart",3.0,10,0,1,,Positive,"{'neg': 0.0, 'neu': 0.779, 'pos': 0.221, 'compound': 0.3716}",0.3716,2,10
+Shipping was real quick!,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+crashed automatically my life is in danger bcoz of this,1.0,10,0,1,,Negative,"{'neg': 0.274, 'neu': 0.726, 'pos': 0.0, 'compound': -0.5267}",-0.5267,0,10
+"नक्की खरेदी करा, खूप उपयोगी आहे.",5.0,6,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+Nivia storm football Size 5,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Good overall,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Excellent and value for money Wet Grinder,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.45, 'pos': 0.55, 'compound': 0.7269}",0.7269,2,7
+"Grip,toughness and design",3.0,3,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,3
+Perfect product!,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.2, 'pos': 0.8, 'compound': 0.6114}",0.6114,2,2
+Excellent and must Buy,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.448, 'pos': 0.552, 'compound': 0.5719}",0.5719,2,4
+Quality and value for Money,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.625, 'pos': 0.375, 'compound': 0.34}",0.34,2,5
+UT7002S26 model is a no-nonsense bicycle...worth buying,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+Terrific,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.4767}",0.4767,2,1
+Decent,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+Superb product for singles,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.423, 'pos': 0.577, 'compound': 0.6249}",0.6249,2,4
+Awesome,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.6249}",0.6249,2,1
+Best RO within range,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.417, 'pos': 0.583, 'compound': 0.6369}",0.6369,2,4
+DAILY USAGE,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Decent Microwave,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Speed better than seagate samsung,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.58, 'pos': 0.42, 'compound': 0.4404}",0.4404,2,5
+Just wow! My parents are loving it!,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.376, 'pos': 0.624, 'compound': 0.8513}",0.8513,2,7
+"Excellent, Works well",5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.147, 'pos': 0.853, 'compound': 0.7003}",0.7003,2,3
+"Nice picture, good sound and really smart TV",5.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.365, 'pos': 0.635, 'compound': 0.8268}",0.8268,2,8
+"मस्त आहे, quality is really superior, नक्की खरेदी करा.",5.0,9,0,0,,Positive,"{'neg': 0.0, 'neu': 0.678, 'pos': 0.322, 'compound': 0.5849}",0.5849,2,9
+"The product is average, but the delivery was on time. 🚚⌛",3.0,11,0,0,🚚⌛,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,11
+Superb five star product,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.423, 'pos': 0.577, 'compound': 0.6249}",0.6249,2,4
+"बकवास क्वालिटी, दोन दिवसात खराब झालं.",1.0,6,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,6
+Best Cooler !,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.182, 'pos': 0.818, 'compound': 0.6696}",0.6696,2,3
+Thanks for delivering the Product on time.,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.674, 'pos': 0.326, 'compound': 0.4404}",0.4404,2,7
+Must buy! Excellent Product,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.429, 'pos': 0.571, 'compound': 0.6114}",0.6114,2,4
+Good Product for Great Price,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.3, 'pos': 0.7, 'compound': 0.7906}",0.7906,2,5
+Good camera for this price range.,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.633, 'pos': 0.367, 'compound': 0.4404}",0.4404,2,6
+Part missing,1.0,2,0,1,,Negative,"{'neg': 0.688, 'neu': 0.312, 'pos': 0.0, 'compound': -0.296}",-0.296,0,2
+Best Ever Mixer Grinder | Recommended | Butterfly Rocks,5.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 0.455, 'pos': 0.545, 'compound': 0.7184}",0.7184,2,9
+good one,3.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Good camera from Qubo,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,4
+Good decent product and worth the money,4.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.51, 'pos': 0.49, 'compound': 0.5859}",0.5859,2,7
+Old Hardware and Old Software,2.0,5,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,5
+hands off flipkart,1.0,3,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,3
+the finishing and the quality are superb,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.594, 'pos': 0.406, 'compound': 0.6249}",0.6249,2,7
+Best quality and fast delivery 🚀🔥,5.0,6,0,0,🚀🔥,Positive,"{'neg': 0.0, 'neu': 0.543, 'pos': 0.457, 'compound': 0.6369}",0.6369,2,6
+Amazing product for its price!!!,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.461, 'pos': 0.539, 'compound': 0.6884}",0.6884,2,5
+Affordable price with good features and quality,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.674, 'pos': 0.326, 'compound': 0.4404}",0.4404,2,7
+Good basic microwave oven,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,4
+Flop,2.0,1,0,1,,Negative,"{'neg': 1.0, 'neu': 0.0, 'pos': 0.0, 'compound': -0.34}",-0.34,0,1
+Signal is not much strong,3.0,5,0,1,,Negative,"{'neg': 0.403, 'neu': 0.597, 'pos': 0.0, 'compound': -0.4023}",-0.4023,0,5
+"Heats up soon, disappointed",1.0,4,0,1,,Negative,"{'neg': 0.508, 'neu': 0.492, 'pos': 0.0, 'compound': -0.4767}",-0.4767,0,4
+Good but nothing fancy,3.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.606, 'pos': 0.394, 'compound': 0.2382}",0.2382,2,4
+Very Nice and Sturdy product,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.564, 'pos': 0.436, 'compound': 0.4754}",0.4754,2,5
+Good product at really low price,4.0,6,0,1,,Positive,"{'neg': 0.258, 'neu': 0.43, 'pos': 0.312, 'compound': 0.1298}",0.1298,2,6
+Delightful Purchase : Got bad habit of speaking to assistant,5.0,10,0,1,,Positive,"{'neg': 0.245, 'neu': 0.49, 'pos': 0.266, 'compound': 0.0772}",0.0772,2,10
+Worth every pennyvery good product...,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.385, 'pos': 0.615, 'compound': 0.5859}",0.5859,2,5
+"Terrible customer service, will never buy again! 😡👎",1.0,8,0,0,😡👎,Negative,"{'neg': 0.326, 'neu': 0.674, 'pos': 0.0, 'compound': -0.5255}",-0.5255,0,8
+HP 678 Black Ink Cartridge,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Terrible experience! The item was defective and the customer service was unhelpful. 😡👎,1.0,13,0,0,😡👎,Negative,"{'neg': 0.364, 'neu': 0.636, 'pos': 0.0, 'compound': -0.7424}",-0.7424,0,13
+Okay Product,3.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.345, 'pos': 0.655, 'compound': 0.2263}",0.2263,2,2
+Worst purchase ever! The item arrived broken and the customer service was terrible. 😡👎,1.0,14,0,0,😡👎,Negative,"{'neg': 0.491, 'neu': 0.509, 'pos': 0.0, 'compound': -0.8908}",-0.8908,0,14
+IFB Dishwasher usage & utility,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+"The product is average, but the delivery was on time. 🚚⌛",3.0,11,0,0,🚚⌛,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,11
+Good quality floor mat,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,4
+"टिकाऊ नाही, लगेच तुटलं.",1.0,4,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,4
+Value for money....,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.455, 'pos': 0.545, 'compound': 0.34}",0.34,2,3
+"Terrible product,don't buy",1.0,3,0,1,,Negative,"{'neg': 0.608, 'neu': 0.392, 'pos': 0.0, 'compound': -0.4767}",-0.4767,0,3
+very bad quality,1.0,3,0,1,,Negative,"{'neg': 0.655, 'neu': 0.345, 'pos': 0.0, 'compound': -0.5849}",-0.5849,0,3
+IFB is far superior than other brands,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.632, 'pos': 0.368, 'compound': 0.5423}",0.5423,2,7
+Nan,2.0,1,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,1
+Classy product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+good product,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Worst than expected.,1.0,3,0,1,,Negative,"{'neg': 0.672, 'neu': 0.328, 'pos': 0.0, 'compound': -0.6249}",-0.6249,0,3
+Product is awsm and service is worse,5.0,7,0,1,,Positive,"{'neg': 0.341, 'neu': 0.659, 'pos': 0.0, 'compound': -0.4767}",-0.4767,2,7
+"वजन बहुत ज्यादा है, हाथ दर्द करने लगता है।",2.0,9,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,9
+A third hand for my Mom!,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.534, 'pos': 0.466, 'compound': 0.5411}",0.5411,2,6
+"really bad product, worst service from flipkart",1.0,7,0,1,,Negative,"{'neg': 0.62, 'neu': 0.38, 'pos': 0.0, 'compound': -0.8464}",-0.8464,0,7
+Delightful,4.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.5859}",0.5859,2,1
+great juicer easy to handle,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.3, 'pos': 0.7, 'compound': 0.7906}",0.7906,2,5
+"बहुत महंगा है, इतना पैसा वसूल नहीं है।",2.0,8,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,8
+Worst Installlation Service provided,1.0,4,0,1,,Negative,"{'neg': 0.577, 'neu': 0.423, 'pos': 0.0, 'compound': -0.6249}",-0.6249,0,4
+Choppers not good,1.0,3,0,1,,Negative,"{'neg': 0.546, 'neu': 0.454, 'pos': 0.0, 'compound': -0.3412}",-0.3412,0,3
+Amazing value for money! The product exceeded my expectations and the delivery was fast. 😍💰🚚,5.0,15,0,0,😍💰🚚,Positive,"{'neg': 0.0, 'neu': 0.667, 'pos': 0.333, 'compound': 0.7574}",0.7574,2,15
+Satisfied,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.4215}",0.4215,2,1
+Just Okay Okay,3.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.208, 'pos': 0.792, 'compound': 0.4215}",0.4215,2,3
+Really Nice,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.244, 'pos': 0.756, 'compound': 0.4754}",0.4754,2,2
+Don't buy this if you are on high speed internet connection,3.0,11,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,11
+Simply Awesome,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+excellent,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.5719}",0.5719,2,1
+Beast,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+Worth the moneygood,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.513, 'pos': 0.487, 'compound': 0.2263}",0.2263,2,3
+Awesome Bass!! Loved it!!,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.179, 'pos': 0.821, 'compound': 0.8798}",0.8798,2,4
+Mind-blowing purchase >>> Just for it,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+A1 worth for every penny,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.678, 'pos': 0.322, 'compound': 0.2263}",0.2263,2,5
+Works as expected,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+Good Product..,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Great Laptop,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+Not a Good design,3.0,4,0,1,,Negative,"{'neg': 0.546, 'neu': 0.454, 'pos': 0.0, 'compound': -0.3412}",-0.3412,0,4
+awesome = insane,5.0,3,0,1,,Positive,"{'neg': 0.397, 'neu': 0.0, 'pos': 0.603, 'compound': 0.34}",0.34,2,3
+powerful suction,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.263, 'pos': 0.737, 'compound': 0.4215}",0.4215,2,2
+Good,3.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.4404}",0.4404,2,1
+Great value,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.7579}",0.7579,2,2
+Exhauste fan,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.303, 'pos': 0.697, 'compound': 0.3182}",0.3182,2,2
+Length of Electrical wire,2.0,4,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,4
+Inalsa,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+Micro owen,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+life saver!!!,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Suitable for light-weight stuff,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+Internet is not Working Properly,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+amazingly superb,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.185, 'pos': 0.815, 'compound': 0.659}",0.659,2,2
+Good product..but bad service by flipkart!,5.0,6,0,1,,Positive,"{'neg': 0.355, 'neu': 0.374, 'pos': 0.271, 'compound': -0.2244}",-0.2244,2,6
+Go ahead and buy!!,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+Good Camera by Hero,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.235, 'pos': 0.765, 'compound': 0.7579}",0.7579,2,4
+Not recommended at all,1.0,4,0,1,,Negative,"{'neg': 0.347, 'neu': 0.653, 'pos': 0.0, 'compound': -0.1511}",-0.1511,0,4
+Wireless Range is Good,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,4
+"Fabulous product with lot of features, yet within the budget",5.0,10,0,1,,Positive,"{'neg': 0.0, 'neu': 0.726, 'pos': 0.274, 'compound': 0.5267}",0.5267,2,10
+World class product at deep discount on big billion day !!,5.0,11,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,11
+One word go for LivPure,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Smart kettle,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.27, 'pos': 0.73, 'compound': 0.4019}",0.4019,2,2
+Not worth the price,2.0,4,0,1,,Negative,"{'neg': 0.357, 'neu': 0.643, 'pos': 0.0, 'compound': -0.1695}",-0.1695,0,4
+fast delivery,3.0,2,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,2
+"Great experience, quality and yield",5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.494, 'pos': 0.506, 'compound': 0.6249}",0.6249,2,5
+5 months only,2.0,3,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,3
+Build quality is not good,1.0,5,0,1,,Negative,"{'neg': 0.376, 'neu': 0.624, 'pos': 0.0, 'compound': -0.3412}",-0.3412,0,5
+Perfect solo m/w for solely reheating,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.575, 'pos': 0.425, 'compound': 0.5719}",0.5719,2,6
+Not recommended,1.0,2,0,1,,Negative,"{'neg': 0.614, 'neu': 0.386, 'pos': 0.0, 'compound': -0.1511}",-0.1511,0,2
+Marketing tactics....Nothing special..,3.0,3,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,3
+Powerful beast!!,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.228, 'pos': 0.772, 'compound': 0.5242}",0.5242,2,2
+Fair,3.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.3182}",0.3182,2,1
+Easy Installation and Nice product,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.345, 'pos': 0.655, 'compound': 0.6908}",0.6908,2,5
+Good TV - Now 4K option makes more sense,4.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 0.707, 'pos': 0.293, 'compound': 0.4404}",0.4404,2,9
+meet the expections,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+"बहुत ही बढ़िया प्रोडक्ट है, जरूर खरीदें।",5.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+"The Best Fan in the market, you can buy with confidence",5.0,11,0,1,,Positive,"{'neg': 0.0, 'neu': 0.449, 'pos': 0.551, 'compound': 0.8689}",0.8689,2,11
+Not as described on the site but no issues with the Quality.,3.0,12,0,1,,Negative,"{'neg': 0.203, 'neu': 0.797, 'pos': 0.0, 'compound': -0.4215}",-0.4215,0,12
+Mind-blowing purchase at this Price Point,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+ifb dishwasher neptune Vx,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+Amazing Product from IFB!,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.423, 'pos': 0.577, 'compound': 0.6239}",0.6239,2,4
+Very Good Product in a Valuable Price,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.389, 'pos': 0.611, 'compound': 0.7425}",0.7425,2,7
+Good product and Very fast delivery of flipkart.. :D,4.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 0.502, 'pos': 0.498, 'compound': 0.7865}",0.7865,2,9
+Working fine with BSNL 3G,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.69, 'pos': 0.31, 'compound': 0.2023}",0.2023,2,5
+Fabulous! must buy,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.351, 'pos': 0.649, 'compound': 0.5707}",0.5707,2,3
+"Not good if display device is a monitors, no seperate audio",2.0,11,0,1,,Negative,"{'neg': 0.365, 'neu': 0.635, 'pos': 0.0, 'compound': -0.5583}",-0.5583,0,11
+Wait for the better price if you are not in a hurry,5.0,12,0,1,,Positive,"{'neg': 0.0, 'neu': 0.775, 'pos': 0.225, 'compound': 0.4404}",0.4404,2,12
+good,4.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.4404}",0.4404,2,1
+Best one in this price range,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.543, 'pos': 0.457, 'compound': 0.6369}",0.6369,2,6
+Excellent product!,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.2, 'pos': 0.8, 'compound': 0.6114}",0.6114,2,2
+inverter making noise very irritating.,3.0,5,0,1,,Negative,"{'neg': 0.452, 'neu': 0.548, 'pos': 0.0, 'compound': -0.5095}",-0.5095,0,5
+"very bad,,, not at all suitable for such a nice platform like flipkart",1.0,13,0,1,,Negative,"{'neg': 0.0, 'neu': 0.654, 'pos': 0.346, 'compound': 0.6486}",0.6486,0,13
+VEry BAd,1.0,2,0,1,,Negative,"{'neg': 0.791, 'neu': 0.209, 'pos': 0.0, 'compound': -0.5849}",-0.5849,0,2
+Good Flask it is.,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,4
+Good Juicer with satisfactory build quality,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.426, 'pos': 0.574, 'compound': 0.6597}",0.6597,2,6
+Two Stars,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Excellent Product. User friendly,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.225, 'pos': 0.775, 'compound': 0.7845}",0.7845,2,4
+product accha nahi hai 😡,2.0,5,0,0,😡,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,5
+"Not worth the price, very disappointed 😞💔",2.0,7,0,0,😞💔,Negative,"{'neg': 0.503, 'neu': 0.497, 'pos': 0.0, 'compound': -0.6198}",-0.6198,0,7
+All in one..,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+"nice product, value for money! 😍",5.0,6,0,0,😍,Positive,"{'neg': 0.0, 'neu': 0.353, 'pos': 0.647, 'compound': 0.6696}",0.6696,2,6
+Cool Device.,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.303, 'pos': 0.697, 'compound': 0.3182}",0.3182,2,2
+Dont buy,1.0,2,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,2
+Value of money,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.455, 'pos': 0.545, 'compound': 0.34}",0.34,2,3
+"Great product, HORRIBLE service.",3.0,4,0,1,,Neutral,"{'neg': 0.41, 'neu': 0.194, 'pos': 0.397, 'compound': -0.0343}",-0.0343,1,4
+Very Bad,1.0,2,0,1,,Negative,"{'neg': 0.791, 'neu': 0.209, 'pos': 0.0, 'compound': -0.5849}",-0.5849,0,2
+"Poor quality fit and finish, water leaks..",1.0,7,0,1,,Negative,"{'neg': 0.292, 'neu': 0.472, 'pos': 0.236, 'compound': -0.1531}",-0.1531,0,7
+"दिसायला सुंदर आहे, घरच्यांना आवडलं.",5.0,5,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+D link the best,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.323, 'pos': 0.677, 'compound': 0.6369}",0.6369,2,4
+Its good but comes with few caveats,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.755, 'pos': 0.245, 'compound': 0.2382}",0.2382,2,7
+Very nice product,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.393, 'pos': 0.607, 'compound': 0.4754}",0.4754,2,3
+Good Product but check for tape at any part of table,4.0,11,0,1,,Positive,"{'neg': 0.0, 'neu': 0.837, 'pos': 0.163, 'compound': 0.2382}",0.2382,2,11
+"working fine, but product quality very cheep.",2.0,7,0,1,,Negative,"{'neg': 0.0, 'neu': 0.811, 'pos': 0.189, 'compound': 0.1027}",0.1027,0,7
+just go for it its worth of money,5.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.787, 'pos': 0.213, 'compound': 0.2263}",0.2263,2,8
+Excellent Product Extremely Quick Delivery,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.519, 'pos': 0.481, 'compound': 0.5719}",0.5719,2,5
+Superb,3.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.6249}",0.6249,2,1
+Prithvi,4.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+perfect product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.213, 'pos': 0.787, 'compound': 0.5719}",0.5719,2,2
+Very Good,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.238, 'pos': 0.762, 'compound': 0.4927}",0.4927,2,2
+very poor,2.0,2,0,1,,Negative,"{'neg': 0.772, 'neu': 0.228, 'pos': 0.0, 'compound': -0.5256}",-0.5256,0,2
+Awesome speaker in this price range,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.549, 'pos': 0.451, 'compound': 0.6249}",0.6249,2,6
+Not advisable to buy..poor quality!,1.0,5,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,5
+"Superb delivery! काल ऑर्डर केलं आणि आज मिळालं, fast service.",5.0,10,0,0,,Positive,"{'neg': 0.0, 'neu': 0.672, 'pos': 0.328, 'compound': 0.6588}",0.6588,2,10
+Good product value for money,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.361, 'pos': 0.639, 'compound': 0.6486}",0.6486,2,5
+best print at low cost : ),5.0,7,0,1,,Positive,"{'neg': 0.226, 'neu': 0.323, 'pos': 0.452, 'compound': 0.4767}",0.4767,2,7
+HP Sells Ink & Head and not Printer,1.0,8,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,8
+Avg product,2.0,2,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,2
+Happy to purchase,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.351, 'pos': 0.649, 'compound': 0.5719}",0.5719,2,3
+nice feeling,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.5106}",0.5106,2,2
+Thank you flipkart,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.444, 'pos': 0.556, 'compound': 0.3612}",0.3612,2,3
+Do not buy this router.,1.0,5,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,5
+Review,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+Nice and superb,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.127, 'pos': 0.873, 'compound': 0.7845}",0.7845,2,3
+"Average product, किंमत थोडी जास्त आहे (price is high).",3.0,9,0,0,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,9
+Worth the price - room for improvement and software upgrade,4.0,10,0,1,,Positive,"{'neg': 0.0, 'neu': 0.588, 'pos': 0.412, 'compound': 0.5994}",0.5994,2,10
+The best at the price point,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.543, 'pos': 0.457, 'compound': 0.6369}",0.6369,2,6
+"Fast Shipping, Genuine product",5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+Average,3.0,1,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,1
+Very Less Pages,1.0,3,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,3
+Awesome Both Product & Service...,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.423, 'pos': 0.577, 'compound': 0.6249}",0.6249,2,5
+Best in the market,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.417, 'pos': 0.583, 'compound': 0.6369}",0.6369,2,4
+Budget one,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+IFB Dishwasher,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Excellent for the price.,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.448, 'pos': 0.552, 'compound': 0.5719}",0.5719,2,4
+"I love flipkart,this soldring iron is best",5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.323, 'pos': 0.677, 'compound': 0.8555}",0.8555,2,7
+Low quality product,1.0,3,0,1,,Negative,"{'neg': 0.512, 'neu': 0.488, 'pos': 0.0, 'compound': -0.2732}",-0.2732,0,3
+great deal at this price,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.494, 'pos': 0.506, 'compound': 0.6249}",0.6249,2,5
+Livepure Pep Pro++ 7L RO +UV +UF,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+Excellent one,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.213, 'pos': 0.787, 'compound': 0.5719}",0.5719,2,2
+Perfect product and ideal!!,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.207, 'pos': 0.793, 'compound': 0.8264}",0.8264,2,4
+Micro tech invetor,1.0,3,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,3
+This is early review.. will update later,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+Best in Class,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.323, 'pos': 0.677, 'compound': 0.6369}",0.6369,2,3
+study table,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+"मला हे खूप आवडलं, धन्यवाद फ्लिपकार्ट!",5.0,6,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+Bajaj GX 1 Mixer Grinder,1.0,5,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,5
+Hp 46 cartridge,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+"Simple , Value for money",5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.556, 'pos': 0.444, 'compound': 0.34}",0.34,2,5
+Really Great product.,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.313, 'pos': 0.687, 'compound': 0.659}",0.659,2,3
+"पैसे की बर्बादी है, मत लेना कोई भी।",1.0,8,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,8
+Bad quality,2.0,2,0,1,,Negative,"{'neg': 0.778, 'neu': 0.222, 'pos': 0.0, 'compound': -0.5423}",-0.5423,0,2
+its not bad,3.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.412, 'pos': 0.588, 'compound': 0.431}",0.431,2,3
+Best in the market! Have a look at description for details,5.0,11,0,1,,Positive,"{'neg': 0.0, 'neu': 0.667, 'pos': 0.333, 'compound': 0.6696}",0.6696,2,11
+Satisfied!,4.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.4753}",0.4753,2,1
+The dlink product is good to purchase,3.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.674, 'pos': 0.326, 'compound': 0.4404}",0.4404,2,7
+no 1 worst product,1.0,4,0,1,,Negative,"{'neg': 0.863, 'neu': 0.137, 'pos': 0.0, 'compound': -0.743}",-0.743,0,4
+Worth every penny & Brilliant,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.26, 'pos': 0.74, 'compound': 0.6908}",0.6908,2,5
+Perfect near the dinner table of a small family.,5.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 0.654, 'pos': 0.346, 'compound': 0.5719}",0.5719,2,9
+Not a full smart tv,3.0,5,0,1,,Negative,"{'neg': 0.429, 'neu': 0.571, 'pos': 0.0, 'compound': -0.3089}",-0.3089,0,5
+Very much safisfactory product.,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+Full disappointed Ã°ÂÂÂ¡,1.0,3,0,0,,Negative,"{'neg': 0.608, 'neu': 0.392, 'pos': 0.0, 'compound': -0.4767}",-0.4767,0,3
+Good product..,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+"product okk hai, but delivery was slow 😕",3.0,8,0,0,😕,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,8
+value for money,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.455, 'pos': 0.545, 'compound': 0.34}",0.34,2,3
+8 hrs backup for what capacity battery?,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+Kitchen friend,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.238, 'pos': 0.762, 'compound': 0.4939}",0.4939,2,2
+Best to Buy From Flipkart,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.488, 'pos': 0.512, 'compound': 0.6369}",0.6369,2,5
+"The product is okay, but the delivery was delayed by a few days. 🚚⌛",3.0,14,0,0,🚚⌛,Negative,"{'neg': 0.159, 'neu': 0.743, 'pos': 0.098, 'compound': -0.2263}",-0.2263,0,14
+This item is very bad and not useful,2.0,8,0,1,,Negative,"{'neg': 0.508, 'neu': 0.492, 'pos': 0.0, 'compound': -0.7351}",-0.7351,0,8
+Best Buy for a Beginner,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.417, 'pos': 0.583, 'compound': 0.6369}",0.6369,2,5
+Only 30 mbps  transfer speed,1.0,5,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,5
+"बकवास है, दो दिन में टूट गया।",1.0,7,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,7
+"The BEST ""Regular TV"" for a ""Non-Smart"" experience!",4.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.535, 'pos': 0.465, 'compound': 0.7371}",0.7371,2,8
+"Overall average product, but Built Quality could have been better..",3.0,10,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,10
+"बहुत फास्ट डिलीवरी हुई, मजा आ गया!",5.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+Fabulous till now !,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.351, 'pos': 0.649, 'compound': 0.5707}",0.5707,2,4
+Nice and Useful Product,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.26, 'pos': 0.74, 'compound': 0.6908}",0.6908,2,4
+"अंदर काफी कम जगह है, छोटा है।",2.0,7,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,7
+Great product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+Gud Product Hatsoff to flipkart,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Fabulous product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.227, 'pos': 0.773, 'compound': 0.5267}",0.5267,2,2
+"3rd class , cheap product , don't buy",1.0,8,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,8
+"Bad quality, drivers faililng within 2 weeks of usage",2.0,9,0,1,,Negative,"{'neg': 0.333, 'neu': 0.667, 'pos': 0.0, 'compound': -0.5423}",-0.5423,0,9
+Good enough,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Good Product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Not as expected it to be. may be upgrade can make it better,3.0,13,0,1,,Positive,"{'neg': 0.0, 'neu': 0.805, 'pos': 0.195, 'compound': 0.4404}",0.4404,2,13
+Amazing product,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.208, 'pos': 0.792, 'compound': 0.5859}",0.5859,2,2
+Worst flipkart service,1.0,3,0,1,,Negative,"{'neg': 0.672, 'neu': 0.328, 'pos': 0.0, 'compound': -0.6249}",-0.6249,0,3
+incomplete item received,1.0,3,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,3
+Nice product at awesome price.,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.303, 'pos': 0.697, 'compound': 0.7845}",0.7845,2,5
+best juicer,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.192, 'pos': 0.808, 'compound': 0.6369}",0.6369,2,2
+Good. BT bowls are too short,3.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.633, 'pos': 0.367, 'compound': 0.4404}",0.4404,2,6
+"RISKY INVESTMENT...FULL OF BUGS, LAGS & HANGS!!",2.0,7,0,1,,Negative,"{'neg': 0.55, 'neu': 0.45, 'pos': 0.0, 'compound': -0.5972}",-0.5972,0,7
+NICE FOOD PROCESSOR,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.417, 'pos': 0.583, 'compound': 0.4215}",0.4215,2,3
+Fab cooler,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.25, 'pos': 0.75, 'compound': 0.4588}",0.4588,2,2
+Good set of features,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,4
+bajaj mixer grinder,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+good quality product at a great price,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.364, 'pos': 0.636, 'compound': 0.7906}",0.7906,2,7
+"सर्वोत्कृष्ट उत्पादन, ५ स्टार!",5.0,4,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+Awesome Juicer. Value for money,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.316, 'pos': 0.684, 'compound': 0.7579}",0.7579,2,5
+Love this product very much,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.488, 'pos': 0.512, 'compound': 0.6369}",0.6369,2,5
+"दूसरी जगह सस्ता मिल रहा है, यहाँ नहीं।",2.0,8,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,8
+Fabulous!!!,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.6458}",0.6458,2,1
+About product,1.0,2,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,2
+A very nice product,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.393, 'pos': 0.607, 'compound': 0.4754}",0.4754,2,4
+Door is bad,3.0,3,0,1,,Negative,"{'neg': 0.636, 'neu': 0.364, 'pos': 0.0, 'compound': -0.5423}",-0.5423,0,3
+Good Football,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Very good product,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.385, 'pos': 0.615, 'compound': 0.4927}",0.4927,2,3
+best decided for it.,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.417, 'pos': 0.583, 'compound': 0.6369}",0.6369,2,4
+Sound is not upto the Mark!,1.0,6,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,6
+Good product - enhances range,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,5
+Mast,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+Mind-blowing purchase Good product and quality,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.633, 'pos': 0.367, 'compound': 0.4404}",0.4404,2,6
+item looking good but it was not full as describe in detail,4.0,12,0,1,,Positive,"{'neg': 0.0, 'neu': 0.849, 'pos': 0.151, 'compound': 0.2382}",0.2382,2,12
+bad service,1.0,2,0,1,,Negative,"{'neg': 0.778, 'neu': 0.222, 'pos': 0.0, 'compound': -0.5423}",-0.5423,0,2
+good quality and value for money.,4.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.43, 'pos': 0.57, 'compound': 0.6486}",0.6486,2,6
+NICE PRODUCT IN THIS PRICE,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.588, 'pos': 0.412, 'compound': 0.4215}",0.4215,2,5
+product  looking very nice & strong quality,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.375, 'pos': 0.625, 'compound': 0.7698}",0.7698,2,7
+Best Laptop Ever Budget Gaming,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.488, 'pos': 0.512, 'compound': 0.6369}",0.6369,2,5
+Another nice Google product!,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.492, 'pos': 0.508, 'compound': 0.4753}",0.4753,2,4
+nivia storm football,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+Inverter,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+Excellent Dishwasher,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.213, 'pos': 0.787, 'compound': 0.5719}",0.5719,2,2
+Best Deal in Market !!,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.455, 'pos': 0.545, 'compound': 0.6988}",0.6988,2,5
+WOW PRODUCT IF YOU WANT TO SEE YOUR OWN DREAMS IN THIS TV!,5.0,13,0,1,,Positive,"{'neg': 0.0, 'neu': 0.553, 'pos': 0.447, 'compound': 0.7959}",0.7959,2,13
+Super!,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.636}",0.636,2,1
+Best product and service,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.417, 'pos': 0.583, 'compound': 0.6369}",0.6369,2,4
+"कम्फर्टेबल आहे, पाय दुखत नाहीत.",5.0,5,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Bajaj GX1 500 W Mixer Grinder,3.0,6,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,6
+Looking good,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Defective Item Sent,1.0,3,0,1,,Negative,"{'neg': 0.592, 'neu': 0.408, 'pos': 0.0, 'compound': -0.4404}",-0.4404,0,3
+Best Buy,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.192, 'pos': 0.808, 'compound': 0.6369}",0.6369,2,2
+Worst experience ever! Faulty Machine & zero response from f,1.0,10,0,1,,Negative,"{'neg': 0.527, 'neu': 0.473, 'pos': 0.0, 'compound': -0.7712}",-0.7712,0,10
+Very Good Router,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.385, 'pos': 0.615, 'compound': 0.4927}",0.4927,2,3
+Ok kind of cooler..not effective in hot conditions,3.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.531, 'pos': 0.469, 'compound': 0.6486}",0.6486,2,8
+bad quality product,1.0,3,0,1,,Negative,"{'neg': 0.636, 'neu': 0.364, 'pos': 0.0, 'compound': -0.5423}",-0.5423,0,3
+Wonderful Product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.213, 'pos': 0.787, 'compound': 0.5719}",0.5719,2,2
+Superb value for money product,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.316, 'pos': 0.684, 'compound': 0.7579}",0.7579,2,5
+Ok. for the price,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.577, 'pos': 0.423, 'compound': 0.296}",0.296,2,4
+Bad Quality,2.0,2,0,1,,Negative,"{'neg': 0.778, 'neu': 0.222, 'pos': 0.0, 'compound': -0.5423}",-0.5423,0,2
+Awesome Microwave with Best price,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.265, 'pos': 0.735, 'compound': 0.8519}",0.8519,2,5
+Awesome...Best For Beginner's!!!!!!!!,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+"कलर और डिजाइन मस्त है, एकदम जबरदस्त!",5.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+Terrible product from google,1.0,4,0,1,,Negative,"{'neg': 0.508, 'neu': 0.492, 'pos': 0.0, 'compound': -0.4767}",-0.4767,0,4
+ALL GOOD,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Sound over Bluetooth cracks sometimes....,3.0,5,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,5
+Mind blowing purchase,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+Otg,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+"Compact, value for money",5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.556, 'pos': 0.444, 'compound': 0.34}",0.34,2,4
+A good gift !,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.7263}",0.7263,2,4
+Perfect juicer for vegetables and fruits.,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.575, 'pos': 0.425, 'compound': 0.5719}",0.5719,2,6
+PRODUCT IS GOOD.SELLER is CHEATING.FLIPKART Service TOO SLOW,4.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,8
+In 5 days the item stopped working,3.0,7,0,1,,Negative,"{'neg': 0.275, 'neu': 0.725, 'pos': 0.0, 'compound': -0.2263}",-0.2263,0,7
+Excellent / supernb,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.213, 'pos': 0.787, 'compound': 0.5719}",0.5719,2,3
+नेटवर्क कवरेज अच्छा नहीं है घर के अंदर।,2.0,8,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,8
+Super,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.5994}",0.5994,2,1
+Great Deal,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+9838797786,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+Football,3.0,1,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,1
+Worthy...,4.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+Will print maximum 100 pages,2.0,5,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,5
+"खराब पॅकेजिंग, बॉक्स तुटलेला होता.",1.0,5,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,5
+Poor quality,1.0,2,0,1,,Negative,"{'neg': 0.756, 'neu': 0.244, 'pos': 0.0, 'compound': -0.4767}",-0.4767,0,2
+Excellent Print Jobs!,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.334, 'pos': 0.666, 'compound': 0.6114}",0.6114,2,3
+Issue With Range,3.0,3,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,3
+Simply awesome,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+Water Purifier,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Best food processor,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.323, 'pos': 0.677, 'compound': 0.6369}",0.6369,2,3
+Decent product - to buy only if you have WiFi router at Home,3.0,13,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,13
+"डिलीवरी बहुत लेट हुई, सर्विस खराब है।",2.0,7,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,7
+"बकवास प्रॉडक्ट, वापरून बघा नका! 😡",1.0,6,0,0,😡,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,6
+tough but not like the pic shown here !!,4.0,9,0,1,,Positive,"{'neg': 0.391, 'neu': 0.609, 'pos': 0.0, 'compound': -0.5422}",-0.5422,2,9
+"product mast hai,but delivery late hui 😡",3.0,7,0,0,😡,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,7
+only for rich kids,3.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.455, 'pos': 0.545, 'compound': 0.5574}",0.5574,2,4
+Overall,4.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+"Highly recommended, amazing product by Google",5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.393, 'pos': 0.607, 'compound': 0.7328}",0.7328,2,6
+good product excellent service.,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.233, 'pos': 0.767, 'compound': 0.765}",0.765,2,4
+Good Delivery and product,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,4
+NYC one product from Philips,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Value for money,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.455, 'pos': 0.545, 'compound': 0.34}",0.34,2,3
+BISHNU SAHIBGANJ JH,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+"USELESS PRODUCT, WORST.....",1.0,3,0,1,,Negative,"{'neg': 0.583, 'neu': 0.417, 'pos': 0.0, 'compound': -0.4215}",-0.4215,0,3
+Its Awesome !,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.185, 'pos': 0.815, 'compound': 0.6588}",0.6588,2,3
+Different type of football,3.0,4,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,4
+Super! Worth it !,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.135, 'pos': 0.865, 'compound': 0.7494}",0.7494,2,4
+Wow,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.5859}",0.5859,2,1
+Good and Worthful,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.408, 'pos': 0.592, 'compound': 0.4404}",0.4404,2,3
+Defective Product,1.0,2,0,1,,Negative,"{'neg': 0.744, 'neu': 0.256, 'pos': 0.0, 'compound': -0.4404}",-0.4404,0,2
+Very Very Good Product,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.464, 'pos': 0.536, 'compound': 0.5379}",0.5379,2,4
+Good product...,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Bajaj 1701MT 17 L Solo Microwave Oven,3.0,7,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,7
+Bajaj solo microwave is a great product,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.549, 'pos': 0.451, 'compound': 0.6249}",0.6249,2,7
+good choice for singles,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,4
+Not for kids below 12 years,1.0,6,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,6
+Very poor,1.0,2,0,1,,Negative,"{'neg': 0.772, 'neu': 0.228, 'pos': 0.0, 'compound': -0.5256}",-0.5256,0,2
+Very bad,1.0,2,0,1,,Negative,"{'neg': 0.791, 'neu': 0.209, 'pos': 0.0, 'compound': -0.5849}",-0.5849,0,2
+Juicer Jar is of no Use,3.0,6,0,1,,Negative,"{'neg': 0.306, 'neu': 0.694, 'pos': 0.0, 'compound': -0.296}",-0.296,0,6
+Met some expectations,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+It is very Good Product,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.556, 'pos': 0.444, 'compound': 0.4927}",0.4927,2,5
+Sturdy Table,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Economical but poor quality,2.0,4,0,1,,Negative,"{'neg': 0.58, 'neu': 0.42, 'pos': 0.0, 'compound': -0.631}",-0.631,0,4
+Terrible experience! The item was defective and the customer service was unhelpful. 😡👎,1.0,13,0,0,😡👎,Negative,"{'neg': 0.364, 'neu': 0.636, 'pos': 0.0, 'compound': -0.7424}",-0.7424,0,13
+Wonderful product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.213, 'pos': 0.787, 'compound': 0.5719}",0.5719,2,2
+Just go for it!,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+A nice Product,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.263, 'pos': 0.737, 'compound': 0.4215}",0.4215,2,3
+Mind-blowing purchase,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+SASTA ROYE EK BAR,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+Pretty Good Quality.,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.141, 'pos': 0.859, 'compound': 0.7269}",0.7269,2,3
+Above-average product,3.0,2,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,2
+Good for hard ground,5.0,4,0,1,,Positive,"{'neg': 0.222, 'neu': 0.317, 'pos': 0.46, 'compound': 0.3612}",0.3612,2,4
+Good Juicer,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+UNSATISFACTORY,1.0,1,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,1
+Good clock.,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Superb!!!,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.7163}",0.7163,2,1
+HP combo Pack 678 Inkjet cartridge,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+Sexy design,3.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.227, 'pos': 0.773, 'compound': 0.5267}",0.5267,2,2
+Superb quality,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+Not as soft as it appears,3.0,6,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,6
+"It is okay, nothing special 😐",3.0,6,0,0,😐,Negative,"{'neg': 0.315, 'neu': 0.419, 'pos': 0.265, 'compound': -0.092}",-0.092,0,6
+Good Performance.,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+avg quality,2.0,2,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,2
+Microtek UPS SW EB1100 Pure Sine Wave Inverter Pure Sine Wav,5.0,11,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,11
+"Like an assembled, one can get for 4.5K Cheap Quality",1.0,10,0,1,,Negative,"{'neg': 0.0, 'neu': 0.783, 'pos': 0.217, 'compound': 0.3612}",0.3612,0,10
+Great!..Must buy!,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Super product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.204, 'pos': 0.796, 'compound': 0.5994}",0.5994,2,2
+wrost product,1.0,2,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,2
+Nice and sturdy,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.417, 'pos': 0.583, 'compound': 0.4215}",0.4215,2,3
+Excellent,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.5719}",0.5719,2,1
+No Technical person provided,5.0,4,0,1,,Positive,"{'neg': 0.423, 'neu': 0.577, 'pos': 0.0, 'compound': -0.296}",-0.296,2,4
+BEST MECHANICAL KEYBOARD UNDER 2000,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.448, 'pos': 0.552, 'compound': 0.7125}",0.7125,2,5
+Awesome deal,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+after using for 3 weeks,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Lenovo is the best,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.417, 'pos': 0.583, 'compound': 0.6369}",0.6369,2,4
+Good Product but charges for installation and Pipes,3.0,8,0,1,,Negative,"{'neg': 0.25, 'neu': 0.566, 'pos': 0.184, 'compound': -0.1779}",-0.1779,0,8
+Careful to opt exchange,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.652, 'pos': 0.348, 'compound': 0.1531}",0.1531,2,4
+Full disappointed ÃÂ°ÃÂÃÂÃÂ¡,1.0,3,0,0,,Negative,"{'neg': 0.608, 'neu': 0.392, 'pos': 0.0, 'compound': -0.4767}",-0.4767,0,3
+Just wow! most deserved smart speaker,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.361, 'pos': 0.639, 'compound': 0.7947}",0.7947,2,6
+Quality product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Cannon PG47,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+very Nice,3.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.244, 'pos': 0.756, 'compound': 0.4754}",0.4754,2,2
+फोटोमध्ये दिसतं तसं नाहीये.,2.0,4,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,4
+Excellent product at this price.,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.519, 'pos': 0.481, 'compound': 0.5719}",0.5719,2,5
+AWESOMEÃ¢ÂÂºÃ¢ÂÂº.VALUE FOR MONEY...DOUBLE THUMBS UP FOR THAT,4.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+Great Product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+Execllent,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+"product quality accha hai, paisa vasool! 😍",5.0,7,0,0,😍,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+Utterly Disappointed,1.0,2,0,1,,Negative,"{'neg': 0.772, 'neu': 0.228, 'pos': 0.0, 'compound': -0.5256}",-0.5256,0,2
+"Worth every penny, with next day delivery as promised",5.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 0.614, 'pos': 0.386, 'compound': 0.5267}",0.5267,2,9
+"Broken item received, very disappointed 😫💢",1.0,6,0,0,😫💢,Negative,"{'neg': 0.619, 'neu': 0.381, 'pos': 0.0, 'compound': -0.7574}",-0.7574,0,6
+worst product,1.0,2,0,1,,Negative,"{'neg': 0.804, 'neu': 0.196, 'pos': 0.0, 'compound': -0.6249}",-0.6249,0,2
+Amazing,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.5859}",0.5859,2,1
+Product ekdam bhari aahe 😍 loved it!,5.0,7,0,0,😍,Positive,"{'neg': 0.0, 'neu': 0.544, 'pos': 0.456, 'compound': 0.636}",0.636,2,7
+One of the Best in the market!,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.572, 'pos': 0.428, 'compound': 0.6696}",0.6696,2,7
+It cost me 15k to get my data recovered! Don't buy this!,1.0,12,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,12
+Best and Elegant for tabletop.,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.291, 'pos': 0.709, 'compound': 0.8074}",0.8074,2,5
+Stops working after return period,1.0,5,0,1,,Negative,"{'neg': 0.286, 'neu': 0.714, 'pos': 0.0, 'compound': -0.1531}",-0.1531,0,5
+I should have bought it earlier....,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+Box,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+Its wonderful BUT,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.46, 'pos': 0.54, 'compound': 0.3291}",0.3291,2,3
+BAD! Too Noisy,1.0,3,0,1,,Negative,"{'neg': 0.862, 'neu': 0.138, 'pos': 0.0, 'compound': -0.7371}",-0.7371,0,3
+Great for the price,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.423, 'pos': 0.577, 'compound': 0.6249}",0.6249,2,4
+Fine,4.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.2023}",0.2023,2,1
+"Product rating,",3.0,2,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,2
+"पैकिंग बहुत अच्छी थी, सुरक्षित मिला।",5.0,6,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+Good Product at this price point !,3.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.61, 'pos': 0.39, 'compound': 0.4926}",0.4926,2,7
+VERY GOOD PRODUCT,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.385, 'pos': 0.615, 'compound': 0.4927}",0.4927,2,3
+Value for the money,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.556, 'pos': 0.444, 'compound': 0.34}",0.34,2,4
+sahi hai...,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+"Good product, but doesn't work out of box if your main router is TP-LINK",5.0,14,0,1,,Positive,"{'neg': 0.0, 'neu': 0.87, 'pos': 0.13, 'compound': 0.2382}",0.2382,2,14
+सॉफ्टवेयर अपडेट के बाद स्लो हो गया।,2.0,7,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,7
+Must buy!Go for it..,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+Just okay Yes,3.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.179, 'pos': 0.821, 'compound': 0.5574}",0.5574,2,3
+Good with not so great service.,3.0,6,0,1,,Negative,"{'neg': 0.375, 'neu': 0.362, 'pos': 0.263, 'compound': -0.3046}",-0.3046,0,6
+nice product and perfect product,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.316, 'pos': 0.684, 'compound': 0.7579}",0.7579,2,5
+GOOD QUALITY WATER FILTER,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,4
+the best laptop you could get for 63k.....just go for it,5.0,11,0,1,,Positive,"{'neg': 0.0, 'neu': 0.704, 'pos': 0.296, 'compound': 0.6369}",0.6369,2,11
+IFB Doesn't need any quality clarification,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+Worst steamer,1.0,2,0,1,,Negative,"{'neg': 0.804, 'neu': 0.196, 'pos': 0.0, 'compound': -0.6249}",-0.6249,0,2
+Don't waste money,1.0,3,0,1,,Negative,"{'neg': 0.0, 'neu': 0.462, 'pos': 0.538, 'compound': 0.3252}",0.3252,0,3
+Great product and giving consistent 300Mbps using Jio Fiber,5.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 0.519, 'pos': 0.481, 'compound': 0.7579}",0.7579,2,9
+Amazing Dishwasher!!,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.186, 'pos': 0.814, 'compound': 0.658}",0.658,2,2
+Great product but no Demo organized...,4.0,6,0,1,,Positive,"{'neg': 0.299, 'neu': 0.428, 'pos': 0.273, 'compound': -0.0644}",-0.0644,2,6
+"खूप दिवसांपासून हवं होतं, मिळालं!",5.0,5,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Nice Product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.263, 'pos': 0.737, 'compound': 0.4215}",0.4215,2,2
+NICE PRODUCT AT A SUPERB PRICE,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.303, 'pos': 0.697, 'compound': 0.7845}",0.7845,2,6
+Good choice for a busy household,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.58, 'pos': 0.42, 'compound': 0.4404}",0.4404,2,6
+स्क्रॅचेस होते प्रॉडक्ट वर.,2.0,4,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,4
+Bajaj FX 11 Food Processor,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Best in the market! Go for it.,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.572, 'pos': 0.428, 'compound': 0.6696}",0.6696,2,7
+Stopped working in 20 days,1.0,5,0,1,,Negative,"{'neg': 0.322, 'neu': 0.678, 'pos': 0.0, 'compound': -0.2263}",-0.2263,0,5
+Excellent product! The quality is top-notch and the delivery was fast. 😍👍🚚,5.0,12,0,0,😍👍🚚,Positive,"{'neg': 0.0, 'neu': 0.734, 'pos': 0.266, 'compound': 0.6114}",0.6114,2,12
+VERY GOOD PRODUCT (Price increased now),5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.372, 'pos': 0.628, 'compound': 0.7756}",0.7756,2,6
+वॉरंटी कार्ड मिळालं नाही.,2.0,4,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,4
+Horrible,1.0,1,0,1,,Negative,"{'neg': 1.0, 'neu': 0.0, 'pos': 0.0, 'compound': -0.5423}",-0.5423,0,1
+Superb Product by Bajaj & Superb Delivery by Flipkart :) :),5.0,11,0,1,,Positive,"{'neg': 0.0, 'neu': 0.297, 'pos': 0.703, 'compound': 0.9349}",0.9349,2,11
+Bad product,1.0,2,0,1,,Negative,"{'neg': 0.778, 'neu': 0.222, 'pos': 0.0, 'compound': -0.5423}",-0.5423,0,2
+product quality issues,1.0,3,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,3
+Does the job,3.0,3,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,3
+"Worst, pure chinese product, Never waste your hard earned Rs",1.0,10,0,1,,Negative,"{'neg': 0.278, 'neu': 0.475, 'pos': 0.246, 'compound': -0.3553}",-0.3553,0,10
+"Descent Product. Quite good, not the best.",4.0,7,0,1,,Positive,"{'neg': 0.291, 'neu': 0.432, 'pos': 0.276, 'compound': -0.0451}",-0.0451,2,7
+Best option on this price,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.488, 'pos': 0.512, 'compound': 0.6369}",0.6369,2,5
+One of the best Kitchen Appliance,4.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.543, 'pos': 0.457, 'compound': 0.6369}",0.6369,2,6
+Awesome product but no free installation,5.0,6,0,1,,Positive,"{'neg': 0.219, 'neu': 0.234, 'pos': 0.547, 'compound': 0.6369}",0.6369,2,6
+Simply awesome Excellent. Go for it.,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.339, 'pos': 0.661, 'compound': 0.8316}",0.8316,2,6
+"Awesomenice  prodect ,,",5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+CHEAPER ONLY BECAUSE OF COST CUTTING,1.0,6,0,1,,Negative,"{'neg': 0.231, 'neu': 0.769, 'pos': 0.0, 'compound': -0.128}",-0.128,0,6
+inalsa is good,2.0,3,0,1,,Negative,"{'neg': 0.0, 'neu': 0.408, 'pos': 0.592, 'compound': 0.4404}",0.4404,0,3
+"दिखने में सुंदर है, घर वालों को पसंद आया।",5.0,9,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,9
+Good TV for price but needs improvement,3.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.457, 'pos': 0.543, 'compound': 0.714}",0.714,2,7
+Mid range Beast... Ryzen >>> i5,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+"लुक खूप प्रीमियम आहे, आवडलं!",5.0,5,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Awesomevery good,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+review after 1 and half years,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+Its a great buy,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.328, 'pos': 0.672, 'compound': 0.6249}",0.6249,2,4
+Worth Money,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.345, 'pos': 0.655, 'compound': 0.2263}",0.2263,2,2
+IFB MACHINE WORKS WELL WITH FORTUNE DETERGENT +&-,5.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.712, 'pos': 0.288, 'compound': 0.4278}",0.4278,2,8
+मटेरियल बहुत लो क्वालिटी का है।,1.0,6,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,6
+can't grind spices...,2.0,3,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,3
+"Was initially skeptical on new brand, worth a shot",4.0,9,0,1,,Positive,"{'neg': 0.225, 'neu': 0.588, 'pos': 0.186, 'compound': -0.1027}",-0.1027,2,9
+"GREAT PRODUCT, GREAT SERVICE BY FLIPKART",5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.328, 'pos': 0.672, 'compound': 0.8481}",0.8481,2,6
+Nice Mixer @ Nice Price,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.263, 'pos': 0.737, 'compound': 0.6808}",0.6808,2,5
+Great Inverter,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+The product is best for cleaning your home,5.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.625, 'pos': 0.375, 'compound': 0.6369}",0.6369,2,8
+Nice product.,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.263, 'pos': 0.737, 'compound': 0.4215}",0.4215,2,2
+"आवडलं, कलर एकदम जबरदस्त आहे.",5.0,5,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Just wow!,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6239}",0.6239,2,2
+good quality for Rs.200.,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,4
+Using this for the last 4 months,4.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+Impressive!!!!,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+AWESOMEÃÂ¢ÃÂÃÂºÃÂ¢ÃÂÃÂº.VALUE FOR MONEY...DOUBLE THUMBS UP FOR THAT,4.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+Worthless Product,1.0,2,0,1,,Negative,"{'neg': 0.744, 'neu': 0.256, 'pos': 0.0, 'compound': -0.4404}",-0.4404,0,2
+Super performance,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.204, 'pos': 0.796, 'compound': 0.5994}",0.5994,2,2
+Packaging was terrible and smell is bad 😷,2.0,8,0,0,😷,Negative,"{'neg': 0.569, 'neu': 0.431, 'pos': 0.0, 'compound': -0.765}",-0.765,0,8
+A first worst product by FLIPKART,2.0,6,0,1,,Negative,"{'neg': 0.506, 'neu': 0.494, 'pos': 0.0, 'compound': -0.6249}",-0.6249,0,6
+Three Stars,3.0,2,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,2
+WORST QUALITY - STOPPED WORKING JUST AFTER 25 DAYS,1.0,9,0,1,,Negative,"{'neg': 0.554, 'neu': 0.446, 'pos': 0.0, 'compound': -0.8159}",-0.8159,0,9
+Highly recommended,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.323, 'pos': 0.677, 'compound': 0.2716}",0.2716,2,2
+Super awesome,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.8402}",0.8402,2,2
+Amazing camera,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.208, 'pos': 0.792, 'compound': 0.5859}",0.5859,2,2
+Best Product & Worth Buying!!,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.23, 'pos': 0.77, 'compound': 0.7707}",0.7707,2,5
+Dlink,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+good ball,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Product is Good but Huge in size,3.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.505, 'pos': 0.495, 'compound': 0.5994}",0.5994,2,7
+Did not meet expectation,1.0,4,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,4
+Great Camera and Awesome Pan Feature,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.328, 'pos': 0.672, 'compound': 0.8481}",0.8481,2,6
+Worth the money . Desert Cooler live up to the Name .,4.0,12,0,1,,Positive,"{'neg': 0.0, 'neu': 0.826, 'pos': 0.174, 'compound': 0.2263}",0.2263,2,12
+"डिस्प्ले अच्छा नहीं है, आँखों में चुभता है।",2.0,8,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,8
+Excellent product from Google!,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.429, 'pos': 0.571, 'compound': 0.6114}",0.6114,2,4
+Nice Flask!!!,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.214, 'pos': 0.786, 'compound': 0.5684}",0.5684,2,2
+Awesome...,4.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+Awesome Sound,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+Food processor means Inalsa,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+VFM cartridge,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+"The product is okay, but the delivery was delayed by a few days. 🚚⌛",3.0,14,0,0,🚚⌛,Negative,"{'neg': 0.159, 'neu': 0.743, 'pos': 0.098, 'compound': -0.2263}",-0.2263,0,14
+Worst product and service including service staff,1.0,7,0,1,,Negative,"{'neg': 0.406, 'neu': 0.594, 'pos': 0.0, 'compound': -0.6249}",-0.6249,0,7
+Great Product :),5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.123, 'pos': 0.877, 'compound': 0.7964}",0.7964,2,3
+Excellent product with great build quality,4.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.339, 'pos': 0.661, 'compound': 0.8316}",0.8316,2,6
+Excellent product from IFB & timely shipping from Flipkart,5.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 0.654, 'pos': 0.346, 'compound': 0.5719}",0.5719,2,9
+Wonderful PAISA WASOOL YAAR,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.448, 'pos': 0.552, 'compound': 0.5719}",0.5719,2,4
+Excellent better than su kam,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.312, 'pos': 0.688, 'compound': 0.765}",0.765,2,5
+Excellent product from Qubo,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.448, 'pos': 0.552, 'compound': 0.5719}",0.5719,2,4
+Juicer,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+Best for Cooking,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.323, 'pos': 0.677, 'compound': 0.6369}",0.6369,2,3
+Delivery was late but product is fine 🚚⌛,3.0,8,0,0,🚚⌛,Positive,"{'neg': 0.0, 'neu': 0.761, 'pos': 0.239, 'compound': 0.296}",0.296,2,8
+Its okay,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.345, 'pos': 0.655, 'compound': 0.2263}",0.2263,2,2
+Rubber will hurt,4.0,3,0,1,,Positive,"{'neg': 0.63, 'neu': 0.37, 'pos': 0.0, 'compound': -0.5267}",-0.5267,2,3
+GOOD PRODUCT,3.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Good...go ahead and order...no issues,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Awesome daily use crockery,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.423, 'pos': 0.577, 'compound': 0.6249}",0.6249,2,4
+Worst experience,1.0,2,0,1,,Negative,"{'neg': 0.804, 'neu': 0.196, 'pos': 0.0, 'compound': -0.6249}",-0.6249,0,2
+worst service from flipkart this time,1.0,6,0,1,,Negative,"{'neg': 0.451, 'neu': 0.549, 'pos': 0.0, 'compound': -0.6249}",-0.6249,0,6
+Great Deal for a budget gaming laptop,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.549, 'pos': 0.451, 'compound': 0.6249}",0.6249,2,7
+Worthy enough for all the promises made,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.476, 'pos': 0.524, 'compound': 0.6705}",0.6705,2,7
+The portable hard-disk is fine,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.69, 'pos': 0.31, 'compound': 0.2023}",0.2023,2,5
+Great product.....with this price range,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.494, 'pos': 0.506, 'compound': 0.6249}",0.6249,2,5
+Its Good,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+An investment in health,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+Good choice,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Want to buy a budget tv...this is the right choice for FHD,5.0,12,0,1,,Positive,"{'neg': 0.0, 'neu': 0.885, 'pos': 0.115, 'compound': 0.0772}",0.0772,2,12
+Nice product from Flipkart,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.517, 'pos': 0.483, 'compound': 0.4215}",0.4215,2,4
+Good Choice....,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Does the job (almost),4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+Pretty good,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.7269}",0.7269,2,2
+Bought this for making chutney bt couldn't get max use of it,3.0,12,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,12
+Easy to carry around and have a rich sound signature,5.0,10,0,1,,Positive,"{'neg': 0.0, 'neu': 0.519, 'pos': 0.481, 'compound': 0.7579}",0.7579,2,10
+Not worth the price. The quality is poor and it broke after a week of use. 😞💔,2.0,17,0,0,😞💔,Negative,"{'neg': 0.368, 'neu': 0.632, 'pos': 0.0, 'compound': -0.7626}",-0.7626,0,17
+"Don't waste your money, पैसे वाया जातील तुमचे, नका घेऊ.",1.0,10,0,0,,Negative,"{'neg': 0.0, 'neu': 0.794, 'pos': 0.206, 'compound': 0.3252}",0.3252,0,10
+GOOD Product,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.216, 'pos': 0.784, 'compound': 0.5622}",0.5622,2,2
+Good product and easy Setup.,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.341, 'pos': 0.659, 'compound': 0.7003}",0.7003,2,5
+Quality Service at best price,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.488, 'pos': 0.512, 'compound': 0.6369}",0.6369,2,5
+Fantastic juicer,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.217, 'pos': 0.783, 'compound': 0.5574}",0.5574,2,2
+सॉफ्टवेअर अपडेट नंतर हँग होत आहे.,2.0,6,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,6
+Bad service,2.0,2,0,1,,Negative,"{'neg': 0.778, 'neu': 0.222, 'pos': 0.0, 'compound': -0.5423}",-0.5423,0,2
+Great seller,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+Excellent buy at the affordable cost,4.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.575, 'pos': 0.425, 'compound': 0.5719}",0.5719,2,6
+Works Perfectly with CRT TV. No better option than this.,5.0,10,0,1,,Positive,"{'neg': 0.135, 'neu': 0.429, 'pos': 0.436, 'compound': 0.7096}",0.7096,2,10
+ESET-I am happy,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.351, 'pos': 0.649, 'compound': 0.5719}",0.5719,2,3
+Slightly disappointed,2.0,2,0,1,,Negative,"{'neg': 0.737, 'neu': 0.263, 'pos': 0.0, 'compound': -0.4228}",-0.4228,0,2
+Very Usefull buy - will make ur wife happy...,5.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,9
+Neptune,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+Tv review,3.0,2,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,2
+Works well,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.323, 'pos': 0.677, 'compound': 0.2732}",0.2732,2,2
+Best buy!,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.182, 'pos': 0.818, 'compound': 0.6696}",0.6696,2,2
+Great Product! Value for money.,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.306, 'pos': 0.694, 'compound': 0.7777}",0.7777,2,5
+Best In class,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.323, 'pos': 0.677, 'compound': 0.6369}",0.6369,2,3
+Terrific Purchase considering the Price Point !!!,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.601, 'pos': 0.399, 'compound': 0.6093}",0.6093,2,7
+DO NOT WASTE YR MONEY ON THIS !!!,1.0,8,0,1,,Negative,"{'neg': 0.0, 'neu': 0.651, 'pos': 0.349, 'compound': 0.579}",0.579,0,8
+Worth every penny,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.513, 'pos': 0.487, 'compound': 0.2263}",0.2263,2,3
+Stopped Working After 5 mins!,2.0,5,0,1,,Negative,"{'neg': 0.422, 'neu': 0.578, 'pos': 0.0, 'compound': -0.2942}",-0.2942,0,5
+Terrible product,1.0,2,0,1,,Negative,"{'neg': 0.756, 'neu': 0.244, 'pos': 0.0, 'compound': -0.4767}",-0.4767,0,2
+"Best quality, easy to use. 100% satisfaction.",5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.286, 'pos': 0.714, 'compound': 0.875}",0.875,2,7
+An absolute beast!,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+I love this product! It works perfectly and the quality is amazing! 😍👍,5.0,13,0,0,😍👍,Positive,"{'neg': 0.0, 'neu': 0.413, 'pos': 0.587, 'compound': 0.9298}",0.9298,2,13
+Very very bad and worthless TV and I feel bad service TV,1.0,12,0,1,,Negative,"{'neg': 0.586, 'neu': 0.414, 'pos': 0.0, 'compound': -0.9063}",-0.9063,0,12
+NYC product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Thanks,4.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.4404}",0.4404,2,1
+Perfect product !,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.2, 'pos': 0.8, 'compound': 0.6114}",0.6114,2,3
+Badly disappointed,2.0,2,0,1,,Negative,"{'neg': 1.0, 'neu': 0.0, 'pos': 0.0, 'compound': -0.7351}",-0.7351,0,2
+Classy Product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Very nice solo microwave,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.492, 'pos': 0.508, 'compound': 0.4754}",0.4754,2,4
+Recamended Product,3.0,2,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,2
+Best sewing machine,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.323, 'pos': 0.677, 'compound': 0.6369}",0.6369,2,3
+Awesome product..,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+Works excellent,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.213, 'pos': 0.787, 'compound': 0.5719}",0.5719,2,2
+terrific,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.4767}",0.4767,2,1
+Working good worth in price,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.385, 'pos': 0.615, 'compound': 0.5859}",0.5859,2,5
+LOVED IT,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.204, 'pos': 0.796, 'compound': 0.5994}",0.5994,2,2
+"आवडलं नाही, परत केलं मी.",1.0,5,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,5
+Waste of money!,1.0,3,0,1,,Negative,"{'neg': 0.607, 'neu': 0.393, 'pos': 0.0, 'compound': -0.4753}",-0.4753,0,3
+"Does what it says, Amazing service from Flipkart",5.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.648, 'pos': 0.352, 'compound': 0.5859}",0.5859,2,8
+A Good Ball To Buy,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,5
+Gud experience with filpkart,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+"आवाज बहुत साफ़ है, बेस्ट ब्लूटूथ स्पीकर।",5.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+Not reliable and bad quality product.,1.0,6,0,1,,Negative,"{'neg': 0.0, 'neu': 0.637, 'pos': 0.363, 'compound': 0.431}",0.431,0,6
+Works very well as a repeater,4.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.626, 'pos': 0.374, 'compound': 0.3384}",0.3384,2,6
+फोटो जैसा दिख रहा था वैसा नहीं है।,2.0,8,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,8
+Wonderful- Excellent,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.8126}",0.8126,2,2
+BEST IN THE MARKET,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.417, 'pos': 0.583, 'compound': 0.6369}",0.6369,2,4
+Good and Vaule for Money,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.58, 'pos': 0.42, 'compound': 0.4404}",0.4404,2,5
+Smart Microwave,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.27, 'pos': 0.73, 'compound': 0.4019}",0.4019,2,2
+Must buy! Working as designed and as described,5.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,8
+"Good set, safely packed, but really small bowls",3.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.597, 'pos': 0.403, 'compound': 0.4678}",0.4678,2,8
+Best in the market at this price range,5.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.625, 'pos': 0.375, 'compound': 0.6369}",0.6369,2,8
+Don't buy this. It will stop working on 11th day.,1.0,10,0,1,,Negative,"{'neg': 0.196, 'neu': 0.804, 'pos': 0.0, 'compound': -0.296}",-0.296,0,10
+Good product and good delivery service,4.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.408, 'pos': 0.592, 'compound': 0.7003}",0.7003,2,6
+Good product if you have guts,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.633, 'pos': 0.367, 'compound': 0.4404}",0.4404,2,6
+Just go for it,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+BAD PRODUCT,4.0,2,0,1,,Positive,"{'neg': 0.778, 'neu': 0.222, 'pos': 0.0, 'compound': -0.5423}",-0.5423,2,2
+Just okay,3.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.345, 'pos': 0.655, 'compound': 0.2263}",0.2263,2,2
+Worth in this price,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.612, 'pos': 0.388, 'compound': 0.2263}",0.2263,2,4
+"Terrific, More than I expected.",5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.492, 'pos': 0.508, 'compound': 0.4767}",0.4767,2,5
+i love it,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.192, 'pos': 0.808, 'compound': 0.6369}",0.6369,2,3
+Good but could have been better,3.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.408, 'pos': 0.592, 'compound': 0.7003}",0.7003,2,6
+Very hard n heavy,3.0,4,0,1,,Negative,"{'neg': 0.458, 'neu': 0.542, 'pos': 0.0, 'compound': -0.1761}",-0.1761,0,4
+best product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.192, 'pos': 0.808, 'compound': 0.6369}",0.6369,2,2
+"Good, but very costly",2.0,4,0,1,,Negative,"{'neg': 0.341, 'neu': 0.334, 'pos': 0.326, 'compound': -0.0231}",-0.0231,0,4
+मटेरियल खूप हलक्या प्रतीचे आहे.,1.0,5,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,5
+Hardground football,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Too Noisy. Dont Buy. Full Stop.,1.0,6,0,1,,Negative,"{'neg': 0.224, 'neu': 0.527, 'pos': 0.249, 'compound': 0.0485}",0.0485,0,6
+5 Star Product,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+Best in the market!,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.4, 'pos': 0.6, 'compound': 0.6696}",0.6696,2,4
+Met Expectations,3.0,2,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,2
+"बिल्कुल रिकमेंड करूँगा, बेस्ट चॉइस।",5.0,5,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Good Deal,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Hated it!,1.0,2,0,1,,Negative,"{'neg': 0.818, 'neu': 0.182, 'pos': 0.0, 'compound': -0.6696}",-0.6696,0,2
+Awesome cooler,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+Great Microwave!,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.185, 'pos': 0.815, 'compound': 0.6588}",0.6588,2,2
+food processor,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Super!Excelleant product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+"बहुत कंफर्टेबल है, पहनकर अच्छा लगा।",5.0,6,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+Good security for PC,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.274, 'pos': 0.726, 'compound': 0.6486}",0.6486,2,4
+"product okk hai, but packaging was bad 😕",3.0,8,0,0,😕,Negative,"{'neg': 0.442, 'neu': 0.558, 'pos': 0.0, 'compound': -0.6956}",-0.6956,0,8
+You need to shell out another Rs. 7000 for installation,4.0,10,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,10
+Micro,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+Good not best,4.0,3,0,1,,Positive,"{'neg': 0.463, 'neu': 0.138, 'pos': 0.399, 'compound': -0.12}",-0.12,2,3
+Neptune FX1 Dishwasher,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+"बकवास प्रॉडक्ट, वापरून बघू नका! Very bad quality.",1.0,8,0,0,,Negative,"{'neg': 0.369, 'neu': 0.631, 'pos': 0.0, 'compound': -0.623}",-0.623,0,8
+BAD Clarity,2.0,2,0,1,,Negative,"{'neg': 0.611, 'neu': 0.0, 'pos': 0.389, 'compound': -0.368}",-0.368,0,2
+Much better than hand wash.,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.33, 'pos': 0.67, 'compound': 0.7269}",0.7269,2,5
+Must buy! It's an excellent product.,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.556, 'pos': 0.444, 'compound': 0.6114}",0.6114,2,6
+Great Mixer,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+Basic appliance for reheating. Body heats up in 10mins,3.0,9,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,9
+Over all good !!,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.463, 'pos': 0.537, 'compound': 0.5399}",0.5399,2,4
+very bad product,1.0,3,0,1,,Negative,"{'neg': 0.655, 'neu': 0.345, 'pos': 0.0, 'compound': -0.5849}",-0.5849,0,3
+Best Sewing machine.,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.323, 'pos': 0.677, 'compound': 0.6369}",0.6369,2,3
+"Quality is best, नक्की खरेदी करा, आवडलं मला.",5.0,8,0,0,,Positive,"{'neg': 0.0, 'neu': 0.625, 'pos': 0.375, 'compound': 0.6369}",0.6369,2,8
+Item is good but Delhivery courier service worst.,1.0,8,0,1,,Negative,"{'neg': 0.415, 'neu': 0.441, 'pos': 0.143, 'compound': -0.6908}",-0.6908,0,8
+Warranty is fake,1.0,3,0,1,,Negative,"{'neg': 0.608, 'neu': 0.392, 'pos': 0.0, 'compound': -0.4767}",-0.4767,0,3
+Excellent Service,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.213, 'pos': 0.787, 'compound': 0.5719}",0.5719,2,2
+Excellent Solo Microwave - Perfect size - Perfect price,5.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 0.265, 'pos': 0.735, 'compound': 0.9022}",0.9022,2,9
+"Timely delivery , next day Installation a top class service",4.0,10,0,1,,Positive,"{'neg': 0.0, 'neu': 0.795, 'pos': 0.205, 'compound': 0.2023}",0.2023,2,10
+"Superb experience, will buy again! ❤️",5.0,6,0,0,❤,Positive,"{'neg': 0.0, 'neu': 0.532, 'pos': 0.468, 'compound': 0.6588}",0.6588,2,6
+Awesome same as explained,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.423, 'pos': 0.577, 'compound': 0.6249}",0.6249,2,4
+Could be way better,2.0,4,0,1,,Negative,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,0,4
+alam,2.0,1,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,1
+Burning Smell,1.0,2,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,2
+"साइज बहुत छोटा है, फिट नहीं हुआ।",2.0,7,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,7
+Product quality is low,1.0,4,0,1,,Negative,"{'neg': 0.412, 'neu': 0.588, 'pos': 0.0, 'compound': -0.2732}",-0.2732,0,4
+"पॅकिंग खूप भारी होतं, सुरक्षित मिळालं.",5.0,6,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+this model has issue in wifi,1.0,6,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,6
+Don't waste your money,1.0,4,0,1,,Negative,"{'neg': 0.0, 'neu': 0.563, 'pos': 0.437, 'compound': 0.3252}",0.3252,0,4
+Great buy,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+"The product is okay, but the delivery was late 🚚⌛",3.0,10,0,0,🚚⌛,Positive,"{'neg': 0.0, 'neu': 0.861, 'pos': 0.139, 'compound': 0.1154}",0.1154,2,10
+good product but not best,4.0,5,0,1,,Positive,"{'neg': 0.479, 'neu': 0.316, 'pos': 0.205, 'compound': -0.5577}",-0.5577,2,5
+Real Performer,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+"Worth every penny, Just got for it.",5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.759, 'pos': 0.241, 'compound': 0.2263}",0.2263,2,7
+Good!!,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.5399}",0.5399,2,1
+MI means TRUST from now on...,4.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.554, 'pos': 0.446, 'compound': 0.6166}",0.6166,2,6
+Very Good product!,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.365, 'pos': 0.635, 'compound': 0.54}",0.54,2,3
+नेहमीप्रमाणे बेस्ट सर्व्हिस.,5.0,3,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+Best among the water purifiers in this segment...,5.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.625, 'pos': 0.375, 'compound': 0.6369}",0.6369,2,8
+Good Stuff with Reasonable Price Only in Flipkart,4.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.707, 'pos': 0.293, 'compound': 0.4404}",0.4404,2,8
+genuine product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Satisfactory performance. bit noisy though,4.0,5,0,1,,Positive,"{'neg': 0.236, 'neu': 0.417, 'pos': 0.347, 'compound': 0.2023}",0.2023,2,5
+Beast in this Range!,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+Good One,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Worth it,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.345, 'pos': 0.655, 'compound': 0.2263}",0.2263,2,2
+"पसंद नहीं आया, मैंने वापस कर दिया।",1.0,7,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,7
+"चांगली खरेदी, मी समाधानी आहे.",5.0,5,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Bajaj Food Processeor,1.0,3,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,3
+Regular usage not good.,2.0,4,0,1,,Negative,"{'neg': 0.445, 'neu': 0.555, 'pos': 0.0, 'compound': -0.3412}",-0.3412,0,4
+Need of these days.,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+"खूप छान प्रॉडक्ट आहे, आवडलं! ✨",5.0,6,0,0,✨,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+Easy to grind..!!,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.365, 'pos': 0.635, 'compound': 0.5399}",0.5399,2,3
+"Black color is not good.. size, fitting and elastic are good",4.0,11,0,1,,Positive,"{'neg': 0.0, 'neu': 0.775, 'pos': 0.225, 'compound': 0.4404}",0.4404,2,11
+Great product for offered price,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.494, 'pos': 0.506, 'compound': 0.6249}",0.6249,2,5
+nice product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.263, 'pos': 0.737, 'compound': 0.4215}",0.4215,2,2
+"खूप फास्ट डिलिव्हरी, थँक्स!",5.0,4,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+why is this so overpriced at Flipkart,3.0,7,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,7
+pre-install windows 11,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+Excellent Router compare to TP-Link TL-WR841 N 300,5.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.619, 'pos': 0.381, 'compound': 0.5719}",0.5719,2,8
+Great Product from Samsung!,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.406, 'pos': 0.594, 'compound': 0.6588}",0.6588,2,4
+very useful,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.238, 'pos': 0.762, 'compound': 0.4927}",0.4927,2,2
+Hats off,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Simply awesome.,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+Good one,3.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Not great,2.0,2,0,1,,Negative,"{'neg': 0.767, 'neu': 0.233, 'pos': 0.0, 'compound': -0.5096}",-0.5096,0,2
+Well!!!,4.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.4545}",0.4545,2,1
+Buget food processor with good quality.,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.633, 'pos': 0.367, 'compound': 0.4404}",0.4404,2,6
+Excellent water purifier,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.351, 'pos': 0.649, 'compound': 0.5719}",0.5719,2,3
+Great Product  as expected,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.423, 'pos': 0.577, 'compound': 0.6249}",0.6249,2,4
+"Bahut badhiya product hai, delivery fast hoti.",5.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+Super! GOOD PRODUCT,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.113, 'pos': 0.887, 'compound': 0.8327}",0.8327,2,3
+Good product for the price,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.58, 'pos': 0.42, 'compound': 0.4404}",0.4404,2,5
+Not fixed on TV HDMI Slot due to unavailability of space,3.0,11,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,11
+Good for its price,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,4
+Worth deal!,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.313, 'pos': 0.687, 'compound': 0.2942}",0.2942,2,2
+2 weeks still no installation,1.0,5,0,1,,Negative,"{'neg': 0.423, 'neu': 0.577, 'pos': 0.0, 'compound': -0.296}",-0.296,0,5
+चार्जिंगला खूप वेळ लागतो.,2.0,4,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,4
+"खूप महाग आहे, परवडत नाही.",2.0,5,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,5
+gorgeous juicer that works wonders!!!!!!,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.436, 'pos': 0.564, 'compound': 0.7326}",0.7326,2,5
+Not Worth,4.0,2,0,1,,Positive,"{'neg': 0.625, 'neu': 0.375, 'pos': 0.0, 'compound': -0.1695}",-0.1695,2,2
+Great deal and awesome service by Flipkart,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.379, 'pos': 0.621, 'compound': 0.8481}",0.8481,2,7
+Loved it,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.204, 'pos': 0.796, 'compound': 0.5994}",0.5994,2,2
+worth buying,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.345, 'pos': 0.655, 'compound': 0.2263}",0.2263,2,2
+Not good,2.0,2,0,1,,Negative,"{'neg': 0.706, 'neu': 0.294, 'pos': 0.0, 'compound': -0.3412}",-0.3412,0,2
+Easy to Use,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.408, 'pos': 0.592, 'compound': 0.4404}",0.4404,2,3
+Poor Signal,3.0,2,0,1,,Negative,"{'neg': 0.756, 'neu': 0.244, 'pos': 0.0, 'compound': -0.4767}",-0.4767,0,2
+"एकदम झकास, भारी आहे!",5.0,4,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+"Good One, Needs more improvement",4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.326, 'pos': 0.674, 'compound': 0.7346}",0.7346,2,5
+Best microwave oven,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.323, 'pos': 0.677, 'compound': 0.6369}",0.6369,2,3
+Paisa wasool product! Mast aahe. ❤️,5.0,6,0,0,❤,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+It's simple and superb.,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.423, 'pos': 0.577, 'compound': 0.6249}",0.6249,2,4
+Far Better Juicer in comparison to other,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.674, 'pos': 0.326, 'compound': 0.4404}",0.4404,2,7
+Bad delivery person,3.0,3,0,1,,Negative,"{'neg': 0.636, 'neu': 0.364, 'pos': 0.0, 'compound': -0.5423}",-0.5423,0,3
+Where i get the service ??,3.0,6,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,6
+"बढ़िया काम कर रहा है, highly recommended for everyone.",5.0,9,0,0,,Positive,"{'neg': 0.0, 'neu': 0.793, 'pos': 0.207, 'compound': 0.2716}",0.2716,2,9
+Good Quality,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+"मजबूत नहीं है, जल्दी खराब हो गया।",1.0,7,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,7
+Hated it!Second hand box received,1.0,5,0,1,,Negative,"{'neg': 0.42, 'neu': 0.281, 'pos': 0.299, 'compound': -0.3164}",-0.3164,0,5
+Go for it !!,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+hidden costs?!,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+"Invoice serial number mismatch issue,apple support rejecting",1.0,7,0,1,,Negative,"{'neg': 0.273, 'neu': 0.364, 'pos': 0.364, 'compound': 0.0}",0.0,0,7
+working good and osm speed nice!!,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.389, 'pos': 0.611, 'compound': 0.7418}",0.7418,2,6
+"Beware, You might get a habits to just ask Assistant",4.0,10,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,10
+Best In Class and Sturdy for Room Decoration.,5.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.625, 'pos': 0.375, 'compound': 0.6369}",0.6369,2,8
+"साधारण सा प्रोडक्ट है, कुछ खास नहीं।",3.0,7,0,0,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,7
+Awesome Product and Good Styling,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.3, 'pos': 0.7, 'compound': 0.7906}",0.7906,2,5
+The worst product I have ever bought! It stopped working after a day and the customer service was terrible. 😡👎,1.0,20,0,0,😡👎,Negative,"{'neg': 0.385, 'neu': 0.615, 'pos': 0.0, 'compound': -0.8553}",-0.8553,0,20
+Buy if you need a small portable wired speaker.,3.0,9,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,9
+Bajaj GX 1 Mixer grinder,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Awesome product with quick delivery,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.494, 'pos': 0.506, 'compound': 0.6249}",0.6249,2,5
+Good Product & Delivery,3.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.408, 'pos': 0.592, 'compound': 0.4404}",0.4404,2,4
+good Item but only for warming the food,3.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.609, 'pos': 0.391, 'compound': 0.431}",0.431,2,8
+New one,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Liked it,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.263, 'pos': 0.737, 'compound': 0.4215}",0.4215,2,2
+Very bad experience 😡 strictly avoid.,1.0,6,0,0,😡,Negative,"{'neg': 0.666, 'neu': 0.334, 'pos': 0.0, 'compound': -0.7178}",-0.7178,0,6
+Compact,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+Good product and delivery,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.508, 'pos': 0.492, 'compound': 0.4404}",0.4404,2,4
+Good!,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.4926}",0.4926,2,1
+Bad quality dishwasher,2.0,3,0,1,,Negative,"{'neg': 0.636, 'neu': 0.364, 'pos': 0.0, 'compound': -0.5423}",-0.5423,0,3
+Looks superb but not good for blocking light,3.0,8,0,1,,Positive,"{'neg': 0.231, 'neu': 0.372, 'pos': 0.396, 'compound': 0.2998}",0.2998,2,8
+Seamless buy & installation,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+"पैसे वाया गेले, अजिबात घेऊ नका.",1.0,6,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,6
+Fine quality,1.0,2,0,1,,Negative,"{'neg': 0.0, 'neu': 0.357, 'pos': 0.643, 'compound': 0.2023}",0.2023,0,2
+Good product in this price,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.58, 'pos': 0.42, 'compound': 0.4404}",0.4404,2,5
+I Love Flipkart,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.192, 'pos': 0.808, 'compound': 0.6369}",0.6369,2,3
+Just wow! Excellent Quality & You Can Blindly Go For It,5.0,11,0,1,,Positive,"{'neg': 0.0, 'neu': 0.507, 'pos': 0.493, 'compound': 0.8313}",0.8313,2,11
+The taste is just wow! 😋✨,5.0,6,0,0,😋✨,Positive,"{'neg': 0.0, 'neu': 0.55, 'pos': 0.45, 'compound': 0.6239}",0.6239,2,6
+if you have wifi at home then go for it,5.0,10,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,10
+Work the money for every penny,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+Value For Money,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.455, 'pos': 0.545, 'compound': 0.34}",0.34,2,3
+Superb Performance for a Week,1.0,5,0,1,,Negative,"{'neg': 0.0, 'neu': 0.423, 'pos': 0.577, 'compound': 0.6249}",0.6249,0,5
+Honest review,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.233, 'pos': 0.767, 'compound': 0.5106}",0.5106,2,2
+Value for Money - Got it in 61k,4.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.714, 'pos': 0.286, 'compound': 0.34}",0.34,2,8
+Hard time following up with Flipkart for the installation and demo of the IFB Microwave,1.0,15,0,1,,Negative,"{'neg': 0.091, 'neu': 0.909, 'pos': 0.0, 'compound': -0.1027}",-0.1027,0,15
+Nice Product by Singer,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.517, 'pos': 0.483, 'compound': 0.4215}",0.4215,2,4
+Don't waste your money...worst product,1.0,5,0,1,,Negative,"{'neg': 0.0, 'neu': 0.632, 'pos': 0.368, 'compound': 0.3252}",0.3252,0,5
+very bad!!!,2.0,2,0,1,,Negative,"{'neg': 0.824, 'neu': 0.176, 'pos': 0.0, 'compound': -0.6877}",-0.6877,0,2
+"product quality accha hai, paisa vasool! 😍",5.0,7,0,0,😍,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+dont waste your money,2.0,4,0,1,,Negative,"{'neg': 0.0, 'neu': 0.563, 'pos': 0.437, 'compound': 0.3252}",0.3252,0,4
+HP Black 678,1.0,3,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,3
+Very Good Protect!!! Must Buy!,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.293, 'pos': 0.707, 'compound': 0.8041}",0.8041,2,5
+Mi tv,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Good machine but their outsourced service will cheat you,4.0,9,0,1,,Positive,"{'neg': 0.309, 'neu': 0.541, 'pos': 0.151, 'compound': -0.4678}",-0.4678,2,9
+Best router avaiable,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.323, 'pos': 0.677, 'compound': 0.6369}",0.6369,2,3
+GREAT BALL,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+Ff,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.4215}",0.4215,2,1
+Nice Juicer for Health concise people,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.641, 'pos': 0.359, 'compound': 0.4215}",0.4215,2,6
+Never purchase from RBStore Seller,1.0,5,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,5
+Worth the money review on first use,4.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.759, 'pos': 0.241, 'compound': 0.2263}",0.2263,2,7
+Pretty cool product,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.154, 'pos': 0.846, 'compound': 0.6705}",0.6705,2,3
+Very good product with this price,4.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.61, 'pos': 0.39, 'compound': 0.4927}",0.4927,2,6
+A product that put a smile on my face,5.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 0.706, 'pos': 0.294, 'compound': 0.3612}",0.3612,2,9
+Highly recommended. Must Buy.,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.589, 'pos': 0.411, 'compound': 0.2716}",0.2716,2,4
+Good for its price!,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.484, 'pos': 0.516, 'compound': 0.4926}",0.4926,2,4
+Buy and Enjoy...,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+Supar,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+Greate Microwave Form IFB ! Go For It !,5.0,9,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,9
+Waste of money- bad sound bad mic,1.0,7,0,1,,Negative,"{'neg': 0.71, 'neu': 0.29, 'pos': 0.0, 'compound': -0.8689}",-0.8689,0,7
+Good for 20W or below requirement,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.633, 'pos': 0.367, 'compound': 0.4404}",0.4404,2,6
+Simply awesome.value for money Product,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Very bad quality. In just 1 month the inverter is dead,1.0,11,0,1,,Negative,"{'neg': 0.503, 'neu': 0.497, 'pos': 0.0, 'compound': -0.8439}",-0.8439,0,11
+Five Stars,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Cartridge delivered .. superfast and well packed.,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.741, 'pos': 0.259, 'compound': 0.2732}",0.2732,2,7
+Go fot it :),5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.5, 'pos': 0.5, 'compound': 0.4588}",0.4588,2,4
+Worst camera,2.0,2,0,1,,Negative,"{'neg': 0.804, 'neu': 0.196, 'pos': 0.0, 'compound': -0.6249}",-0.6249,0,2
+product is not working..,1.0,4,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,4
+Good in budget,3.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.408, 'pos': 0.592, 'compound': 0.4404}",0.4404,2,3
+The ball is NO good! NOT RECOMMENDED,1.0,7,0,1,,Negative,"{'neg': 0.437, 'neu': 0.326, 'pos': 0.237, 'compound': -0.3526}",-0.3526,0,7
+Inalsa Food Processor,1.0,3,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,3
+Great Microwave,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+Must buy!,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Awesome design and easy to use and clean,5.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.34, 'pos': 0.66, 'compound': 0.8658}",0.8658,2,8
+Stopped working in 4 months,1.0,5,0,1,,Negative,"{'neg': 0.388, 'neu': 0.612, 'pos': 0.0, 'compound': -0.2263}",-0.2263,0,5
+Wow ! Excellent demo by Singer in person even in COVID times,5.0,12,0,1,,Positive,"{'neg': 0.0, 'neu': 0.536, 'pos': 0.464, 'compound': 0.8313}",0.8313,2,12
+Good Performance,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Very Good Product,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.385, 'pos': 0.615, 'compound': 0.4927}",0.4927,2,3
+"Brilliant device with a decent price if you are using any cable BROADBAND(tikona,local cable broadband that do not require a telephone line)",5.0,22,0,1,,Positive,"{'neg': 0.0, 'neu': 0.833, 'pos': 0.167, 'compound': 0.5859}",0.5859,2,22
+Nice (do give discount sometime please),5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.641, 'pos': 0.359, 'compound': 0.4215}",0.4215,2,6
+convinient product,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+A quality product,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+super product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.204, 'pos': 0.796, 'compound': 0.5994}",0.5994,2,2
+Product Worth Buying,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.513, 'pos': 0.487, 'compound': 0.2263}",0.2263,2,3
+Wonderful Product and Super Saver,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.283, 'pos': 0.717, 'compound': 0.8225}",0.8225,2,5
+Super!  Melodious and Crisp Sound,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.488, 'pos': 0.512, 'compound': 0.636}",0.636,2,5
+awesome for the price,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.423, 'pos': 0.577, 'compound': 0.6249}",0.6249,2,4
+Just an ordinary item 🤷‍♂️,3.0,5,0,0,🤷♂,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,5
+Horrible brand.. panel gone in 18 months,1.0,7,0,1,,Negative,"{'neg': 0.368, 'neu': 0.632, 'pos': 0.0, 'compound': -0.5423}",-0.5423,0,7
+The worst product I have ever bought! It stopped working after a day and the customer service was terrible. 😡👎,1.0,20,0,0,😡👎,Negative,"{'neg': 0.385, 'neu': 0.615, 'pos': 0.0, 'compound': -0.8553}",-0.8553,0,20
+Amazing performance,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.208, 'pos': 0.792, 'compound': 0.5859}",0.5859,2,2
+Really Nice Product,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.393, 'pos': 0.607, 'compound': 0.4754}",0.4754,2,3
+"Flipkart, As good as always",5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.58, 'pos': 0.42, 'compound': 0.4404}",0.4404,2,5
+superb,4.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.6249}",0.6249,2,1
+So so product,3.0,3,0,1,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,3
+BAJAJ Applicance,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+"Butterful Rapid Mixer - Just OK product, not excellent !",3.0,10,0,1,,Negative,"{'neg': 0.269, 'neu': 0.491, 'pos': 0.24, 'compound': -0.0918}",-0.0918,0,10
+Very good product at reasonable price,4.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.61, 'pos': 0.39, 'compound': 0.4927}",0.4927,2,6
+good working,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Must  kitchen gadget,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,3
+Excellent Product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.213, 'pos': 0.787, 'compound': 0.5719}",0.5719,2,2
+Top notch product with Genuine price.,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.735, 'pos': 0.265, 'compound': 0.2023}",0.2023,2,6
+The Power of Livpure Pep Pro+ technology is Most innovative,5.0,10,0,1,,Positive,"{'neg': 0.0, 'neu': 0.738, 'pos': 0.262, 'compound': 0.4927}",0.4927,2,10
+Best water purifier in this price range,4.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.588, 'pos': 0.412, 'compound': 0.6369}",0.6369,2,7
+Unsatisfactory,1.0,1,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,1
+Absolute Rubbish!,1.0,2,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,2
+Express delivery in 1 day,4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+"काम ठीक से नहीं कर रहा, टाइम वेस्ट है।",1.0,9,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,9
+Bad Product with Poor quality materials,2.0,6,0,1,,Negative,"{'neg': 0.623, 'neu': 0.377, 'pos': 0.0, 'compound': -0.765}",-0.765,0,6
+कव्हरेज चांगलं नाहीये शहरात सुद्धा.,2.0,5,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,5
+Good product.,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Awesome Thermostat Water Bottle with longer capability,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.594, 'pos': 0.406, 'compound': 0.6249}",0.6249,2,7
+चांगलं आहे पण टिकेल का माहित नाही.,3.0,7,0,0,,Neutral,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,1,7
+Amazing product!,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6239}",0.6239,2,2
+Recommended product,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.357, 'pos': 0.643, 'compound': 0.2023}",0.2023,2,2
+Wonderful,4.0,1,0,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.5719}",0.5719,2,1
+Great Product worth the price tag.,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.4, 'pos': 0.6, 'compound': 0.7184}",0.7184,2,6
+Must buy! If planning to buy,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+Good worth it,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.172, 'pos': 0.828, 'compound': 0.5859}",0.5859,2,3
+"मस्त प्रॉडक्ट आहे, आवडला! ❤️",5.0,5,0,0,❤,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,5
+Cost effective and great quality prints,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 0.357, 'pos': 0.643, 'compound': 0.802}",0.802,2,6
+30+ hrs to charge 150 AH battery,1.0,7,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,7
+Worth the money,4.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.513, 'pos': 0.487, 'compound': 0.2263}",0.2263,2,3
+best ball,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.192, 'pos': 0.808, 'compound': 0.6369}",0.6369,2,2
+So convenient,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+It's good to have one like this !,4.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.468, 'pos': 0.532, 'compound': 0.69}",0.69,2,8
+"Worst quality, waste of money 🤮👎",1.0,6,0,0,🤮👎,Negative,"{'neg': 0.633, 'neu': 0.367, 'pos': 0.0, 'compound': -0.7845}",-0.7845,0,6
+Good so far,1.0,3,0,1,,Negative,"{'neg': 0.0, 'neu': 0.408, 'pos': 0.592, 'compound': 0.4404}",0.4404,0,3
+"लुक बहुत प्रीमियम है, क्लासी लगता है।",5.0,7,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,7
+Excellent product for Indian cooking,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.519, 'pos': 0.481, 'compound': 0.5719}",0.5719,2,5
+beyond satisfactory,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 0.286, 'pos': 0.714, 'compound': 0.3612}",0.3612,2,2
+"good oven, got it at discounted price..",5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.549, 'pos': 0.451, 'compound': 0.4767}",0.4767,2,7
+AwesomeNice,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+Kitchen mate,4.0,2,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+But only if you want a terrible installation experience,3.0,9,0,1,,Negative,"{'neg': 0.358, 'neu': 0.517, 'pos': 0.125, 'compound': -0.5719}",-0.5719,0,9
+hoping for the best,4.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.222, 'pos': 0.778, 'compound': 0.7906}",0.7906,2,4
+Monstrous performance @ budget,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,4
+Never you can miss!,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.633, 'pos': 0.367, 'compound': 0.1867}",0.1867,2,4
+Really recommended and works great.,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.326, 'pos': 0.674, 'compound': 0.7346}",0.7346,2,5
+IFB SX1 Nice product,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.517, 'pos': 0.483, 'compound': 0.4215}",0.4215,2,4
+Did not meet expectations,1.0,4,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,4
+बॅटरी बॅकअप खूप कमी आहे.,2.0,5,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,5
+Issa vibe,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,2
+Fantastic.....,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,1
+SAMSUNG 23 L Solo Microwave Oven,4.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+great buy,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.196, 'pos': 0.804, 'compound': 0.6249}",0.6249,2,2
+Good performance,5.0,2,1,1,,Positive,"{'neg': 0.0, 'neu': 0.256, 'pos': 0.744, 'compound': 0.4404}",0.4404,2,2
+Best buy for 500,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.417, 'pos': 0.583, 'compound': 0.6369}",0.6369,2,4
+Not Expected This Product,1.0,4,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,4
+terrible product,1.0,2,0,1,,Negative,"{'neg': 0.756, 'neu': 0.244, 'pos': 0.0, 'compound': -0.4767}",-0.4767,0,2
+Recommended,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.2023}",0.2023,2,1
+"साइज मध्ये प्रॉब्लेम आहे, खूप लहान आहे.",2.0,7,0,0,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,7
+Good alternative to Fire Tv stick,4.0,6,0,1,,Positive,"{'neg': 0.258, 'neu': 0.43, 'pos': 0.312, 'compound': 0.128}",0.128,2,6
+Product not working,1.0,3,0,1,,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,3
+Best in the class,5.0,4,0,1,,Positive,"{'neg': 0.0, 'neu': 0.417, 'pos': 0.583, 'compound': 0.6369}",0.6369,2,4
+कलर एकदम सही है जैसा मुझे चाहिए था।,5.0,8,0,0,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,8
+Best in the market!  - Superb - purifier!!!!,5.0,8,0,1,,Positive,"{'neg': 0.0, 'neu': 0.297, 'pos': 0.703, 'compound': 0.8877}",0.8877,2,8
+ULTIMATE COOLER AT THIS PRICE RANGE,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+"Wife's Pride, Maid's Envy !!",5.0,5,0,1,,Positive,"{'neg': 0.26, 'neu': 0.371, 'pos': 0.369, 'compound': 0.2225}",0.2225,2,5
+Bajaj FX7 600 W Food Processor,5.0,6,0,1,,Positive,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,2,6
+good product with reasonable price.,5.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.58, 'pos': 0.42, 'compound': 0.4404}",0.4404,2,5
+great bluetooth speakers,5.0,3,0,1,,Positive,"{'neg': 0.0, 'neu': 0.328, 'pos': 0.672, 'compound': 0.6249}",0.6249,2,3
+Awesome!!,5.0,1,1,1,,Positive,"{'neg': 0.0, 'neu': 0.0, 'pos': 1.0, 'compound': 0.6892}",0.6892,2,1
+a good product but switch gets stuck most of the time !!!!!!!!,4.0,12,0,1,,Positive,"{'neg': 0.251, 'neu': 0.616, 'pos': 0.133, 'compound': -0.4055}",-0.4055,2,12
+"पैसे वाया गेले, घेऊ नका. 👎",1.0,6,0,0,👎,Negative,"{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}",0.0,0,6
+One of the best buy from FLIPKART,5.0,7,0,1,,Positive,"{'neg': 0.0, 'neu': 0.588, 'pos': 0.412, 'compound': 0.6369}",0.6369,2,7
+"Really Nice, value for money",4.0,5,0,1,,Positive,"{'neg': 0.0, 'neu': 0.342, 'pos': 0.658, 'compound': 0.6976}",0.6976,2,5
