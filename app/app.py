@@ -16,10 +16,11 @@ st.title("🏛️ Enterprise Intelligence: Multilingual Sentiment Dashboard")
 @st.cache_resource
 def load_assets():
     try:
-        df = pd.read_csv('../data/final_insights_multilingual.csv', encoding='utf-8-sig')
-        metadata = pd.read_csv('../data/correctedMetadata.csv')
-        model = joblib.load('../models/sentiment_model.pkl')
-        vectorizer = joblib.load('../models/tfidf_vectorizer.pkl')
+        # '..' ऐवजी पूर्ण पाथ किंवा योग्य रिलेटिव्ह पाथ द्या
+        df = pd.read_csv('data/final_insights_multilingual.csv', encoding='utf-8-sig')
+        metadata = pd.read_csv('data/correctedMetadata.csv')
+        model = joblib.load('models/sentiment_model.pkl')
+        vectorizer = joblib.load('models/tfidf_vectorizer.pkl')
         return df, metadata, model, vectorizer
     except Exception as e:
         st.error(f"Error loading files: {e}")
