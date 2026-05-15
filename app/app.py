@@ -16,6 +16,7 @@ st.title("🏛️ Enterprise Intelligence: Multilingual Sentiment Dashboard")
 @st.cache_resource
 def load_assets():
     try:
+        # Path for Streamlit Cloud 
         df = pd.read_csv('data/final_insights_multilingual.csv', encoding='utf-8-sig')
         metadata = pd.read_csv('data/correctedMetadata.csv')
         model = joblib.load('models/sentiment_model.pkl')
@@ -74,15 +75,34 @@ def draw_gauge(score):
     return fig
 
 # 4. Sidebar Control Panel
-st.sidebar.title("🛠️ Business Intelligence Control Panel")
-search_term = st.sidebar.text_input("🔍 Search Keyword (e.g. 'good', 'मस्त'):")
+st.sidebar.title("🛠️ BI Control Panel")
+search_term = st.sidebar.text_input("🔍 Search Keyword (e.g. 'good', 'bad','मस्त','अच्छा'):")
+
+# --- Empty States Logic (Filtering Data) ---
+filtered_df = df.copy()
+is_data_empty = False
 
 if search_term:
-    df = df[df['review_text'].str.contains(search_term, case=False, na=False)]
+    filtered_df = df[df['review_text'].str.contains(search_term, case=False, na=False)]
+    if filtered_df.empty:
+        st.sidebar.warning(f"'{search_term}' Data not found.")
+        is_data_empty = True
+
+# --- Sidebar About Section ---
+st.sidebar.divider()
+with st.sidebar.expander("ℹ️ About This Project"):
+    st.write("""
+    **Product Sentiment BI Tool**
+    ही एक प्रगत AI सिस्टीम आहे जी ग्राहकांच्या रिव्ह्यूचे विश्लेषण करते.
+    
+    * **Features:** Multilingual support, Intent detection, Data integrity.
+    * **Developer:** Vaishnavi Giri
+    * **Tech:** NLP, Python, Streamlit
+    """)
 
 st.sidebar.divider()
 st.sidebar.subheader("📥 Export Reports")
-csv_report = df.to_csv(index=False).encode('utf-8-sig')
+csv_report = filtered_df.to_csv(index=False).encode('utf-8-sig')
 st.sidebar.download_button("Download Full Report", csv_report, "bi_sentiment_analysis.csv", "text/csv")
 
 # 5. Dashboard Tabs
@@ -96,24 +116,24 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
 
 # --- TAB 1: Performance Trends ---
 with tab1:
-    if not df.empty:
+    if not is_data_empty:
         col_a, col_b = st.columns([1, 2])
         with col_a:
-            pos_rate = (df['sentiment'] == 'Positive').mean() * 100
+            pos_rate = (filtered_df['sentiment'] == 'Positive').mean() * 100
             st.plotly_chart(draw_gauge(pos_rate), use_container_width=True)
         
         with col_b:
             st.subheader("Market Sentiment by Language")
-            lang_sent_table = pd.crosstab(df['detected_lang'], df['sentiment'])
+            lang_sent_table = pd.crosstab(filtered_df['detected_lang'], filtered_df['sentiment'])
             st.bar_chart(lang_sent_table)
 
         st.divider()
         st.subheader("🔥 Rating-Sentiment Density Heatmap")
         fig_heat, ax_heat = plt.subplots(figsize=(8, 4))
-        sns.heatmap(pd.crosstab(df['rating'], df['sentiment']), annot=True, fmt='d', cmap='YlGnBu', ax=ax_heat)
+        sns.heatmap(pd.crosstab(filtered_df['rating'], filtered_df['sentiment']), annot=True, fmt='d', cmap='YlGnBu', ax=ax_heat)
         st.pyplot(fig_heat)
     else:
-        st.warning("No data matches your current search.")
+        st.info("🔍 Filtered data not found. Please try a different keyword.")
 
 # --- TAB 2: Live AI Predictor ---
 with tab2:
@@ -135,98 +155,97 @@ with tab2:
         else:
             st.info("Please enter text for analysis.")
 
-# --- TAB 3: Integrity & Emotions (Business Focused) ---
+# --- TAB 3: Integrity & Emotions ---
 with tab3:
-    col_integrity, col_emotions = st.columns(2)
-    
-    with col_integrity:
-        st.subheader("🕵️ Integrity & Trust Analysis")
-        # 1. Fake vs Real Pie Chart
-        if 'is_fake' in df.columns and not df.empty:
-            counts = df['is_fake'].value_counts()
-            fig_p, ax_p = plt.subplots(figsize=(5,5))
-            # labels based on index: 0 for Real, 1 for Fake
-            l = [('Genuine' if i == 0 else 'Suspicious') for i in counts.index]
-            counts.plot.pie(labels=l, autopct='%1.1f%%', colors=['#2E7D32','#C62828'], ax=ax_p, startangle=90)
-            ax_p.set_ylabel('')
-            st.pyplot(fig_p)
+    if not is_data_empty:
+        col_integrity, col_emotions = st.columns(2)
         
-        st.divider()
-        # 2. Sincerity Score
-        st.write("**🎯 Feedback Depth (Sincerity)**")
-        def check_sincerity(text):
-            words = len(str(text).split())
-            return "Detailed" if words > 5 else "Brief"
-        
-        df['sincerity'] = df['review_text'].apply(check_sincerity)
-        sincerity_stats = df['sincerity'].value_counts()
-        st.bar_chart(sincerity_stats)
-        st.caption("Detailed reviews often indicate more engaged customers, while brief ones may suggest superficial feedback.")
-
-    with col_emotions:
-        st.subheader("🎭 Emotional Insights")
-        # 1. Emoji Analysis
-        def find_emojis(t): return [char for char in str(t) if char in emoji.EMOJI_DATA]
-        emoji_list = df['review_text'].apply(find_emojis).sum()
-        top_e = Counter(emoji_list).most_common(10)
-        
-        if top_e:
-            st.write("**Top Visual Emotions (Emojis):**")
-            st.table(pd.DataFrame(top_e, columns=['Emoji', 'Frequency']))
-        
-        st.divider()
-        # 2. Sentiment Intensity
-        st.write("**🔥 Sentiment Intensity Level**")
-        # intensity on the basis of rating: 1 & 5 are strong, 2-4 are moderate
-        def get_intensity(row):
-            if row['rating'] in [1, 5]: return "Strong"
-            else: return "Moderate"
+        with col_integrity:
+            st.subheader("🕵️ Integrity & Trust Analysis")
+            if 'is_fake' in filtered_df.columns:
+                counts = filtered_df['is_fake'].value_counts()
+                fig_p, ax_p = plt.subplots(figsize=(5,5))
+                l = [('Genuine' if i == 0 else 'Suspicious') for i in counts.index]
+                counts.plot.pie(labels=l, autopct='%1.1f%%', colors=['#2E7D32','#C62828'], ax=ax_p, startangle=90)
+                ax_p.set_ylabel('')
+                st.pyplot(fig_p)
             
-        df['intensity'] = df.apply(get_intensity, axis=1)
-        intensity_plot = pd.crosstab(df['sentiment'], df['intensity'])
-        st.bar_chart(intensity_plot)
-        st.caption("Strong Intensity means customers have very strong opinions about your product.")
+            st.divider()
+            st.write("**🎯 Feedback Depth (Sincerity)**")
+            def check_sincerity(text):
+                words = len(str(text).split())
+                return "Detailed" if words > 5 else "Brief"
+            
+            filtered_df['sincerity'] = filtered_df['review_text'].apply(check_sincerity)
+            sincerity_stats = filtered_df['sincerity'].value_counts()
+            st.bar_chart(sincerity_stats)
+
+        with col_emotions:
+            st.subheader("🎭 Emotional Insights")
+            def find_emojis(t): return [char for char in str(t) if char in emoji.EMOJI_DATA]
+            emoji_list = filtered_df['review_text'].apply(find_emojis).sum()
+            top_e = Counter(emoji_list).most_common(10)
+            
+            if top_e:
+                st.write("**Top Visual Emotions (Emojis):**")
+                st.table(pd.DataFrame(top_e, columns=['Emoji', 'Frequency']))
+            
+            st.divider()
+            st.write("**🔥 Sentiment Intensity Level**")
+            def get_intensity(row):
+                return "Strong" if row['rating'] in [1, 5] else "Moderate"
+                
+            filtered_df['intensity'] = filtered_df.apply(get_intensity, axis=1)
+            intensity_plot = pd.crosstab(filtered_df['sentiment'], filtered_df['intensity'])
+            st.bar_chart(intensity_plot)
+    else:
+        st.info("Data not available for emotional analysis.")
 
 # --- TAB 4: Custom Filters ---
 with tab4:
     st.subheader("🎯 Deep Dive Explorer")
-    if not df.empty:
+    if not is_data_empty:
         f_col1, f_col2 = st.columns(2)
         with f_col1:
-            sel_lang = st.multiselect("Language Filter:", df['detected_lang'].unique(), default=df['detected_lang'].unique())
+            sel_lang = st.multiselect("Language Filter:", filtered_df['detected_lang'].unique(), default=filtered_df['detected_lang'].unique())
         with f_col2:
-            sel_sent = st.multiselect("Sentiment Filter:", df['sentiment'].unique(), default=df['sentiment'].unique())
+            sel_sent = st.multiselect("Sentiment Filter:", filtered_df['sentiment'].unique(), default=filtered_df['sentiment'].unique())
         
-        final_view = df[(df['detected_lang'].isin(sel_lang)) & (df['sentiment'].isin(sel_sent))]
+        final_view = filtered_df[(filtered_df['detected_lang'].isin(sel_lang)) & (filtered_df['sentiment'].isin(sel_sent))]
         st.dataframe(final_view[['review_text', 'detected_lang', 'sentiment', 'rating']], use_container_width=True)
 
-# --- TAB 5: Strategic Business Insights (New Feature) ---
+# --- TAB 5: Strategic Insights ---
 with tab5:
-    st.subheader("🔦 Identifying Business Pain-Points")
-    df['intent'] = df['review_text'].apply(detect_intent)
-    
-    col_ins1, col_ins2 = st.columns(2)
-    
-    with col_ins1:
-        st.write("**Top Concerns (Negative Intents)**")
-        neg_intents = df[df['sentiment'] == 'Negative']['intent'].value_counts()
-        if not neg_intents.empty:
-            st.bar_chart(neg_intents)
-        else:
-            st.success("No negative trends found in current data!")
+    if not is_data_empty:
+        st.subheader("🔦 Identifying Business Pain-Points")
+        filtered_df['intent'] = filtered_df['review_text'].apply(detect_intent)
+        
+        col_ins1, col_ins2 = st.columns(2)
+        
+        with col_ins1:
+            st.write("**Top Concerns (Negative Intents)**")
+            neg_intents = filtered_df[filtered_df['sentiment'] == 'Negative']['intent'].value_counts()
+            if not neg_intents.empty:
+                st.bar_chart(neg_intents)
+            else:
+                st.success("No negative trends found in current data!")
 
-    with col_ins2:
-        st.write("**Intent Distribution Heatmap**")
-        intent_sent = pd.crosstab(df['intent'], df['sentiment'])
-        st.write(intent_analysis := intent_sent.style.background_gradient(cmap='YlOrRd'))
-    
-    st.divider()
-    st.write("**📝 Business Strategy Recommendations:**")
-    if pos_rate < 60:
-        st.error("🚨 **Immediate Attention:** customers are not satisfied. Please review the 'Quality' and 'Logistics' departments.")
-    elif len(df[df['intent'] == "🚚 Logistics"]) > len(df) * 0.2:
-        st.warning("⚠️ **Logistics Warning:** delivery complaints are increasing. Consider changing supply chain partners or improving tracking.")
+        with col_ins2:
+            st.write("**Intent Distribution Heatmap**")
+            intent_sent = pd.crosstab(filtered_df['intent'], filtered_df['sentiment'])
+            st.write(intent_sent.style.background_gradient(cmap='YlOrRd'))
+        
+        st.divider()
+        st.write("**📝 Business Strategy Recommendations:**")
+        cur_pos_rate = (filtered_df['sentiment'] == 'Positive').mean() * 100
+        if cur_pos_rate < 60:
+            st.error("🚨 **Immediate Attention:** customers are not satisfied. 'Quality' and 'Logistics' departments need attention.")
+        elif len(filtered_df[filtered_df['intent'] == "🚚 Logistics"]) > len(filtered_df) * 0.2:
+            st.warning("⚠️ **Logistics Warning:** Delivery complaints are increasing. Improve the supply chain.")
+        else:
+            st.success("✅ **Market Leader Potential:** Your product is performing well.")
     else:
-        st.success("✅ **Market Leader Potential:** your product is performing well. Invest in new features and marketing.")
+        st.info("Data not available for strategic analysis.")
+
 st.sidebar.markdown("---")
 st.sidebar.caption("Enterprise AI Engine | Status: Online 🟢")
