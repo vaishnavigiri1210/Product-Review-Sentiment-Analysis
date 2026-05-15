@@ -8,7 +8,6 @@ scikit-learn
 streamlit
 transformers
 torch
-streamlit
 joblib
 plotly
 langdetect
