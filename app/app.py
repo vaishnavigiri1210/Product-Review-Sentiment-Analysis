@@ -16,7 +16,6 @@ st.title("🏛️ Enterprise Intelligence: Multilingual Sentiment Dashboard")
 @st.cache_resource
 def load_assets():
     try:
-        # '..' ऐवजी पूर्ण पाथ किंवा योग्य रिलेटिव्ह पाथ द्या
         df = pd.read_csv('data/final_insights_multilingual.csv', encoding='utf-8-sig')
         metadata = pd.read_csv('data/correctedMetadata.csv')
         model = joblib.load('models/sentiment_model.pkl')
@@ -92,7 +91,7 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "🤖 AI Predictor", 
     "🕵️ Integrity & Emotions", 
     "🎯 Advanced Filters",
-    "💡 Strategic Insights" # नवीन विभाग
+    "💡 Strategic Insights"
 ])
 
 # --- TAB 1: Performance Trends ---
@@ -153,7 +152,7 @@ with tab3:
             st.pyplot(fig_p)
         
         st.divider()
-        # 2. Sincerity Score (नवीन फिचर)
+        # 2. Sincerity Score
         st.write("**🎯 Feedback Depth (Sincerity)**")
         def check_sincerity(text):
             words = len(str(text).split())
@@ -162,7 +161,7 @@ with tab3:
         df['sincerity'] = df['review_text'].apply(check_sincerity)
         sincerity_stats = df['sincerity'].value_counts()
         st.bar_chart(sincerity_stats)
-        st.caption("Detailed रिव्ह्यू जास्त असणे हे ग्राहकांच्या विश्वासाचे लक्षण आहे.")
+        st.caption("Detailed reviews often indicate more engaged customers, while brief ones may suggest superficial feedback.")
 
     with col_emotions:
         st.subheader("🎭 Emotional Insights")
@@ -176,9 +175,9 @@ with tab3:
             st.table(pd.DataFrame(top_e, columns=['Emoji', 'Frequency']))
         
         st.divider()
-        # 2. Sentiment Intensity (नवीन फिचर)
+        # 2. Sentiment Intensity
         st.write("**🔥 Sentiment Intensity Level**")
-        # रेटिंगच्या आधारावर तीव्रता मोजणे
+        # intensity on the basis of rating: 1 & 5 are strong, 2-4 are moderate
         def get_intensity(row):
             if row['rating'] in [1, 5]: return "Strong"
             else: return "Moderate"
@@ -186,7 +185,7 @@ with tab3:
         df['intensity'] = df.apply(get_intensity, axis=1)
         intensity_plot = pd.crosstab(df['sentiment'], df['intensity'])
         st.bar_chart(intensity_plot)
-        st.caption("Strong Intensity म्हणजे ग्राहक तुमच्या प्रॉडक्टबद्दल अत्यंत ठाम मत मांडत आहे.")
+        st.caption("Strong Intensity means customers have very strong opinions about your product.")
 
 # --- TAB 4: Custom Filters ---
 with tab4:
@@ -224,11 +223,10 @@ with tab5:
     st.divider()
     st.write("**📝 Business Strategy Recommendations:**")
     if pos_rate < 60:
-        st.error("🚨 **Immediate Attention:** ग्राहकांचे समाधान कमी आहे. 'Quality' आणि 'Logistics' विभागांची तातडीने तपासणी करा.")
+        st.error("🚨 **Immediate Attention:** customers are not satisfied. Please review the 'Quality' and 'Logistics' departments.")
     elif len(df[df['intent'] == "🚚 Logistics"]) > len(df) * 0.2:
-        st.warning("⚠️ **Logistics Warning:** डिलिव्हरीबद्दल तक्रारी वाढत आहेत. सप्लाय चेन पार्टनर्स बदला किंवा ट्रॅकिंग सुधारा.")
+        st.warning("⚠️ **Logistics Warning:** delivery complaints are increasing. Consider changing supply chain partners or improving tracking.")
     else:
-        st.success("✅ **Market Leader Potential:** तुमचे प्रॉडक्ट चांगले परफॉर्म करत आहे. नवीन फीचर्स आणि मार्केटिंगवर भर द्या.")
-
+        st.success("✅ **Market Leader Potential:** your product is performing well. Invest in new features and marketing.")
 st.sidebar.markdown("---")
 st.sidebar.caption("Enterprise AI Engine | Status: Online 🟢")
