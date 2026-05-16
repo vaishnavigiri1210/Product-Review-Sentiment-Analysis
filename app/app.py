@@ -45,7 +45,7 @@ if df is None:
 # ==========================================
 # 2. PUBLIC GOOGLE SHEET STORAGE SYSTEM (NO SECRETS REQUIRED)
 # ==========================================
-# ⚠️ खालील लिंकच्या ठिकाणी तुझ्या स्वतःच्या गुगल शीटची "Anyone with the link can edit" केलेली लिंक टाक!
+
 GSHEET_URL = "https://docs.google.com/spreadsheets/d/1wts27e8aBcAjq91u6is7jP11Q95rmXuyOoW0i4Tu9fI/edit?usp=sharing"
 def save_review_to_gsheet(review, sentiment, intent, language):
     try:
