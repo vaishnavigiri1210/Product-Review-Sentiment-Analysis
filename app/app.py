@@ -6,9 +6,9 @@ import seaborn as sns   # For advanced visualizations
 import plotly.graph_objects as go       # For interactive charts
 import emoji        # For emoji analysis
 import os           # For file path handling
-import re           # Optimized intent detection साठी Regex
+import re           # Optimized intent detection for Regex
 import gspread      # Google Sheets connection
-from datetime import datetime           # तारीख आणि वेळ सेव्ह करण्यासाठी
+from datetime import datetime           # data and time handling
 from collections import Counter         # For counting emojis
 from langdetect import detect, detect_langs     # For language detection             
 from streamlit_mic_recorder import speech_to_text       # For mic input in Streamlit
@@ -48,13 +48,12 @@ if df is None:
 # ⚠️ खालील लिंकच्या ठिकाणी तुझ्या स्वतःच्या गुगल शीटची "Anyone with the link can edit" केलेली लिंक टाक!
 GSHEET_URL = "https://docs.google.com/spreadsheets/d/1wts27e8aBcAjq91u6is7jP11Q95rmXuyOoW0i4Tu9fI/edit?usp=sharing"
 def save_review_to_gsheet(review, sentiment, intent, language):
-    """सार्वजनिक गुगल शीटमध्ये डेटा थेट इंटरनेटवरून सेव्ह करणे (डिप्लॉयमेंटसाठी १००% परफेक्ट)"""
     try:
-        # विना क्रेडेंशियल्स एडिट लिंकद्वारे कनेक्ट करणे
+        # without gspread.public_link, we can directly access the sheet without needing credentials, as long as the sheet is set to "Anyone with the link can edit"
         gc = gspread.public_link(GSHEET_URL) if hasattr(gspread, 'public_link') else gspread.open_by_url(GSHEET_URL)
         sheet = gc.sheet1
         
-        # शीट रिकामा असेल तर हेडर टाकणे
+        # sheet is empty, so add header row first
         if not sheet.get_all_values():
             sheet.append_row(["Timestamp", "Review Text", "Sentiment", "Intent", "Language"])
             
@@ -62,7 +61,7 @@ def save_review_to_gsheet(review, sentiment, intent, language):
         sheet.append_row([current_time, review, sentiment, intent, language])
         return True
     except:
-        # जर वरील पद्धत फेल झाली, तर बॅकअप म्हणून फक्त चालू सेशनमध्ये सेव्ह ठेवणे
+        # if there's an error (e.g. sheet not found, quota exceeded), fallback to session state backup
         if "backup_list" not in st.session_state:
             st.session_state.backup_list = []
         current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -70,7 +69,8 @@ def save_review_to_gsheet(review, sentiment, intent, language):
         return False
 
 def load_live_logs():
-    """गुगल शीट किंवा बॅकअपमधून डेटा वाचून डॅशボードवर दाखवणे"""
+    """from google sheet data load and return as dataframe. 
+    If error occurs, return backup data from session state."""
     try:
         gc = gspread.open_by_url(GSHEET_URL)
         sheet = gc.sheet1
