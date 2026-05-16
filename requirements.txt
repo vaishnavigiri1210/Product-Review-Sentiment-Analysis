@@ -11,3 +11,5 @@ torch
 joblib
 plotly
 langdetect
+streamlit-mic-recorder
+speechrecognition
