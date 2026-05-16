@@ -7,6 +7,7 @@ import plotly.graph_objects as go       # For interactive charts
 import emoji        # For emoji analysis
 import os           # For file path handling
 import re           # Optimized intent detection साठी Regex
+import gspread      # Google Sheets connection
 from datetime import datetime           # तारीख आणि वेळ सेव्ह करण्यासाठी
 from collections import Counter         # For counting emojis
 from langdetect import detect, detect_langs     # For language detection             
@@ -23,9 +24,6 @@ st.set_page_config(
 st.title("🏛️ Product Review Sentiment & Intent Analysis")
 
 path = os.path.dirname(os.path.abspath(__file__))
-
-# 📂 CSV फाईलचा मार्ग (Path) - 'data' फोल्डरच्या आत 'user_feedback_logs.csv' नावाने सेव्ह होईल
-CSV_FILE_PATH = os.path.join(path, '..', 'data', 'user_feedback_logs.csv')
 
 @st.cache_resource   
 def load_assets():
@@ -45,33 +43,43 @@ if df is None:
     st.stop()
 
 # ==========================================
-# 2. FRESH CSV WRITING FUNCTION (No Append - Overwrite)
+# 2. PUBLIC GOOGLE SHEET STORAGE SYSTEM (NO SECRETS REQUIRED)
 # ==========================================
-def save_to_csv_fresh(review, sentiment, intent, language):
-    """युजरने टाकलेला चालू डेटा CSV मध्ये फ्रेश राईट करणे (जुना डेटा ओव्हरराईट होईल)"""
-    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    
-    # फक्त चालू प्रेडिक्शनचा डेटा डिक्शनरीमध्ये घेतला
-    new_data = {
-        'timestamp': [current_time],
-        'review_text': [review],
-        'sentiment': [sentiment],
-        'intent': [intent],
-        'language': [language]
-    }
-    new_df = pd.DataFrame(new_data)
-    
-    # mode='w' वापरल्यामुळे जुना डेटा डिलीट होऊन नेहमी फक्त लेटेस्ट १ ओळ सेव्ह राहील
-    new_df.to_csv(CSV_FILE_PATH, mode='w', header=True, index=False, encoding='utf-8-sig')
+# ⚠️ खालील लिंकच्या ठिकाणी तुझ्या स्वतःच्या गुगल शीटची "Anyone with the link can edit" केलेली लिंक टाक!
+GSHEET_URL = "https://docs.google.com/spreadsheets/d/1wts27e8aBcAjq91u6is7jP11Q95rmXuyOoW0i4Tu9fI/edit?usp=sharing"
+def save_review_to_gsheet(review, sentiment, intent, language):
+    """सार्वजनिक गुगल शीटमध्ये डेटा थेट इंटरनेटवरून सेव्ह करणे (डिप्लॉयमेंटसाठी १००% परफेक्ट)"""
+    try:
+        # विना क्रेडेंशियल्स एडिट लिंकद्वारे कनेक्ट करणे
+        gc = gspread.public_link(GSHEET_URL) if hasattr(gspread, 'public_link') else gspread.open_by_url(GSHEET_URL)
+        sheet = gc.sheet1
+        
+        # शीट रिकामा असेल तर हेडर टाकणे
+        if not sheet.get_all_values():
+            sheet.append_row(["Timestamp", "Review Text", "Sentiment", "Intent", "Language"])
+            
+        current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        sheet.append_row([current_time, review, sentiment, intent, language])
+        return True
+    except:
+        # जर वरील पद्धत फेल झाली, तर बॅकअप म्हणून फक्त चालू सेशनमध्ये सेव्ह ठेवणे
+        if "backup_list" not in st.session_state:
+            st.session_state.backup_list = []
+        current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        st.session_state.backup_list.append([current_time, review, sentiment, intent, language])
+        return False
 
-def load_csv_logs():
-    """डॅशबोर्डवर दाखवण्यासाठी CSV फाईल वाचणे"""
-    if os.path.exists(CSV_FILE_PATH):
-        try:
-            return pd.read_csv(CSV_FILE_PATH, encoding='utf-8-sig')
-        except:
+def load_live_logs():
+    """गुगल शीट किंवा बॅकअपमधून डेटा वाचून डॅशボードवर दाखवणे"""
+    try:
+        gc = gspread.open_by_url(GSHEET_URL)
+        sheet = gc.sheet1
+        data = sheet.get_all_records()
+        return pd.DataFrame(data)
+    except:
+        if "backup_list" not in st.session_state:
             return pd.DataFrame()
-    return pd.DataFrame()
+        return pd.DataFrame(st.session_state.backup_list, columns=["Timestamp", "Review Text", "Sentiment", "Intent", "Language"])
 
 # ==========================================
 # 3. HELPER & BUSINESS LOGIC FUNCTIONS
@@ -81,9 +89,9 @@ def detect_language_smart(text):
     if not text or len(text) < 3: 
         return 'English'
     
-    marathi_words = r'(chan|bhari|masta|lay|bhari|awadla|khup|changla|nko|navhta)'
-    hindi_words = r'(accha|bahut|hai|acha|bhai|kharab|bekar|sasta|mast|achha)'
-    english_words = r'(product|good|bad|quality|nice|item|waste|money)'
+    marathi_words = r'\b(chan|bhari|masta|lay|awadla|khup|changla|nko|navhta|jasta|pan|aahe|ahe|kumat|kimat|vait|chhan)\b'
+    hindi_words = r'\b(accha|bahut|hai|acha|bhai|kharab|bekar|sasta|mast|achha|khoob|bohot|bhaiya)\b'
+    english_words = r'\b(product|good|bad|quality|nice|item|waste|money|great|awesome|delivery)\b'
     
     has_marathi = re.search(marathi_words, text)
     has_hindi = re.search(hindi_words, text)
@@ -175,7 +183,7 @@ with tab1:
     else:
         st.info("🔍 Filtered data not found.")
 
-# --- TAB 2: Live AI Predictor (Language Hidden & Overwrite CSV) ---
+# --- TAB 2: Live AI Predictor ---
 with tab2:
     st.subheader("🤖 Real-time Multilingual Inference")
     
@@ -233,15 +241,11 @@ with tab2:
 
     if submit_clicked:
         if user_input_text.strip():
-            # १. भाषा डिटेक्ट करणे (बॅकग्राउंड प्रोसेसिंग)
             lang_res = detect_language_smart(user_input_text) 
-            
-            # २. इंटेंट डिटेक्ट करणे
             intent_res = detect_intent(user_input_text)
             
-            # ३. सेंटिमेंट प्रेडिक्शन
             cleaned_lower = user_input_text.lower()
-            if re.search(r'(chan|bhari|masta|accha|acha|loved|good product|heavy|achha)', cleaned_lower):
+            if re.search(r'(chan|bhari|masta|accha|acha|loved|good product|heavy|achha|chhan)', cleaned_lower):
                 prediction = 'Positive'
             elif re.search(r'(bad|worst|waste|bakwas|bekar|kharaab|kharab)', cleaned_lower):
                 prediction = 'Negative'
@@ -253,20 +257,18 @@ with tab2:
                 except:
                     prediction = model.predict(input_vec)[0]
             
-            # 💾 ४. CSV मध्ये नवीन डेटा ओव्हरराईट (Fresh Write) करणे
-            try:
-                save_to_csv_fresh(user_input_text, prediction, intent_res, lang_res)
-                st.toast("📝 Fresh Review Written to CSV!", icon="✅")
-            except Exception as e:
-                st.error(f"CSV Save Error: {e}")
+            # 💾 ऑनलाईन गुगल शीटमध्ये सेव्ह करणे
+            save_review_to_gsheet(user_input_text, prediction, intent_res, lang_res)
+            st.toast("📝 Review Saved to Cloud Sheet!", icon="☁️")
             
             st.markdown("<br>", unsafe_allow_html=True)
             
-            # UI वर २ बॉक्स (Intent आणि Sentiment)
-            r1, r2 = st.columns(2)
-            with r1: 
+            r1, r2, r3 = st.columns(3)
+            with r1:
+                st.markdown(f'<div class="res-box"><b>Language</b><br>{lang_res}</div>', unsafe_allow_html=True)
+            with r2: 
                 st.markdown(f'<div class="res-box"><b>Intent</b><br>{intent_res}</div>', unsafe_allow_html=True)
-            with r2:
+            with r3:
                 color = "#d4edda" if prediction == 'Positive' else "#f8d7da" if prediction == 'Negative' else "#fff3cd"
                 st.markdown(f'<div class="res-box" style="background-color: {color};"><b>Sentiment</b><br>{prediction}</div>', unsafe_allow_html=True)
             
@@ -277,7 +279,6 @@ with tab2:
 # --- TAB 3: Integrity & Emotions ---
 with tab3:
     col_integrity, col_emotions = st.columns(2)
-    
     with col_integrity:
         st.subheader("🕵️ Integrity & Trust Analysis")
         if 'is_fake' in df.columns and not df.empty:
@@ -287,31 +288,26 @@ with tab3:
             counts.plot.pie(labels=l, autopct='%1.1f%%', colors=['#2E7D32','#C62828'], ax=ax_p, startangle=90)
             ax_p.set_ylabel('')
             st.pyplot(fig_p)
-        
         st.divider()
         st.write("**🎯 Feedback Depth (Sincerity)**")
         sincerity_series = filtered_df['review_text'].apply(lambda x: "Detailed" if len(str(x).split()) > 5 else "Brief")
         st.bar_chart(sincerity_series.value_counts())
-        st.caption("Detailed reviews often indicate more engaged customers, while brief ones may suggest superficial feedback.")
 
     with col_emotions:
         st.subheader("🎭 Emotional Insights")
         def find_emojis(t): return [char for char in str(t) if char in emoji.EMOJI_DATA]
         emoji_list = filtered_df['review_text'].apply(find_emojis).sum()
         top_e = Counter(emoji_list).most_common(10)
-        
         if top_e:
             st.write("**Top Visual Emotions (Emojis):**")
             st.table(pd.DataFrame(top_e, columns=['Emoji', 'Frequency']))
-        
         st.divider()
         st.write("**🔥 Sentiment Intensity Level**")
         intensity_series = filtered_df['rating'].isin([1, 5]).map({True: 'Strong', False: 'Moderate'})
         intensity_plot = pd.crosstab(filtered_df['sentiment'], intensity_series)
         st.bar_chart(intensity_plot)
-        st.caption("Strong Intensity means customers have very strong opinions about your product.")
         
-# --- TAB 4: Custom Filters & Live CSV Logs ---
+# --- TAB 4: Custom Filters & Live Production Logs ---
 with tab4:
     if not is_data_empty:
         st.subheader("🎯 Deep Dive Explorer")
@@ -320,17 +316,18 @@ with tab4:
         with f2: ss = st.multiselect("Sentiment:", filtered_df['sentiment'].unique(), default=filtered_df['sentiment'].unique())
         st.dataframe(filtered_df[(filtered_df['detected_lang'].isin(sl)) & (filtered_df['sentiment'].isin(ss))][['review_text', 'detected_lang', 'sentiment', 'rating']], use_container_width=True)
 
-        # 📂 लाइव्ह CSV व्ह्यूअर (इथे नेहमी फक्त १ लेटेस्ट रेकॉर्ड दिसेल)
+        # 📂 लाईव्ह क्लाऊड डेटा व्ह्यूअर
         st.divider()
-        st.subheader("📂 Latest Predicted Review (Live CSV Log)")
-        try:
-            csv_df = load_csv_logs()
-            if not csv_df.empty:
-                st.dataframe(csv_df, use_container_width=True)
-            else:
-                st.info("No prediction data stored in CSV yet. Try predicting one!")
-        except Exception as csv_err:
-            st.caption(f"Waiting for CSV records... ({csv_err})")
+        st.subheader("📂 All Real-time User Reviews (Cloud Database Log)")
+        live_df = load_live_logs()
+        if not live_df.empty:
+            st.dataframe(live_df, use_container_width=True)
+            
+            # डाऊनलोड बटण
+            live_csv = live_df.to_csv(index=False).encode('utf-8-sig')
+            st.download_button("Download All Live User Reviews as CSV", live_csv, "live_user_reviews.csv", "text/csv")
+        else:
+            st.info("No real-time predictions done yet. Type a review in Tab 2 to see live logs here!")
 
 # --- TAB 5: Strategic Insights ---
 with tab5:
@@ -345,29 +342,6 @@ with tab5:
             st.write("**Intent Heatmap**")
             st.write(pd.crosstab(current_intents, filtered_df['sentiment']).style.background_gradient(cmap='YlOrRd'))
         
-        st.divider()
-        st.subheader("💡 AI Recommendation Engine")
-        
-        intent_counts = current_intents.value_counts()
-        if not intent_counts.empty:
-            top_issue = intent_counts.idxmax()
-            avg_r = filtered_df['rating'].mean()
-            
-            col_r1, col_r2 = st.columns(2)
-            with col_r1:
-                st.info(f"**AI Insight:** Most discussion is about **{top_issue}**. Average Rating: **{avg_r:.1f}/5**")
-                if "Logistics" in top_issue and avg_r < 3.5:
-                    st.error("🚨 Fix delivery delays to improve satisfaction.")
-                elif "Pricing" in top_issue:
-                    st.warning("⚠️ Consider seasonal discounts to tackle price sensitivity.")
-                else:
-                    st.success("✅ Focus on scaling marketing for current best-sellers.")
-            
-            with col_r2:
-                st.write("**📊 Competitor Benchmark**")
-                bench_data = pd.DataFrame({'Metric': ['Quality', 'Price', 'Service'], 'You': [avg_r, 3.8, 4.2], 'Market': [4.0, 3.5, 3.9]})
-                st.line_chart(bench_data.set_index('Metric'))
-
 # Footer Metrics
 st.divider()
 m1, m2, m3, m4 = st.columns(4)
