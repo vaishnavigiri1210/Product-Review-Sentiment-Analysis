@@ -88,25 +88,10 @@ Business pain-point analysis using customer feedback.
 
 # 📂 Project Structure
 
-```text
-Product-Review-Sentiment-Analysis/
-│
-├── app/
-│   └── app.py
-│
-├── data/
-│   ├── final_insights_multilingual.csv
-│   └── correctedMetadata.csv
-│
-├── models/
-│   ├── sentiment_model.pkl
-│   └── tfidf_vectorizer.pkl
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
-```
+![alt text](image.png)
 
+```
+```
 ---
 
 # ☁️ Live Google Sheet Database
@@ -125,6 +110,7 @@ Users can open this sheet to verify:
 - Language detection logs
 - Prediction timestamps
 
+```
 ---
 
 ## 📌 Stored Fields
@@ -189,4 +175,3 @@ Dashboard Visualization
 - Advanced Analytics
 - Recommendation Engine
 
-![alt text](image.png)
