@@ -109,8 +109,8 @@ Users can open this sheet to verify:
 - Language detection logs
 - Prediction timestamps
 
-```
-``` 
+---
+
 ## 📌 Stored Fields
 
 | Field | Description |
