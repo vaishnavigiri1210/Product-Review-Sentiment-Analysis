@@ -188,3 +188,5 @@ Dashboard Visualization
 - Deployment on AWS/Render
 - Advanced Analytics
 - Recommendation Engine
+
+![alt text](image.png)
