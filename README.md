@@ -90,8 +90,7 @@ Business pain-point analysis using customer feedback.
 
 ![alt text](image.png)
 
-```
-```
+
 ---
 
 # ☁️ Live Google Sheet Database
