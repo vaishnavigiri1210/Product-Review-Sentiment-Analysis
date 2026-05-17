@@ -7,7 +7,7 @@ import plotly.graph_objects as go       # For interactive charts
 import emoji        # For emoji analysis
 import os           # For file path handling
 import re           # Optimized intent detection for Regex
-import gspread      # Google Sheets connection
+import requests     # Safe & No-Credential Cloud connection
 from datetime import datetime           # data and time handling
 from collections import Counter         # For counting emojis
 from langdetect import detect, detect_langs     # For language detection             
@@ -43,43 +43,47 @@ if df is None:
     st.stop()
 
 # ==========================================
-# 2. PUBLIC GOOGLE SHEET STORAGE SYSTEM (NO SECRETS REQUIRED)
+# 2. API-BASED GOOGLE SHEET SYSTEM (NO SECRETS / NO CREDENTIALS REQUIRED)
 # ==========================================
 
-GSHEET_URL = "https://docs.google.com/spreadsheets/d/1wts27e8aBcAjq91u6is7jP11Q95rmXuyOoW0i4Tu9fI/edit?usp=sharing"
+API_URL = "https://script.google.com/macros/s/AKfycbx9Xc5EbrrGbUKduzVfZUqsdkNDR_zZQng2oDA7JKy9y4Wa0rxt3NVZK_CXt-ZOj3ADhA/exec"
+
 def save_review_to_gsheet(review, sentiment, intent, language):
+    """Apps Script API द्वारे थेट आणि सुरक्षित डेटा गुगल शीटमध्ये लिहिणे"""
+    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    payload = {
+        "timestamp": current_time,
+        "review": review,
+        "sentiment": sentiment,
+        "intent": intent,
+        "language": language
+    }
     try:
-        # without gspread.public_link, we can directly access the sheet without needing credentials, as long as the sheet is set to "Anyone with the link can edit"
-        gc = gspread.public_link(GSHEET_URL) if hasattr(gspread, 'public_link') else gspread.open_by_url(GSHEET_URL)
-        sheet = gc.sheet1
-        
-        # sheet is empty, so add header row first
-        if not sheet.get_all_values():
-            sheet.append_row(["Timestamp", "Review Text", "Sentiment", "Intent", "Language"])
-            
-        current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        sheet.append_row([current_time, review, sentiment, intent, language])
-        return True
+        response = requests.post(API_URL, json=payload, timeout=10)
+        if response.status_code == 200:
+            return True
+        raise Exception("API Error")
     except:
-        # if there's an error (e.g. sheet not found, quota exceeded), fallback to session state backup
+        # if error occurs, save to session state backup list for later retry or local access
         if "backup_list" not in st.session_state:
             st.session_state.backup_list = []
-        current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         st.session_state.backup_list.append([current_time, review, sentiment, intent, language])
         return False
 
 def load_live_logs():
-    """from google sheet data load and return as dataframe. 
-    If error occurs, return backup data from session state."""
+    """Apps reads directly from the same Google Sheet via API to show live logs of user reviews and predictions"""
     try:
-        gc = gspread.open_by_url(GSHEET_URL)
-        sheet = gc.sheet1
-        data = sheet.get_all_records()
-        return pd.DataFrame(data)
+        response = requests.get(API_URL, timeout=10)
+        if response.status_code == 200:
+            data = response.json()
+            if data:
+                return pd.DataFrame(data)
     except:
-        if "backup_list" not in st.session_state:
-            return pd.DataFrame()
-        return pd.DataFrame(st.session_state.backup_list, columns=["Timestamp", "Review Text", "Sentiment", "Intent", "Language"])
+        pass
+    
+    if "backup_list" not in st.session_state or not st.session_state.backup_list:
+        return pd.DataFrame()
+    return pd.DataFrame(st.session_state.backup_list, columns=["Timestamp", "Review Text", "Sentiment", "Intent", "Language"])
 
 # ==========================================
 # 3. HELPER & BUSINESS LOGIC FUNCTIONS
@@ -257,9 +261,12 @@ with tab2:
                 except:
                     prediction = model.predict(input_vec)[0]
             
-            # 💾 ऑनलाईन गुगल शीटमध्ये सेव्ह करणे
-            save_review_to_gsheet(user_input_text, prediction, intent_res, lang_res)
-            st.toast("📝 Review Saved to Cloud Sheet!", icon="☁️")
+            # 💾saves to online google sheet
+            success = save_review_to_gsheet(user_input_text, prediction, intent_res, lang_res)
+            if success:
+                st.toast("📝 Review Saved to Cloud Sheet!", icon="☁️")
+            else:
+                st.toast("⚠️ Connection failed. Saved to local session.", icon="ℹ️")
             
             st.markdown("<br>", unsafe_allow_html=True)
             
@@ -316,7 +323,7 @@ with tab4:
         with f2: ss = st.multiselect("Sentiment:", filtered_df['sentiment'].unique(), default=filtered_df['sentiment'].unique())
         st.dataframe(filtered_df[(filtered_df['detected_lang'].isin(sl)) & (filtered_df['sentiment'].isin(ss))][['review_text', 'detected_lang', 'sentiment', 'rating']], use_container_width=True)
 
-        # 📂 लाईव्ह क्लाऊड डेटा व्ह्यूअर
+        # 📂 live cloud data viewer
         st.divider()
         st.subheader("📂 All Real-time User Reviews (Cloud Database Log)")
         live_df = load_live_logs()
@@ -350,4 +357,4 @@ m2.metric("Filtered Reviews", len(filtered_df))
 m3.metric("Avg Rating", f"{filtered_df['rating'].mean():.1f} ⭐" if not filtered_df.empty else "0.0 ⭐")
 m4.metric("Market Sentiment", "Positive" if (filtered_df['sentiment'] == 'Positive').mean() * 100 > 50 else "Needs Work")
 
-st.sidebar.caption("VoxInsight AI | Status: Online 🟢")
+st.sidebar.caption("Predict,Review,Intent | Status: Online 🟢")
