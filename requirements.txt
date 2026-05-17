@@ -13,4 +13,4 @@ plotly
 langdetect
 streamlit-mic-recorder
 speechrecognition
-streamlit-gsheets-connection
+gspread
