@@ -110,7 +110,6 @@ Users can open this sheet to verify:
 - Prediction timestamps
 
 ```
----
 ``` 
 ## 📌 Stored Fields
 
