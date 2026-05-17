@@ -270,12 +270,11 @@ with tab2:
             
             st.markdown("<br>", unsafe_allow_html=True)
             
-            r1, r2, r3 = st.columns(3)
-            with r1:
-                st.markdown(f'<div class="res-box"><b>Language</b><br>{lang_res}</div>', unsafe_allow_html=True)
-            with r2: 
+            r1, r2, = st.columns(2)
+                
+            with r1: 
                 st.markdown(f'<div class="res-box"><b>Intent</b><br>{intent_res}</div>', unsafe_allow_html=True)
-            with r3:
+            with r2:
                 color = "#d4edda" if prediction == 'Positive' else "#f8d7da" if prediction == 'Negative' else "#fff3cd"
                 st.markdown(f'<div class="res-box" style="background-color: {color};"><b>Sentiment</b><br>{prediction}</div>', unsafe_allow_html=True)
             
