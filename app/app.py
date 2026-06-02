@@ -329,7 +329,7 @@ with tab2:
         else:
             st.warning("Please enter some text or use mic input to predict.")
 
-# --- TAB 3: Integrity & Emotions ---
+# TAB 3: Integrity & Emotions
 with tab3:
     col_integrity, col_emotions = st.columns(2)
     with col_integrity:
@@ -360,7 +360,7 @@ with tab3:
         intensity_plot = pd.crosstab(filtered_df['sentiment'], intensity_series)
         st.bar_chart(intensity_plot)
         
-# --- TAB 4: Custom Filters & Live Production Logs ---
+# TAB 4: Custom Filters & Live Production Logs
 with tab4:
     if not is_data_empty:
         st.subheader("🎯 Deep Dive Explorer")
@@ -382,7 +382,7 @@ with tab4:
         else:
             st.info("No real-time predictions done yet. Type a review in Tab 2 to see live logs here!")
 
-# --- TAB 5: Strategic Insights ---
+# TAB 5: Strategic Insights
 with tab5:
     if not is_data_empty:
         current_intents = filtered_df['review_text'].apply(detect_intent)
