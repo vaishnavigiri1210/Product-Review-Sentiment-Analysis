@@ -12,7 +12,6 @@ from datetime import datetime           # current data and time handling
 from collections import Counter         # For counting emojis
 from langdetect import detect, detect_langs     # For language detection 
 # instead of langdetect we can use google translate API for accuracy it is better 
-from streamlit.column_config import Column
 from streamlit_mic_recorder import speech_to_text       # For mic input in Streamlit
 # for voice input we can use whisper API for more accuracy and multilingual support
 
@@ -312,14 +311,12 @@ with tab2:
             # 💾saves to online google sheet
             success = save_review_to_gsheet(user_input_text, prediction, intent_res, lang_res)
             if success:
-                st.toast("📝 Review Saved to Cloud Sheet!", icon="☁️")
+                st.toast("📝 Review Saved to Google Sheet!", icon="☁️")
             else:
                 st.toast("⚠️ Connection failed. Saved to local session.", icon="ℹ️")
             
             st.markdown("<br>", unsafe_allow_html=True)
             
-            st.write("### 📝 Review Analyzed")
-            st.info(user_input_text)
             r1, r2, = st.columns(2)
                 
             with r1: 
@@ -402,6 +399,7 @@ with tab5:
 st.divider()
 m1, m2, m3, m4 = st.columns(4)
 m1.metric("Total Reviews", len(df))
+m2.metric("Filtered Reviews", len(filtered_df))
 m3.metric("Avg Rating", f"{filtered_df['rating'].mean():.1f} ⭐" if not filtered_df.empty else "0.0 ⭐")
 m4.metric("Market Sentiment", "Positive" if (filtered_df['sentiment'] == 'Positive').mean() * 100 > 50 else "Needs Work")
 
