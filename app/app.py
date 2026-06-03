@@ -222,7 +222,10 @@ with tab2:
         if user_input_text.strip():
             lang_res = detect_language_smart(user_input_text)
             intent_res = detect_intent(user_input_text)
+            
+            # 1. Clean punctuation entirely so boundaries (\b) match words perfectly
             cleaned_lower = user_input_text.lower().strip()
+            cleaned_lower = re.sub(r'[^\w\s]', ' ', cleaned_lower)  # Replaces structural symbols with blank padding
 
             # --- EMOJI TRACKING SYSTEM ---
             strong_positive_emojis = ["😍", "👍", "❤️", "🔥", "😊", "✨", "😋", "🚀", "💰", "🥰", "👌"]
@@ -236,13 +239,13 @@ with tab2:
             positive_words = [
                 "good","great","excellent","amazing","awesome","love","best","fantastic","perfect","nice",
                 "worth","chan","bhari","masta","mast","lay","awadla","khup","changla","accha","acha","achha",
-                "छान","मस्त","भारी","उत्तम","चांगला","आवडलं","अच्छा","शानदार","बहुत बढ़िया"
+                "छान","मस्त","भारी","उत्तम","चांगला","आवडलं","अच्छा","शानदार","बढ़िया"
             ]
        
             negative_words = [
                 "bad","worst","poor","terrible","waste","broken","useless","delay","kharab","vait",
-                "bekar","nko","navhta","jasta","sasta","nahi","vaya","kh खराब","वाईट","बेकार",
-                "निराश","पैसे वाया","घटिया","पैसे बर्बाद"
+                "bekar","nko","navhta","jasta","sasta","nahi","vaya","खराब","वाईट","बेकार",
+                "निराश","घटिया"
             ]
 
             negative_phrases = [
@@ -252,23 +255,23 @@ with tab2:
 
             prediction = None
             
-            # 1. First check explicit negative combinations
+            # 2. Check explicit key phrases first
             if any(phrase in cleaned_lower for phrase in negative_phrases):
                 prediction = "Negative"
             else:
-                # 2. Count matches using exact word markers and case insensitivity
+                # 3. Clean word matrix counter loops
                 pos_count = 0
                 neg_count = 0
                 
                 for word in positive_words:
-                    if re.search(r'\b' + re.escape(word) + r'\b', cleaned_lower, re.IGNORECASE):
+                    if re.search(r'\b' + re.escape(word) + r'\b', cleaned_lower):
                         pos_count += 1
                         
                 for word in negative_words:
-                    if re.search(r'\b' + re.escape(word) + r'\b', cleaned_lower, re.IGNORECASE):
+                    if re.search(r'\b' + re.escape(word) + r'\b', cleaned_lower):
                         neg_count += 1
 
-                # Combine word counts with emoji metrics
+                # Append visual emoji counts to categorical integers
                 pos_count += pos_emoji_count
                 neg_count += neg_emoji_count
 
@@ -279,7 +282,7 @@ with tab2:
                 elif len(extracted_emojis) > 0 and pos_emoji_count == 0 and neg_emoji_count == 0:
                     prediction = "Neutral"
 
-            # 3. Fallback to Machine Learning Model if rules tie out perfectly
+            # 4. Fallback to Machine Learning Model if rules end in a flat tie
             if prediction is None:
                 padded_text = "".join(f" {ch} " if ch in emoji.EMOJI_DATA else ch for ch in cleaned_lower)
                 input_vec = vectorizer.transform([padded_text])
