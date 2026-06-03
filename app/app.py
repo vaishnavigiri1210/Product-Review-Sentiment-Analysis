@@ -82,10 +82,11 @@ def detect_language_smart(text):
     raw_text = str(text).strip()
     text_lower = raw_text.lower()
     
+    # Patch A: Absolute isolation logic for pure emoji arrays
+    if all(char in emoji.EMOJI_DATA or char.isspace() for char in raw_text) and any(char in emoji.EMOJI_DATA for char in raw_text):
+        return 'Emoji-Only'
+        
     if not text_lower or len(text_lower) < 3: 
-        # Check if the short string is purely an emoji
-        if all(char in emoji.EMOJI_DATA for char in raw_text):
-            return 'Emoji-Only'
         return 'English'
     
     # Check for Devanagari Script (Native Marathi / Hindi characters)
@@ -97,7 +98,7 @@ def detect_language_smart(text):
         return 'Hindi'
 
     # Transliterated (Latin Alphabet) Keywords via Exact Word Boundaries
-    marathi_words = r'\b(chan|bhari|masta|lay|awadla|khup|changla|nko|navhta|jasta|pan|aahe|ahe|kumat|kimat|vait|chhan|nakki|k खरेदी)\b'
+    marathi_words = r'\b(chan|bhari|masta|lay|awadla|khup|changla|nko|navhta|jasta|pan|aahe|ahe|kumat|kimat|vait|chhan|nakki|kapda)\b'
     hindi_words = r'\b(accha|bahut|hai|acha|bhai|kharab|bekar|sasta|mast|achha|khoob|bohot|bhaiya|nahi|hai|hota|gaya|mil)\b'
     english_words = r'\b(product|good|bad|quality|nice|item|waste|money|great|awesome|delivery|perfect|worst|terrible)\b'
     
@@ -124,10 +125,11 @@ def detect_language_smart(text):
 
 def detect_intent(text):
     text = str(text).lower()
-    if re.search(r'\b(price|cost|expensive|kimat|किंमत|महाग|दर|स्वस्त|paise|paisa|बर्बादी|money|पैसे)\b', text): return "💰 Pricing"
-    if re.search(r'\b(delivery|late|fast|slow|ushir|उशीर|वेळ|डिलिव्हरी|पोहोचले|time|day|days|delays|delayed)\b', text): return "🚚 Logistics"
-    if re.search(r'\b(quality|material|strong|durability|दर्जा|क्वालिटी|कापड|टिकाऊ|kapda|fabric|look|broken|तुटलं|damage|damaged|defective)\b', text): return "🛠️ Quality"
-    if re.search(r'\b(support|staff|मदत|सहकार्य|call|care|service|सर्व्हिस|respond)\b', text): return "📞 Support"
+    # Patch C: Boundary-free substring verification for complex Devanagari script structures
+    if re.search(r'\b(price|cost|expensive|money|paise|paisa)\b|किंमत|महाग|दर|स्वस्त|बर्बाद|बर्बादी|पैसे', text): return "💰 Pricing"
+    if re.search(r'\b(delivery|late|fast|slow|time|day|days|delays|delayed)\b|उशीर|वेळ|डिलिव्हरी|पोहोचले', text): return "🚚 Logistics"
+    if re.search(r'\b(quality|material|strong|durability|fabric|look|broken|damage|damaged|defective)\b|दर्जा|क्वालिटी|कापड|टिकाऊ|तुटलं', text): return "🛠️ Quality"
+    if re.search(r'\b(support|staff|call|care|service|respond)\b|मदत|सहकार्य|सर्व्हिस', text): return "📞 Support"
     return "📝 General"
 
 def draw_gauge(score):
@@ -248,9 +250,11 @@ with tab2:
                 "निराश","घटिया"
             ]
 
+            # Patch B: Add explicit romanized/latin-script string structures into higher override layer
             negative_phrases = [
                 "not good", "not worth", "poor quality", "waste of money", 
-                "very bad", "bad product", "खराब", "वाईट", "बेकार"
+                "very bad", "bad product", "खराब", "वाईट", "बेकार",
+                "khup kharab", "khup vait", "complete waste", "paise बर्बाद", "paise waste"
             ]
 
             prediction = None
