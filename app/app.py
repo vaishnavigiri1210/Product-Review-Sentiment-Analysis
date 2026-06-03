@@ -236,148 +236,166 @@ with tab1:
 # TAB 2: Live AI Predictor
 with tab2:
     st.subheader("🤖 Real-time Multilingual Inference")
-    
-    st.markdown("""
-        <style>
-        div[data-testid="column"] { display: flex; align-items: center; gap: 0px; }
-        div[data-testid="stTextInput"] input {
-            border-radius: 10px !important;
-            height: 48px !important;
-            border: 1px solid #d1d5db !important;
-        }
-        div[data-testid="stForm"] { border: none !important; padding: 0px !important; margin-top: -0px; }
-        div.stFormSubmitButton > button {
-            background-color: transparent !important;
-            color: #4285f4 !important;
-            border: 1px solid #4285f4 !important;
-            border-radius: 10px !important;
-            height: 45px !important;
-            width: 100% !important;
-            font-weight: bold !important;
-            margin-top: 5px;
-        }
-        .res-box {
-            padding: 15px;
-            border-radius: 10px;
-            border: 1px solid #eee;
-            text-align: center;
-            background: #ffffff;
-            box-shadow: 0px 2px 4px rgba(0,0,0,0.05);
-            font-size: 16px;
-        }
-        </style>
-    """, unsafe_allow_html=True)
 
     if "final_text_val" not in st.session_state:
         st.session_state.final_text_val = ""
 
     col_in, col_m = st.columns([0.88, 0.12])
-    
+
     with col_m:
-        v_res = speech_to_text(language='en-IN', start_prompt="🎙️", stop_prompt="🛑", just_once=True, key='MIC_STABLE')
+        v_res = speech_to_text(
+            language='en-IN',
+            start_prompt="🎙️",
+            stop_prompt="🛑",
+            just_once=True,
+            key='MIC_STABLE'
+        )
+
         if v_res:
             st.session_state.final_text_val = v_res
             st.rerun()
 
     with col_in:
         with st.form(key='my_predict_form', clear_on_submit=False):
+
             user_input_text = st.text_input(
                 "Review Box",
                 value=st.session_state.final_text_val,
                 placeholder="Write your review or click the mic...",
                 label_visibility="collapsed"
             )
-            submit_clicked = st.form_submit_button("Predict Sentiment & Intent")
+
+            submit_clicked = st.form_submit_button(
+                "Predict Sentiment & Intent"
+            )
 
     if submit_clicked:
+
         if user_input_text.strip():
-            lang_res = detect_language_smart(user_input_text) 
+
+            lang_res = detect_language_smart(user_input_text)
             intent_res = detect_intent(user_input_text)
-            
-            # CUSTOM MULTILINGUAL DICTIONARY
-
-            positive_words = [
-                "good","great","excellent","amazing","awesome",
-                "love","loved","best","superb","fantastic",
-                "perfect","nice","wonderful","satisfied",
-                "recommended","worth","value",
-                "paisa vasool","value for money",
-                "useful","premium","liked",
-
-                "छान","मस्त","भारी","झकास",
-                "उत्तम","आवडलं","आवडला",
-                "चांगला","चांगली","चांगले",
-                "सर्वोत्कृष्ट",
-
-                "अच्छा","बहुत अच्छा","बढ़िया",
-                "शानदार","पसंद",
-                "बेहतरीन","जबरदस्त"
-            ]
-
-            negative_words = [
-                "bad","worst","poor","terrible",
-                "waste","disappointed","broken",
-                "useless","defective","avoid",
-                "not worth","late","delay",
-                "damaged","problem","issue",
-                "slow","poor quality",
-                "waste of money",
-
-                "खराब","वाईट","बकवास",
-                "बेकार","निराश",
-                "तुटलं","घेऊ नका",
-                "पैसे वाया",
-
-                "खराब","बेकार",
-                "बर्बाद","मत खरीदो",
-                "निराश","घटिया"
-            ]
 
             cleaned_lower = user_input_text.lower()
 
-            pos_count = sum(word.lower() in cleaned_lower for word in positive_words)
-            neg_count = sum(word.lower() in cleaned_lower for word in negative_words)
+            # Positive Dictionary
 
-            if pos_count > neg_count:
-                prediction = "Positive"
+            positive_words = [
+                "good","great","excellent","amazing","awesome",
+                "love","best","fantastic","perfect","nice",
+                "worth","value for money",
+                "छान","मस्त","भारी","उत्तम",
+                "चांगला","आवडलं",
+                "अच्छा","बहुत अच्छा","शानदार"
+            ]
+       
+            # Negative Dictionary
 
-            elif neg_count > pos_count:
+            negative_words = [
+                "bad","worst","poor","terrible",
+                "waste","broken","useless",
+                "not worth","delay",
+                "खराब","वाईट","बेकार",
+                "निराश","पैसे वाया",
+                "घटिया","पैसे बर्बाद"
+            ]
+
+            # Negative Phrases
+      
+            negative_phrases = [
+                "not good",
+                "not worth",
+                "poor quality",
+                "waste of money",
+                "very bad",
+                "bad product",
+                "खराब",
+                "वाईट",
+                "बेकार"
+            ]
+
+            if any(
+                phrase in cleaned_lower
+                for phrase in negative_phrases
+            ):
                 prediction = "Negative"
 
             else:
-                input_vec = vectorizer.transform([cleaned_lower])
 
-                try:
-                    probs = model.predict_proba(input_vec)[0]
+                pos_count = sum(
+                    word.lower() in cleaned_lower
+                    for word in positive_words
+                )
 
-                    if max(probs) < 0.60:
-                        prediction = "Neutral"
-                    else:
-                        prediction = model.predict(input_vec)[0]
+                neg_count = sum(
+                    word.lower() in cleaned_lower
+                    for word in negative_words
+                )
 
-                except:
-                    prediction = model.predict(input_vec)[0]
-            
-            # 💾saves to online google sheet
-            success = save_review_to_gsheet(user_input_text, prediction, intent_res, lang_res)
+                if pos_count > neg_count:
+                    prediction = "Positive"
+
+                elif neg_count > pos_count:
+                    prediction = "Negative"
+
+                else:
+
+                    input_vec = vectorizer.transform(
+                        [cleaned_lower]
+                    )
+
+                    try:
+                        probs = model.predict_proba(
+                            input_vec
+                        )[0]
+
+                        if max(probs) < 0.60:
+                            prediction = "Neutral"
+                        else:
+                            prediction = model.predict(
+                                input_vec
+                            )[0]
+
+                    except:
+                        prediction = model.predict(
+                            input_vec
+                        )[0]
+
+            # Save Review
+            success = save_review_to_gsheet(
+                user_input_text,
+                prediction,
+                intent_res,
+                lang_res
+            )
+
             if success:
-                st.toast("📝 Review Saved to Google Sheet!", icon="☁️")
+                st.success(
+                    "✅ Review Saved Successfully!"
+                )
             else:
-                st.toast("⚠️ Connection failed. Saved to local session.", icon="ℹ️")
-            
-            st.markdown("<br>", unsafe_allow_html=True)
-            
-            r1, r2, = st.columns(2)
-                
-            with r1: 
-                st.markdown(f'<div class="res-box"><b>Intent</b><br>{intent_res}</div>', unsafe_allow_html=True)
+                st.warning(
+                    "⚠️ Saved Locally (API Failed)"
+                )
+
+            r1, r2 = st.columns(2)
+
+            with r1:
+                st.info(
+                    f"Intent: {intent_res}"
+                )
+
             with r2:
-                color = "#d4edda" if prediction == 'Positive' else "#f8d7da" if prediction == 'Negative' else "#fff3cd"
-                st.markdown(f'<div class="res-box" style="background-color: {color};"><b>Sentiment</b><br>{prediction}</div>', unsafe_allow_html=True)
-            
+                st.success(
+                    f"Sentiment: {prediction}"
+                )
+
             st.session_state.final_text_val = ""
+
         else:
-            st.warning("Please enter some text or use mic input to predict.")
+            st.warning(
+                "Please enter some text or use mic input."
+            )
 
 # TAB 3: Integrity & Emotions
 with tab3:
