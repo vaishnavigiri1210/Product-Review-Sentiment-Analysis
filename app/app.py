@@ -124,10 +124,11 @@ def detect_language_smart(text):
 
 def detect_intent(text):
     text = str(text).lower()
-    if re.search(r'(price|cost|expensive|kimat|किंमत|महाग|दर|स्वस्त|paise|paisa|बर्बादी|waste of money|पैसे वाया)', text): return "💰 Pricing"
-    if re.search(r'(delivery|late|fast|slow|ushir|उशीर|वेळ|डिलिव्हरी|पोहोचले|time|day|days|delays|delayed|service|सर्व्हिस)', text): return "🚚 Logistics"
-    if re.search(r'(quality|material|strong|durability|दर्जा|क्वालिटी|कापड|टिकाऊ|kapda|fabric|look|broken|तुटलं|damage|damaged|defective)', text): return "🛠️ Quality"
-    if re.search(r'(support|staff|मदत|सहकार्य|call|care|customer service|respond)', text): return "📞 Support"
+    # Fixed with clear word boundaries (\b) to stop partial match overlaps
+    if re.search(r'\b(price|cost|expensive|kimat|किंमत|महाग|दर|स्वस्त|paise|paisa|बर्बादी|money|पैसे)\b', text): return "💰 Pricing"
+    if re.search(r'\b(delivery|late|fast|slow|ushir|उशीर|वेळ|डिलिव्हरी|पोहोचले|time|day|days|delays|delayed)\b', text): return "🚚 Logistics"
+    if re.search(r'\b(quality|material|strong|durability|दर्जा|क्वालिटी|कापड|टिकाऊ|kapda|fabric|look|broken|तुटलं|damage|damaged|defective)\b', text): return "🛠️ Quality"
+    if re.search(r'\b(support|staff|मदत|सहकार्य|call|care|service|सर्व्हिस|respond)\b', text): return "📞 Support"
     return "📝 General"
 
 def draw_gauge(score):
@@ -256,9 +257,9 @@ with tab2:
             if any(phrase in cleaned_lower for phrase in negative_phrases):
                 prediction = "Negative"
             else:
-                # Count matches using true word boundaries (\b) so parts of words aren't misread
-                pos_count = sum(1 for word in positive_words if re.search(r'\b' + re.escape(word) + r'\b', cleaned_lower))
-                neg_count = sum(1 for word in negative_words if re.search(r'\b' + re.escape(word) + r'\b', cleaned_lower))
+                # Count matches using strict word boundaries (\b) so parts of words aren't misread
+                pos_count = sum(1 for word in positive_words if re.search(r'\b' + re.escape(word.lower()) + r'\b', cleaned_lower))
+                neg_count = sum(1 for word in negative_words if re.search(r'\b' + re.escape(word.lower()) + r'\b', cleaned_lower))
 
                 # Combine word results with raw emoji counts
                 pos_count += pos_emoji_count
