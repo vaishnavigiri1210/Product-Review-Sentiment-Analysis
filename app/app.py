@@ -1,22 +1,19 @@
-import streamlit as st      # Streamlit for web app
-import pandas as pd         # Data manipulation
-import joblib               # For loading ML models
+import streamlit as st       # Streamlit for web app
+import pandas as pd          # Data manipulation
+import joblib                # For loading ML models
 import matplotlib.pyplot as plt     # For plotting
-import seaborn as sns   # For advanced visualizations
+import seaborn as sns    # For advanced visualizations
 import plotly.graph_objects as go       # For interactive charts here gauge chart
-import emoji        # For emoji analysis
+import emoji         # For emoji analysis
 import os           # For file path handling
-import re           # Optimized intent,language detection and keyword matching for Regeular Expressions
+import re           # Optimized intent, language detection and keyword matching for Regular Expressions
 import requests     # sending data to and fetching from API-based Google Sheet system over the internet
 from datetime import datetime           # current data and time handling
 from collections import Counter         # For counting emojis
 from langdetect import detect_langs     # For language detection 
-# instead of langdetect we can use google translate API for accuracy it is better 
 from streamlit_mic_recorder import speech_to_text       # For mic input in Streamlit
-# for voice input we can use whisper API for more accuracy and multilingual support
 
 # 1. PAGE & PATH CONFIGURATION 
-
 st.set_page_config(
     page_title="Product Review Sentiment & Intent Analysis", 
     layout="wide", 
@@ -25,10 +22,8 @@ st.set_page_config(
 st.title("🏛️ Product Review Sentiment & Intent Analysis")
 
 path = os.path.dirname(os.path.abspath(__file__))
-# it returns the current file location i.e. app.py
-# os.path.abspath(__file__)
 
-@st.cache_resource   # run this function only once and remenber the result
+@st.cache_resource   # run this function only once and remember the result
 def load_assets():
     try:
         df = pd.read_csv(os.path.join(path, '..', 'data', 'final_insights_multilingual.csv'), encoding='utf-8-sig')
@@ -45,18 +40,10 @@ if df is None:
     st.stop()   # stops the execution of the app if data loading fails
 
 # 2. API-BASED GOOGLE SHEET SYSTEM
-
-# API stands for Application Programming Interface, 
-# it is a set of rules that allows different software applications to communicate with each other. 
-# In this case, we are using an API to connect our Streamlit app with a Google Sheet, 
-# allowing us to send and retrieve data in real-time.
-
 API_URL = "https://script.google.com/macros/s/AKfycbwccWuyEQyiOunRKit9WMvgr8cYsu6k-KqRTbP9s8dmsharWo4fPqTAPiMGBe0xWDJnsQ/exec"
+
 def save_review_to_gsheet(review, sentiment, intent, language):
-    # save to online google sheet via API
-    # from app to API: App sends review, sentiment, intent, language data to Google Sheet via API for live logging and backup
-    # strftime -> Convert datetime into readable string
-    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S") # current date and time in string format
+    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S") 
     payload = {
         "timestamp": current_time,
         "review": review,
@@ -64,77 +51,67 @@ def save_review_to_gsheet(review, sentiment, intent, language):
         "intent": intent,
         "language": language
     }
-    # post -> send data
-    # Save review to cloud
-    # timeout -> waits maximum 10 seconds for the API response, if it takes longer, it will raise a timeout exception and save the review to local session state instead of crashing the app.
     try:
         response = requests.post(API_URL, json=payload, timeout=10)
-        # status_code -> Every API rsponds:-
-                # 200 -> success ; 404 -> not found ; 500 -> server error
         if response.status_code == 200:
             return True
-        # return true -> Saving successful otherswise raise an exception to trigger local backup
         raise Exception("API Error")
     except:
-        # if error occurs, save to session state backup list for later retry or local access
-        # session state -> Temporary storage while app is running
         if "backup_list" not in st.session_state:
             st.session_state.backup_list = []
-        # saves failed reviews because of internet or API issues to a local list in session state with all details for later retry or local access
         st.session_state.backup_list.append([current_time, review, sentiment, intent, language])
         return False
 
 def load_live_logs():
-    # Apps reads directly from the same Google Sheet via API to show live logs of user reviews and predictions
-    # get -> fetch data
     try:
         response = requests.get(API_URL, timeout=10)
         if response.status_code == 200:
-        # Dictionary sent over internet
-        # API returns data in JSON format.
-        # response.json() -> converts internet data to Python dictionary data
             data = response.json()
             if data:
                 return pd.DataFrame(data)
     except:
-        # Suppose:
-                # No Internet
-                # API Down
-                # Google Sheet Error
-        # Do nothing , Continue execution -> pass
         pass
     
-    # if backup data exists then show backup otherwise return empty dataframe
     if "backup_list" not in st.session_state or not st.session_state.backup_list:
         return pd.DataFrame()
     return pd.DataFrame(st.session_state.backup_list, columns=["Timestamp", "Review Text", "Sentiment", "Intent", "Language"])
 
-# 3. HELPER & BUSINESS LOGIC FUNCTIONS
+# 3. ADVANCED HELPER & BUSINESS LOGIC FUNCTIONS
 
 def detect_language_smart(text):
-    # converts everything into lowecase and removes extra spaces for better matching and detection
-    text = str(text).lower().strip()
-    # if text is empty or too short, we can assume it's English as default 
-    # since most reviews are in English and it avoids misclassification of very short texts which may not have enough language-specific words for accurate detection.
-    if not text or len(text) < 3: 
+    raw_text = str(text).strip()
+    text_lower = raw_text.lower()
+    
+    if not text_lower or len(text_lower) < 3: 
+        # Check if the short string is purely an emoji
+        if all(char in emoji.EMOJI_DATA for char in raw_text):
+            return 'Emoji-Only'
         return 'English'
     
-    marathi_words = r'\b(chan|bhari|masta|lay|awadla|khup|changla|nko|navhta|jasta|pan|aahe|ahe|kumat|kimat|vait|chhan)\b'
-    hindi_words = r'\b(accha|bahut|hai|acha|bhai|kharab|bekar|sasta|mast|achha|khoob|bohot|bhaiya)\b'
-    english_words = r'\b(product|good|bad|quality|nice|item|waste|money|great|awesome|delivery)\b'
+    # Check for Devanagari Script (Native Marathi / Hindi characters)
+    if re.search(r'[\u0900-\u097F]', raw_text):
+        # Specific high-frequency native Marathi markers
+        marathi_native = r'(आहे|नाही|छान|मस्त|भारी|खूप|तयार|करून|बघा|नका|काही|केलं|मिळालं|होता)'
+        if re.search(marathi_native, raw_text):
+            return 'Marathi'
+        return 'Hindi'
+
+    # Transliterated (Latin Alphabet) Keywords via Exact Word Boundaries
+    marathi_words = r'\b(chan|bhari|masta|lay|awadla|khup|changla|nko|navhta|jasta|pan|aahe|ahe|kumat|kimat|vait|chhan|nakki|k खरेदी)\b'
+    hindi_words = r'\b(accha|bahut|hai|acha|bhai|kharab|bekar|sasta|mast|achha|khoob|bohot|bhaiya|nahi|hai|hota|gaya|mil)\b'
+    english_words = r'\b(product|good|bad|quality|nice|item|waste|money|great|awesome|delivery|perfect|worst|terrible)\b'
     
-    has_marathi = re.search(marathi_words, text)
-    has_hindi = re.search(hindi_words, text)
-    has_english = re.search(english_words, text)
+    has_marathi = re.search(marathi_words, text_lower)
+    has_hindi = re.search(hindi_words, text_lower)
+    has_english = re.search(english_words, text_lower)
     
     if has_marathi and has_english: return 'Marathi + English (Mixed)'
     elif has_hindi and has_english: return 'Hindi + English (Mixed)'
     elif has_marathi: return 'Marathi'
     elif has_hindi: return 'Hindi'
-        
+    
     try:
-        res = detect_langs(text)
-        # whose probability is greater than 10% we will consider that language as part of the review's language composition
+        res = detect_langs(text_lower)
         lang_codes = [l.lang for l in res if l.prob > 0.10]
         if 'en' in lang_codes and 'mr' in lang_codes: return 'Marathi + English (Mixed)'
         elif 'en' in lang_codes and 'hi' in lang_codes: return 'Hindi + English (Mixed)'
@@ -147,10 +124,10 @@ def detect_language_smart(text):
 
 def detect_intent(text):
     text = str(text).lower()
-    if re.search(r'(price|cost|expensive|kimat|किंमत|महाग|दर|स्वस्त|paise|paisa)', text): return "💰 Pricing"
-    if re.search(r'(delivery|late|fast|slow|ushir|उशीर|वेळ|डिलिव्हरी|पोहोचले|time|day|days)', text): return "🚚 Logistics"
-    if re.search(r'(quality|material|strong|durability|दर्जा|क्वालिटी|कापड|टिकाऊ|kapda|fabric|look)', text): return "🛠️ Quality"
-    if re.search(r'(service|support|staff|मदत|सर्व्हिस|सहकार्य|call|care)', text): return "📞 Support"
+    if re.search(r'(price|cost|expensive|kimat|किंमत|महाग|दर|स्वस्त|paise|paisa|बर्बादी|waste of money|पैसे वाया)', text): return "💰 Pricing"
+    if re.search(r'(delivery|late|fast|slow|ushir|उशीर|वेळ|डिलिव्हरी|पोहोचले|time|day|days|delays|delayed|service|सर्व्हिस)', text): return "🚚 Logistics"
+    if re.search(r'(quality|material|strong|durability|दर्जा|क्वालिटी|कापड|टिकाऊ|kapda|fabric|look|broken|तुटलं|damage|damaged|defective)', text): return "🛠️ Quality"
+    if re.search(r'(support|staff|मदत|सहकार्य|call|care|customer service|respond)', text): return "📞 Support"
     return "📝 General"
 
 def draw_gauge(score):
@@ -171,13 +148,9 @@ def draw_gauge(score):
     return fig
 
 # 4. SIDEBAR CONTROL PANEL
-
 st.sidebar.title("🛠️ BI Control Panel")
 search_term = st.sidebar.text_input("🔍 Search Keyword (e.g. 'good', 'bad', 'मस्त'):")
 
-# creates duplicate of original dataframe for filtering based on search term, if search term is provided. 
-# If no search term is provided, it will show the full data. 
-# If search term is provided but no data matches, it will show a warning and set a flag to indicate that filtered data is empty for later use in tabs.
 filtered_df = df.copy()
 is_data_empty = False
 
@@ -188,13 +161,10 @@ if search_term:
         is_data_empty = True
 
 st.sidebar.divider()
-
-# .encode('utf-8-sig') -> displays marathi/hindi characters or emojis correctly otherwise shows ???? in excel when downloaded as CSV
 csv_report = filtered_df.to_csv(index=False).encode('utf-8-sig')
 st.sidebar.download_button("Download Full Report", csv_report, "bi_analysis.csv", "text/csv")
 
 # 5. DASHBOARD TABS
-
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "📈 Market Performance", "🤖 AI Predictor", "🕵️ Integrity & Emotions", "🎯 Advanced Filters", "💡 Strategic Insights"
 ])
@@ -202,32 +172,16 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
 # TAB 1: Performance Trends
 with tab1:
     if not is_data_empty:
-        # calculate the percentage of positive reviews by comparing sentiment values with "Positive"
-        # converting the result into boolean values, taking the mean, and multiplying by 100.
         pos_rate = (filtered_df['sentiment'] == 'Positive').mean() * 100
-        # side by side columns for gauge and sentiment by language bar chart
-        # Column A = 1 part
-        # Column B = 2 parts
         col_a, col_b = st.columns([1, 2])
-        # in column a gauge chart displays 
-        # use_container_width=True -> Fill available space otherwise chart will look small
         with col_a: 
             st.plotly_chart(draw_gauge(pos_rate), use_container_width=True)
-        # in column b 
         with col_b:
             st.subheader("Market Sentiment by Language")
-            # crosstab -> creates summary table
-            # x-axis -> detected language
-            # y-axis -> sentiment categories
-            # Which language group has more positive reviews
-            # bar_chart -> Converts crosstab into chart
             st.bar_chart(pd.crosstab(filtered_df['detected_lang'], filtered_df['sentiment']))
         st.divider()
         st.subheader("🔥 Rating-Sentiment Density Heatmap")
         fig_heat, ax_heat = plt.subplots(figsize=(8, 4))
-        # annot=True -> shows the count in each cell of the heatmap
-        # fmt='d' -> formats the annotations as integers
-        # cmap='YlGnBu' -> color scheme for the heatmap (Yellow-Green-Blue)
         sns.heatmap(pd.crosstab(filtered_df['rating'], filtered_df['sentiment']), annot=True, fmt='d', cmap='YlGnBu', ax=ax_heat)
         st.pyplot(fig_heat)
     else:
@@ -250,155 +204,102 @@ with tab2:
             just_once=True,
             key='MIC_STABLE'
         )
-
         if v_res:
             st.session_state.final_text_val = v_res
             st.rerun()
 
     with col_in:
         with st.form(key='my_predict_form', clear_on_submit=False):
-
             user_input_text = st.text_input(
                 "Review Box",
                 value=st.session_state.final_text_val,
                 placeholder="Write your review or click the mic...",
                 label_visibility="collapsed"
             )
-
-            submit_clicked = st.form_submit_button(
-                "Predict Sentiment & Intent"
-            )
+            submit_clicked = st.form_submit_button("Predict Sentiment & Intent")
 
     if submit_clicked:
-
         if user_input_text.strip():
-
             lang_res = detect_language_smart(user_input_text)
             intent_res = detect_intent(user_input_text)
+            cleaned_lower = user_input_text.lower().strip()
 
-            cleaned_lower = user_input_text.lower()
+            # --- EMOJI TRACKING SYSTEM ---
+            strong_positive_emojis = ["😍", "👍", "❤️", "🔥", "😊", "✨", "😋", "🚀", "💰", "🥰", "👌"]
+            strong_negative_emojis = ["😡", "👎", "🤮", "💩", "❌", "🗑️", "😷", "💀", "🚫", "😫", "💢", "😞", "💔"]
+            
+            extracted_emojis = [char for char in user_input_text if char in emoji.EMOJI_DATA]
+            pos_emoji_count = sum(1 for e in extracted_emojis if e in strong_positive_emojis)
+            neg_emoji_count = sum(1 for e in extracted_emojis if e in strong_negative_emojis)
 
-            # Positive Dictionary
-
+            # --- MULTILINGUAL WORD BOUNDARY DICTIONARIES ---
             positive_words = [
-                "good","great","excellent","amazing","awesome",
-                "love","best","fantastic","perfect","nice",
-                "worth","value for money",
-                "छान","मस्त","भारी","उत्तम",
-                "चांगला","आवडलं",
-                "अच्छा","बहुत अच्छा","शानदार",
-                "बेस्ट है","बहुत बढ़िया","आंख बंद करके खरीद लो",
-                "पैसे वसूल","worth every rupee","highly recommended"
+                "good","great","excellent","amazing","awesome","love","best","fantastic","perfect","nice",
+                "worth","छान","मस्त","भारी","उत्तम","चांगला","आवडलं","अच्छा","शानदार","बेस्ट है",
+                "बहुत बढ़िया","पैसे वसूल","worth every rupee","highly recommended"
             ]
        
-            # Negative Dictionary
-
             negative_words = [
-                "bad","worst","poor","terrible",
-                "waste","broken","useless",
-                "not worth","delay",
-                "खराब","वाईट","बेकार",
-                "निराश","पैसे वाया",
-                "घटिया","पैसे बर्बाद","could be better", "average",
-                "damaged","did not respond","poor support"
+                "bad","worst","poor","terrible","waste","broken","useless","not worth","delay",
+                "खराब","वाईट","बेकार","निराश","पैसे वाया","घटिया","पैसे बर्बाद","could be better", 
+                "average","damaged","did not respond","poor support"
             ]
 
-            # Negative Phrases
-      
             negative_phrases = [
-                "not good",
-                "not worth",
-                "poor quality",
-                "waste of money",
-                "very bad",
-                "bad product",
-                "खराब",
-                "वाईट",
-                "बेकार"
+                "not good", "not worth", "poor quality", "waste of money", 
+                "very bad", "bad product", "खराब", "वाईट", "बेकार"
             ]
 
-            if any(
-                phrase in cleaned_lower
-                for phrase in negative_phrases
-            ):
+            prediction = None
+            
+            # First check explicit negative combinations
+            if any(phrase in cleaned_lower for phrase in negative_phrases):
                 prediction = "Negative"
-
             else:
+                # Count matches using true word boundaries (\b) so parts of words aren't misread
+                pos_count = sum(1 for word in positive_words if re.search(r'\b' + re.escape(word) + r'\b', cleaned_lower))
+                neg_count = sum(1 for word in negative_words if re.search(r'\b' + re.escape(word) + r'\b', cleaned_lower))
 
-                pos_count = sum(
-                    word.lower() in cleaned_lower
-                    for word in positive_words
-                )
-
-                neg_count = sum(
-                    word.lower() in cleaned_lower
-                    for word in negative_words
-                )
+                # Combine word results with raw emoji counts
+                pos_count += pos_emoji_count
+                neg_count += neg_emoji_count
 
                 if pos_count > neg_count:
                     prediction = "Positive"
-
                 elif neg_count > pos_count:
                     prediction = "Negative"
+                elif len(extracted_emojis) > 0 and pos_emoji_count == 0 and neg_emoji_count == 0:
+                    prediction = "Neutral"
 
-                else:
+            # Fallback to Machine Learning Model if rules tie
+            if prediction is None:
+                # Pad emojis with whitespace so the vectorizer catches them explicitly
+                padded_text = "".join(f" {ch} " if ch in emoji.EMOJI_DATA else ch for ch in cleaned_lower)
+                input_vec = vectorizer.transform([padded_text])
+                
+                try:
+                    probs = model.predict_proba(input_vec)[0]
+                    if max(probs) < 0.55:
+                        prediction = "Neutral"
+                    else:
+                        prediction = model.predict(input_vec)[0]
+                except:
+                    prediction = model.predict(input_vec)[0]
 
-                    input_vec = vectorizer.transform(
-                        [cleaned_lower]
-                    )
-
-                    try:
-                        probs = model.predict_proba(
-                            input_vec
-                        )[0]
-
-                        if max(probs) < 0.60:
-                            prediction = "Neutral"
-                        else:
-                            prediction = model.predict(
-                                input_vec
-                            )[0]
-
-                    except:
-                        prediction = model.predict(
-                            input_vec
-                        )[0]
-
-            # Save Review
-            success = save_review_to_gsheet(
-                user_input_text,
-                prediction,
-                intent_res,
-                lang_res
-            )
+            # Sync results online
+            success = save_review_to_gsheet(user_input_text, prediction, intent_res, lang_res)
 
             if success:
-                st.success(
-                    "✅ Review Saved Successfully!"
-                )
+                st.success("✅ Review Saved Successfully to Cloud Database!")
             else:
-                st.warning(
-                    "⚠️ Saved Locally (API Failed)"
-                )
+                st.warning("⚠️ Saved Locally to Session State Backup (Network/API Timeout)")
 
             r1, r2 = st.columns(2)
-
-            with r1:
-                st.info(
-                    f"Intent: {intent_res}"
-                )
-
-            with r2:
-                st.success(
-                    f"Sentiment: {prediction}"
-                )
-
+            with r1: st.info(f"Intent Domain: {intent_res}")
+            with r2: st.success(f"Model Prediction: {prediction}")
             st.session_state.final_text_val = ""
-
         else:
-            st.warning(
-                "Please enter some text or use mic input."
-            )
+            st.warning("Please enter some text or use mic input.")
 
 # TAB 3: Integrity & Emotions
 with tab3:
@@ -440,14 +341,11 @@ with tab4:
         with f2: ss = st.multiselect("Sentiment:", filtered_df['sentiment'].unique(), default=filtered_df['sentiment'].unique())
         st.dataframe(filtered_df[(filtered_df['detected_lang'].isin(sl)) & (filtered_df['sentiment'].isin(ss))][['review_text', 'detected_lang', 'sentiment', 'rating']], use_container_width=True)
 
-        # 📂 live cloud data viewer
         st.divider()
         st.subheader("📂 All Real-time User Reviews (Cloud Database Log)")
         live_df = load_live_logs()
         if not live_df.empty:
             st.dataframe(live_df, use_container_width=True)
-            
-            # download option for live logs
             live_csv = live_df.to_csv(index=False).encode('utf-8-sig')
             st.download_button("Download All Live User Reviews as CSV", live_csv, "live_user_reviews.csv", "text/csv")
         else:
@@ -475,4 +373,4 @@ avg_rating = filtered_df['rating'].fillna(0).mean()
 m3.metric("Avg Rating", f"{avg_rating:.1f} ⭐" if not filtered_df.empty else "0.0 ⭐")
 m4.metric("Market Sentiment", "Positive" if (filtered_df['sentiment'] == 'Positive').mean() * 100 > 50 else "Needs Work")
 
-st.sidebar.caption("Predict,Review,Intent | Status: Online 🟢")
+st.sidebar.caption("Predict, Review, Intent | Status: Online 🟢")
