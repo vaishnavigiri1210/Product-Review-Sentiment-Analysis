@@ -264,19 +264,6 @@ with tab1:
         fig_heat, ax_heat = plt.subplots(figsize=(8, 4))
         sns.heatmap(pd.crosstab(filtered_df['rating'], filtered_df['sentiment']), annot=True, fmt='d', cmap='YlGnBu', ax=ax_heat)
         st.pyplot(fig_heat)
-        
-        # Operational CSAT KPI blocks rendered explicitly under the heatmap
-        st.divider()
-        pos_reviews = (filtered_df['sentiment'] == 'Positive').sum()
-        total_reviews = len(filtered_df)
-        csat_score = (pos_reviews / total_reviews) * 100 if total_reviews > 0 else 0
-        
-        c_m1, c_m2, c_m3 = st.columns(3)
-        c_m1.metric(label="🎯 Brand CSAT Status Score", value=f"{csat_score:.1f} %", delta="Target > 75%")
-        c_m2.metric(label="✅ Active Approvals", value=int(pos_reviews))
-        c_m3.metric(label="📊 Sample Size Matrix", value=int(total_reviews))
-    else:
-        st.info("🔍 Filtered data not found.")
 
 # TAB 2: Live AI Predictor
 with tab2:
