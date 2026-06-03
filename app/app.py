@@ -349,8 +349,8 @@ with tab2:
             bulk_raw['Detected_Language'] = bulk_languages
             
             st.success("🎉 Bulk Processing Completed Successfully!")
-            st.dataframe(bulk_raw[['http' not in str(c).lower() for c in bulk_raw.columns]], use_container_width=True)
-            
+            clean_columns = [c for c in bulk_raw.columns if 'http' not in str(c).lower()]
+            st.dataframe(bulk_raw[clean_columns], use_container_width=True)
             bulk_output = bulk_raw.to_csv(index=False).encode('utf-8-sig')
             st.download_button("Download Bulk Processing Results", bulk_output, "bulk_analytics_output.csv", "text/csv")
 
