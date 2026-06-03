@@ -39,6 +39,10 @@ df, model, vectorizer = load_assets()
 if df is None:
     st.stop()   # stops the execution of the app if data loading fails
 
+# Initialize hide log visibility tracker if it doesn't exist
+if "hide_live_logs" not in st.session_state:
+    st.session_state.hide_live_logs = False
+
 # 2. API-BASED GOOGLE SHEET SYSTEM
 API_URL = "https://script.google.com/macros/s/AKfycbwccWuyEQyiOunRKit9WMvgr8cYsu6k-KqRTbP9s8dmsharWo4fPqTAPiMGBe0xWDJnsQ/exec"
 
@@ -63,6 +67,9 @@ def save_review_to_gsheet(review, sentiment, intent, language):
         return False
 
 def load_live_logs():
+    if st.session_state.hide_live_logs:
+        return pd.DataFrame()
+        
     try:
         response = requests.get(API_URL, timeout=10)
         if response.status_code == 200:
@@ -82,7 +89,7 @@ def detect_language_smart(text):
     raw_text = str(text).strip()
     text_lower = raw_text.lower()
     
-    # Absolute isolation logic for pure emoji arrays
+    # Isolation logic for pure emoji arrays
     if all(char in emoji.EMOJI_DATA or char.isspace() for char in raw_text) and any(char in emoji.EMOJI_DATA for char in raw_text):
         return 'Emoji-Only'
         
@@ -131,7 +138,6 @@ def detect_intent(text):
     return "📝 General"
 
 def execute_prediction_pipeline(text_input):
-    """ Central processing engine utilized by single & bulk upload flows """
     lang_res = detect_language_smart(text_input)
     intent_res = detect_intent(text_input)
     
@@ -206,21 +212,6 @@ def draw_gauge(score):
 # 4. SIDEBAR CONTROL PANEL
 st.sidebar.title("🛠️ BI Control Panel")
 
-# FEATURE 1: Quick-Copy "Test Reviews" Toolkit for Evaluators
-st.sidebar.subheader("📋 Live Demo Copy-Paste Box")
-test_options = {
-    "Select a pre-made phrase...": "",
-    "Marathi Mix (Positive)": "ekdum bhari quality! masta delivery hoti.",
-    "Marathi Mix (Negative)": "product khup kharab aahe, paise vaya gele.",
-    "Hindi Mix (Negative)": "bekar quality, material bilkul strong nahi hai.",
-    "Pure Emoji Option": "😡😡😡",
-    "Devanagari Script (Intent)": "बहुत घटिया प्रोडक्ट है, पैसे बर्बाद हो गए।"
-}
-selected_test = st.sidebar.selectbox("Click to reveal sentences:", list(test_options.keys()))
-if test_options[selected_test]:
-    st.sidebar.info(f"📋 Copy this:\n`{test_options[selected_test]}`")
-
-st.sidebar.divider()
 search_term = st.sidebar.text_input("🔍 Search Keyword (e.g. 'good', 'bad', 'मस्त'):")
 
 filtered_df = df.copy()
@@ -231,6 +222,22 @@ if search_term:
     if filtered_df.empty:
         st.sidebar.warning(f"'{search_term}' Data not found.")
         is_data_empty = True
+
+st.sidebar.divider()
+
+# Live Demo Quick-Copy Tool
+st.sidebar.subheader("📋 Live Demo Copy-Paste Box")
+test_options = {
+    "Select a pre-made phrase...": "",
+    "Marathi Mix (Positive)": "ekdum bhari quality! masta delivery hoti.",
+    "Marathi Mix (Negative)": "product khup kharab aahe, paise vaya gele.",
+    "Hindi Mix (Negative)": "bekar quality, material bilkul strong nahi hai.",
+    "Pure Emoji Option": "😡😡😡",
+    "Devanagari Script (Intent)": "बहुत घटिया破解प्रोडक्ट है, पैसे बर्बाद हो गए।"
+}
+selected_test = st.sidebar.selectbox("Click to reveal sentences:", list(test_options.keys()))
+if test_options[selected_test]:
+    st.sidebar.info(f"📋 Copy this:\n`{test_options[selected_test]}`")
 
 st.sidebar.divider()
 csv_report = filtered_df.to_csv(index=False).encode('utf-8-sig')
@@ -244,17 +251,6 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
 # TAB 1: Performance Trends
 with tab1:
     if not is_data_empty:
-        # FEATURE 2: Operational CSAT (Customer Satisfaction Score) Card Display
-        pos_reviews = (filtered_df['sentiment'] == 'Positive').sum()
-        total_reviews = len(filtered_df)
-        csat_score = (pos_reviews / total_reviews) * 100 if total_reviews > 0 else 0
-        
-        c_m1, c_m2, c_m3 = st.columns(3)
-        c_m1.metric(label="🎯 Brand CSAT Status Score", value=f"{csat_score:.1f} %", delta="Target > 75%")
-        c_m2.metric(label="✅ Active Approvals", value=int(pos_reviews))
-        c_m3.metric(label="📊 Sample Size Matrix", value=int(total_reviews))
-        st.divider()
-
         pos_rate = (filtered_df['sentiment'] == 'Positive').mean() * 100
         col_a, col_b = st.columns([1, 2])
         with col_a: 
@@ -267,10 +263,21 @@ with tab1:
         fig_heat, ax_heat = plt.subplots(figsize=(8, 4))
         sns.heatmap(pd.crosstab(filtered_df['rating'], filtered_df['sentiment']), annot=True, fmt='d', cmap='YlGnBu', ax=ax_heat)
         st.pyplot(fig_heat)
+        
+        # Brand CSAT Score metrics section completely below the Heatmap
+        st.divider()
+        pos_reviews = (filtered_df['sentiment'] == 'Positive').sum()
+        total_reviews = len(filtered_df)
+        csat_score = (pos_reviews / total_reviews) * 100 if total_reviews > 0 else 0
+        
+        c_m1, c_m2, c_m3 = st.columns(3)
+        c_m1.metric(label="🎯 Brand CSAT Status Score", value=f"{csat_score:.1f} %", delta="Target > 75%")
+        c_m2.metric(label="✅ Active Approvals", value=int(pos_reviews))
+        c_m3.metric(label="📊 Sample Size Matrix", value=int(total_reviews))
     else:
         st.info("🔍 Filtered data not found.")
 
-# TAB 2: Live AI Predictor & Bulk File Engine
+# TAB 2: Live AI Predictor
 with tab2:
     st.subheader("🤖 Real-time Multilingual Inference")
 
@@ -297,6 +304,9 @@ with tab2:
 
     if submit_clicked:
         if user_input_text.strip():
+            # Reset log hiding state when a new manual test is run
+            st.session_state.hide_live_logs = False
+            
             prediction, intent_res, lang_res = execute_prediction_pipeline(user_input_text)
             success = save_review_to_gsheet(user_input_text, prediction, intent_res, lang_res)
 
@@ -311,15 +321,13 @@ with tab2:
             st.warning("Please enter some text or use mic input.")
 
     st.divider()
-    
-    # FEATURE 3: Bulk CSV / File Processing Engine Layer
     st.subheader("🔀 Corporate Bulk Data Processing")
     st.write("Upload an external spreadsheet (`.csv`) filled with hundreds of user comments to parse them simultaneously.")
     
     uploaded_file = st.file_uploader("Upload review file here:", type=["csv"])
     if uploaded_file is not None:
+        st.session_state.hide_live_logs = False
         bulk_raw = pd.read_csv(uploaded_file)
-        # Scan for an appropriate text column header name inside file dynamically
         possible_cols = [c for c in bulk_raw.columns if 'review' in c.lower() or 'text' in c.lower()]
         
         if not possible_cols:
@@ -329,7 +337,6 @@ with tab2:
             st.info(f"Processing data column: `{target_col}`")
             
             bulk_sentiments, bulk_intents, bulk_languages = [], [], []
-            
             with st.spinner("Analyzing bulk matrices..."):
                 for idx, row in bulk_raw.iterrows():
                     pred_s, pred_i, pred_l = execute_prediction_pipeline(str(row[target_col]))
@@ -389,14 +396,15 @@ with tab4:
 
         st.divider()
         
-        # FEATURE 4: Live Spreadsheet Operations Reset Mechanism
-        col_log_title, col_log_btn = st.columns([0.8, 0.2])
+        # CHANGE: Widened the layout split to [0.72, 0.28] so button text never wraps or clips
+        col_log_title, col_log_btn = st.columns([0.72, 0.28])
         with col_log_title:
             st.subheader("📂 All Real-time User Reviews (Cloud Database Log)")
         with col_log_btn:
-            if st.button("🧹 Clear Session View"):
-                if "backup_list" in st.session_state:
-                    st.session_state.backup_list = []
+            # CHANGE: Fixed clear view button to actively hide data log representation
+            if st.button("🧹 Clear Session View", use_container_width=True):
+                st.session_state.backup_list = []
+                st.session_state.hide_live_logs = True
                 st.rerun()
                 
         live_df = load_live_logs()
@@ -405,7 +413,7 @@ with tab4:
             live_csv = live_df.to_csv(index=False).encode('utf-8-sig')
             st.download_button("Download All Live User Reviews as CSV", live_csv, "live_user_reviews.csv", "text/csv")
         else:
-            st.info("No real-time predictions done yet. Type a review in Tab 2 to see live logs here!")
+            st.info("No active real-time log entries to display.")
 
 # TAB 5: Strategic Insights
 with tab5:
