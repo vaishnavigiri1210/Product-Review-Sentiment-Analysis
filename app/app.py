@@ -212,6 +212,7 @@ def draw_gauge(score):
 # 4. SIDEBAR CONTROL PANEL
 st.sidebar.title("🛠️ BI Control Panel")
 
+# Search keyword
 search_term = st.sidebar.text_input("🔍 Search Keyword (e.g. 'good', 'bad', 'मस्त'):")
 
 filtered_df = df.copy()
@@ -225,7 +226,7 @@ if search_term:
 
 st.sidebar.divider()
 
-# Live Demo Quick-Copy Tool
+# Live Demo Quick-Copy Tool 
 st.sidebar.subheader("📋 Live Demo Copy-Paste Box")
 test_options = {
     "Select a pre-made phrase...": "",
@@ -233,7 +234,7 @@ test_options = {
     "Marathi Mix (Negative)": "product khup kharab aahe, paise vaya gele.",
     "Hindi Mix (Negative)": "bekar quality, material bilkul strong nahi hai.",
     "Pure Emoji Option": "😡😡😡",
-    "Devanagari Script (Intent)": "बहुत घटिया破解प्रोडक्ट है, पैसे बर्बाद हो गए।"
+    "Devanagari Script (Intent)": "बहुत घटिया प्रोडक्ट है, पैसे बर्बाद हो गए।"
 }
 selected_test = st.sidebar.selectbox("Click to reveal sentences:", list(test_options.keys()))
 if test_options[selected_test]:
@@ -264,7 +265,7 @@ with tab1:
         sns.heatmap(pd.crosstab(filtered_df['rating'], filtered_df['sentiment']), annot=True, fmt='d', cmap='YlGnBu', ax=ax_heat)
         st.pyplot(fig_heat)
         
-        # Brand CSAT Score metrics section completely below the Heatmap
+        # Operational CSAT KPI blocks rendered explicitly under the heatmap
         st.divider()
         pos_reviews = (filtered_df['sentiment'] == 'Positive').sum()
         total_reviews = len(filtered_df)
@@ -304,7 +305,6 @@ with tab2:
 
     if submit_clicked:
         if user_input_text.strip():
-            # Reset log hiding state when a new manual test is run
             st.session_state.hide_live_logs = False
             
             prediction, intent_res, lang_res = execute_prediction_pipeline(user_input_text)
@@ -396,15 +396,17 @@ with tab4:
 
         st.divider()
         
-        # CHANGE: Widened the layout split to [0.72, 0.28] so button text never wraps or clips
         col_log_title, col_log_btn = st.columns([0.72, 0.28])
         with col_log_title:
             st.subheader("📂 All Real-time User Reviews (Cloud Database Log)")
         with col_log_btn:
-            # CHANGE: Fixed clear view button to actively hide data log representation
-            if st.button("🧹 Clear Session View", use_container_width=True):
-                st.session_state.backup_list = []
-                st.session_state.hide_live_logs = True
+            # Interactive state toggle changing dynamically between Clear and See Data modes
+            button_label = "👁️ See Live Data" if st.session_state.hide_live_logs else "🧹 Clear Session View"
+            
+            if st.button(button_label, use_container_width=True):
+                if not st.session_state.hide_live_logs:
+                    st.session_state.backup_list = []
+                st.session_state.hide_live_logs = not st.session_state.hide_live_logs
                 st.rerun()
                 
         live_df = load_live_logs()
@@ -413,7 +415,7 @@ with tab4:
             live_csv = live_df.to_csv(index=False).encode('utf-8-sig')
             st.download_button("Download All Live User Reviews as CSV", live_csv, "live_user_reviews.csv", "text/csv")
         else:
-            st.info("No active real-time log entries to display.")
+            st.info("No active real-time log entries to display. Click 'See Live Data' or run a new prediction to load rows.")
 
 # TAB 5: Strategic Insights
 with tab5:
