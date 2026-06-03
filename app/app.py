@@ -10,7 +10,7 @@ import re           # Optimized intent,language detection and keyword matching f
 import requests     # sending data to and fetching from API-based Google Sheet system over the internet
 from datetime import datetime           # current data and time handling
 from collections import Counter         # For counting emojis
-from langdetect import detect, detect_langs     # For language detection 
+from langdetect import detect_langs     # For language detection 
 # instead of langdetect we can use google translate API for accuracy it is better 
 from streamlit_mic_recorder import speech_to_text       # For mic input in Streamlit
 # for voice input we can use whisper API for more accuracy and multilingual support
@@ -32,15 +32,14 @@ path = os.path.dirname(os.path.abspath(__file__))
 def load_assets():
     try:
         df = pd.read_csv(os.path.join(path, '..', 'data', 'final_insights_multilingual.csv'), encoding='utf-8-sig')
-        metadata = pd.read_csv(os.path.join(path, '..', 'data', 'correctedMetadata.csv'))
         model = joblib.load(os.path.join(path, '..', 'models', 'sentiment_model.pkl'))
         vectorizer = joblib.load(os.path.join(path, '..', 'models', 'tfidf_vectorizer.pkl'))
-        return df, metadata, model, vectorizer
+        return df, model, vectorizer
     except Exception as e:
         st.error(f"Error loading files: {e}")
-        return None, None, None, None
+        return None, None, None
 
-df, metadata, model, vectorizer = load_assets() 
+df, model, vectorizer = load_assets() 
 
 if df is None:
     st.stop()   # stops the execution of the app if data loading fails
@@ -275,7 +274,7 @@ with tab2:
     col_in, col_m = st.columns([0.88, 0.12])
     
     with col_m:
-        v_res = speech_to_text(language='en', start_prompt="🎙️", stop_prompt="🛑", just_once=True, key='MIC_STABLE')
+        v_res = speech_to_text(language='en-IN', start_prompt="🎙️", stop_prompt="🛑", just_once=True, key='MIC_STABLE')
         if v_res:
             st.session_state.final_text_val = v_res
             st.rerun()
@@ -295,16 +294,67 @@ with tab2:
             lang_res = detect_language_smart(user_input_text) 
             intent_res = detect_intent(user_input_text)
             
+            # CUSTOM MULTILINGUAL DICTIONARY
+
+            positive_words = [
+                "good","great","excellent","amazing","awesome",
+                "love","loved","best","superb","fantastic",
+                "perfect","nice","wonderful","satisfied",
+                "recommended","worth","value",
+                "paisa vasool","value for money",
+                "useful","premium","liked",
+
+                "छान","मस्त","भारी","झकास",
+                "उत्तम","आवडलं","आवडला",
+                "चांगला","चांगली","चांगले",
+                "सर्वोत्कृष्ट",
+
+                "अच्छा","बहुत अच्छा","बढ़िया",
+                "शानदार","पसंद",
+                "बेहतरीन","जबरदस्त"
+            ]
+
+            negative_words = [
+                "bad","worst","poor","terrible",
+                "waste","disappointed","broken",
+                "useless","defective","avoid",
+                "not worth","late","delay",
+                "damaged","problem","issue",
+                "slow","poor quality",
+                "waste of money",
+
+                "खराब","वाईट","बकवास",
+                "बेकार","निराश",
+                "तुटलं","घेऊ नका",
+                "पैसे वाया",
+
+                "खराब","बेकार",
+                "बर्बाद","मत खरीदो",
+                "निराश","घटिया"
+            ]
+
             cleaned_lower = user_input_text.lower()
-            if re.search(r'(chan|bhari|masta|accha|acha|loved|good product|heavy|achha|chhan)', cleaned_lower):
-                prediction = 'Positive'
-            elif re.search(r'(bad|worst|waste|bakwas|bekar|kharaab|kharab)', cleaned_lower):
-                prediction = 'Negative'
+
+            pos_count = sum(word.lower() in cleaned_lower for word in positive_words)
+            neg_count = sum(word.lower() in cleaned_lower for word in negative_words)
+
+            if pos_count > neg_count:
+                prediction = "Positive"
+
+            elif neg_count > pos_count:
+                prediction = "Negative"
+
             else:
                 input_vec = vectorizer.transform([cleaned_lower])
+
                 try:
                     probs = model.predict_proba(input_vec)[0]
-                    prediction = 'Neutral' if max(probs) < 0.60 else model.predict(input_vec)[0]
+
+                    if max(probs) < 0.60:
+                        prediction = "Neutral"
+                    else:
+                        prediction = model.predict(input_vec)[0]
+
                 except:
                     prediction = model.predict(input_vec)[0]
             
@@ -338,7 +388,7 @@ with tab3:
             counts = df['is_fake'].value_counts()
             fig_p, ax_p = plt.subplots(figsize=(5,5))
             l = [('Genuine' if str(i) in ['0', '0.0', 'Real', 'False'] else 'Suspicious') for i in counts.index]
-            counts.plot.pie(labels=l, autopct='%1.1f%%', colors=['#2E7D32','#C62828'], ax=ax_p, startangle=90)
+            counts.plot.pie(labels=l, autopct='%1.1f%%', colors = ['#2E7D32'] if len(counts)==1 else ['#2E7D32','#C62828'], ax=ax_p, startangle=90)
             ax_p.set_ylabel('')
             st.pyplot(fig_p)
         st.divider()
@@ -400,7 +450,8 @@ st.divider()
 m1, m2, m3, m4 = st.columns(4)
 m1.metric("Total Reviews", len(df))
 m2.metric("Filtered Reviews", len(filtered_df))
-m3.metric("Avg Rating", f"{filtered_df['rating'].mean():.1f} ⭐" if not filtered_df.empty else "0.0 ⭐")
+avg_rating = filtered_df['rating'].fillna(0).mean()
+m3.metric("Avg Rating", f"{avg_rating:.1f} ⭐" if not filtered_df.empty else "0.0 ⭐")
 m4.metric("Market Sentiment", "Positive" if (filtered_df['sentiment'] == 'Positive').mean() * 100 > 50 else "Needs Work")
 
 st.sidebar.caption("Predict,Review,Intent | Status: Online 🟢")
