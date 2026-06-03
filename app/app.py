@@ -286,7 +286,9 @@ with tab2:
                 "worth","value for money",
                 "छान","मस्त","भारी","उत्तम",
                 "चांगला","आवडलं",
-                "अच्छा","बहुत अच्छा","शानदार"
+                "अच्छा","बहुत अच्छा","शानदार",
+                "बेस्ट है","बहुत बढ़िया","आंख बंद करके खरीद लो",
+                "पैसे वसूल","worth every rupee","highly recommended"
             ]
        
             # Negative Dictionary
@@ -297,7 +299,8 @@ with tab2:
                 "not worth","delay",
                 "खराब","वाईट","बेकार",
                 "निराश","पैसे वाया",
-                "घटिया","पैसे बर्बाद"
+                "घटिया","पैसे बर्बाद","could be better", "average",
+                "damaged","did not respond","poor support"
             ]
 
             # Negative Phrases
