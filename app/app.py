@@ -124,7 +124,6 @@ def detect_language_smart(text):
 
 def detect_intent(text):
     text = str(text).lower()
-    # Fixed with clear word boundaries (\b) to stop partial match overlaps
     if re.search(r'\b(price|cost|expensive|kimat|किंमत|महाग|दर|स्वस्त|paise|paisa|बर्बादी|money|पैसे)\b', text): return "💰 Pricing"
     if re.search(r'\b(delivery|late|fast|slow|ushir|उशीर|वेळ|डिलिव्हरी|पोहोचले|time|day|days|delays|delayed)\b', text): return "🚚 Logistics"
     if re.search(r'\b(quality|material|strong|durability|दर्जा|क्वालिटी|कापड|टिकाऊ|kapda|fabric|look|broken|तुटलं|damage|damaged|defective)\b', text): return "🛠️ Quality"
@@ -233,17 +232,17 @@ with tab2:
             pos_emoji_count = sum(1 for e in extracted_emojis if e in strong_positive_emojis)
             neg_emoji_count = sum(1 for e in extracted_emojis if e in strong_negative_emojis)
 
-            # --- MULTILINGUAL WORD BOUNDARY DICTIONARIES ---
+            # --- FULL MULTILINGUAL DICTIONARIES ---
             positive_words = [
                 "good","great","excellent","amazing","awesome","love","best","fantastic","perfect","nice",
-                "worth","छान","मस्त","भारी","उत्तम","चांगला","आवडलं","अच्छा","शानदार","बेस्ट है",
-                "बहुत बढ़िया","पैसे वसूल","worth every rupee","highly recommended"
+                "worth","chan","bhari","masta","mast","lay","awadla","khup","changla","accha","acha","achha",
+                "छान","मस्त","भारी","उत्तम","चांगला","आवडलं","अच्छा","शानदार","बहुत बढ़िया"
             ]
        
             negative_words = [
-                "bad","worst","poor","terrible","waste","broken","useless","not worth","delay",
-                "खराब","वाईट","बेकार","निराश","पैसे वाया","घटिया","पैसे बर्बाद","could be better", 
-                "average","damaged","did not respond","poor support"
+                "bad","worst","poor","terrible","waste","broken","useless","delay","kharab","vait",
+                "bekar","nko","navhta","jasta","sasta","nahi","vaya","kh खराब","वाईट","बेकार",
+                "निराश","पैसे वाया","घटिया","पैसे बर्बाद"
             ]
 
             negative_phrases = [
@@ -253,15 +252,23 @@ with tab2:
 
             prediction = None
             
-            # First check explicit negative combinations
+            # 1. First check explicit negative combinations
             if any(phrase in cleaned_lower for phrase in negative_phrases):
                 prediction = "Negative"
             else:
-                # Count matches using strict word boundaries (\b) so parts of words aren't misread
-                pos_count = sum(1 for word in positive_words if re.search(r'\b' + re.escape(word.lower()) + r'\b', cleaned_lower))
-                neg_count = sum(1 for word in negative_words if re.search(r'\b' + re.escape(word.lower()) + r'\b', cleaned_lower))
+                # 2. Count matches using exact word markers and case insensitivity
+                pos_count = 0
+                neg_count = 0
+                
+                for word in positive_words:
+                    if re.search(r'\b' + re.escape(word) + r'\b', cleaned_lower, re.IGNORECASE):
+                        pos_count += 1
+                        
+                for word in negative_words:
+                    if re.search(r'\b' + re.escape(word) + r'\b', cleaned_lower, re.IGNORECASE):
+                        neg_count += 1
 
-                # Combine word results with raw emoji counts
+                # Combine word counts with emoji metrics
                 pos_count += pos_emoji_count
                 neg_count += neg_emoji_count
 
@@ -272,9 +279,8 @@ with tab2:
                 elif len(extracted_emojis) > 0 and pos_emoji_count == 0 and neg_emoji_count == 0:
                     prediction = "Neutral"
 
-            # Fallback to Machine Learning Model if rules tie
+            # 3. Fallback to Machine Learning Model if rules tie out perfectly
             if prediction is None:
-                # Pad emojis with whitespace so the vectorizer catches them explicitly
                 padded_text = "".join(f" {ch} " if ch in emoji.EMOJI_DATA else ch for ch in cleaned_lower)
                 input_vec = vectorizer.transform([padded_text])
                 
