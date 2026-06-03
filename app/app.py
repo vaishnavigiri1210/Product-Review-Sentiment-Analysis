@@ -82,7 +82,7 @@ def detect_language_smart(text):
     raw_text = str(text).strip()
     text_lower = raw_text.lower()
     
-    # Patch A: Absolute isolation logic for pure emoji arrays
+    # Absolute isolation logic for pure emoji arrays
     if all(char in emoji.EMOJI_DATA or char.isspace() for char in raw_text) and any(char in emoji.EMOJI_DATA for char in raw_text):
         return 'Emoji-Only'
         
@@ -91,7 +91,6 @@ def detect_language_smart(text):
     
     # Check for Devanagari Script (Native Marathi / Hindi characters)
     if re.search(r'[\u0900-\u097F]', raw_text):
-        # Specific high-frequency native Marathi markers
         marathi_native = r'(आहे|नाही|छान|मस्त|भारी|खूप|तयार|करून|बघा|नका|काही|केलं|मिळालं|होता)'
         if re.search(marathi_native, raw_text):
             return 'Marathi'
@@ -125,12 +124,67 @@ def detect_language_smart(text):
 
 def detect_intent(text):
     text = str(text).lower()
-    # Patch C: Boundary-free substring verification for complex Devanagari script structures
     if re.search(r'\b(price|cost|expensive|money|paise|paisa)\b|किंमत|महाग|दर|स्वस्त|बर्बाद|बर्बादी|पैसे', text): return "💰 Pricing"
     if re.search(r'\b(delivery|late|fast|slow|time|day|days|delays|delayed)\b|उशीर|वेळ|डिलिव्हरी|पोहोचले', text): return "🚚 Logistics"
     if re.search(r'\b(quality|material|strong|durability|fabric|look|broken|damage|damaged|defective)\b|दर्जा|क्वालिटी|कापड|टिकाऊ|तुटलं', text): return "🛠️ Quality"
     if re.search(r'\b(support|staff|call|care|service|respond)\b|मदत|सहकार्य|सर्व्हिस', text): return "📞 Support"
     return "📝 General"
+
+def execute_prediction_pipeline(text_input):
+    """ Central processing engine utilized by single & bulk upload flows """
+    lang_res = detect_language_smart(text_input)
+    intent_res = detect_intent(text_input)
+    
+    cleaned_lower = text_input.lower().strip()
+    cleaned_lower = re.sub(r'[^\w\s]', ' ', cleaned_lower)
+
+    strong_positive_emojis = ["😍", "👍", "❤️", "🔥", "😊", "✨", "😋", "🚀", "💰", "🥰", "👌"]
+    strong_negative_emojis = ["😡", "👎", "🤮", "💩", "❌", "🗑️", "😷", "💀", "🚫", "😫", "💢", "😞", "💔"]
+    
+    extracted_emojis = [char for char in text_input if char in emoji.EMOJI_DATA]
+    pos_emoji_count = sum(1 for e in extracted_emojis if e in strong_positive_emojis)
+    neg_emoji_count = sum(1 for e in extracted_emojis if e in strong_negative_emojis)
+
+    positive_words = [
+        "good","great","excellent","amazing","awesome","love","best","fantastic","perfect","nice",
+        "worth","chan","bhari","masta","mast","lay","awadla","khup","changla","accha","acha","achha",
+        "छान","मस्त","भारी","उत्तम","चांगला","आवडलं","अच्छा","शानदार","बढ़िया"
+    ]
+    negative_words = [
+        "bad","worst","poor","terrible","waste","broken","useless","delay","kharab","vait",
+        "bekar","nko","navhta","jasta","sasta","nahi","vaya","खराब","वाईट","बेकार",
+        "निराश","घटिया"
+    ]
+    negative_phrases = [
+        "not good", "not worth", "poor quality", "waste of money", 
+        "very bad", "bad product", "खराब", "वाईट", "बेकार",
+        "khup kharab", "khup vait", "complete waste", "paise बर्बाद", "paise waste"
+    ]
+
+    prediction = None
+    if any(phrase in cleaned_lower for phrase in negative_phrases):
+        prediction = "Negative"
+    else:
+        pos_count = sum(1 for w in positive_words if re.search(r'\b' + re.escape(w) + r'\b', cleaned_lower))
+        neg_count = sum(1 for w in negative_words if re.search(r'\b' + re.escape(w) + r'\b', cleaned_lower))
+        
+        pos_count += pos_emoji_count
+        neg_count += neg_emoji_count
+
+        if pos_count > neg_count: prediction = "Positive"
+        elif neg_count > pos_count: prediction = "Negative"
+        elif len(extracted_emojis) > 0 and pos_emoji_count == 0 and neg_emoji_count == 0: prediction = "Neutral"
+
+    if prediction is None:
+        padded_text = "".join(f" {ch} " if ch in emoji.EMOJI_DATA else ch for ch in cleaned_lower)
+        input_vec = vectorizer.transform([padded_text])
+        try:
+            probs = model.predict_proba(input_vec)[0]
+            prediction = "Neutral" if max(probs) < 0.55 else model.predict(input_vec)[0]
+        except:
+            prediction = model.predict(input_vec)[0]
+            
+    return prediction, intent_res, lang_res
 
 def draw_gauge(score):
     fig = go.Figure(go.Indicator(
@@ -151,6 +205,22 @@ def draw_gauge(score):
 
 # 4. SIDEBAR CONTROL PANEL
 st.sidebar.title("🛠️ BI Control Panel")
+
+# FEATURE 1: Quick-Copy "Test Reviews" Toolkit for Evaluators
+st.sidebar.subheader("📋 Live Demo Copy-Paste Box")
+test_options = {
+    "Select a pre-made phrase...": "",
+    "Marathi Mix (Positive)": "ekdum bhari quality! masta delivery hoti.",
+    "Marathi Mix (Negative)": "product khup kharab aahe, paise vaya gele.",
+    "Hindi Mix (Negative)": "bekar quality, material bilkul strong nahi hai.",
+    "Pure Emoji Option": "😡😡😡",
+    "Devanagari Script (Intent)": "बहुत घटिया प्रोडक्ट है, पैसे बर्बाद हो गए।"
+}
+selected_test = st.sidebar.selectbox("Click to reveal sentences:", list(test_options.keys()))
+if test_options[selected_test]:
+    st.sidebar.info(f"📋 Copy this:\n`{test_options[selected_test]}`")
+
+st.sidebar.divider()
 search_term = st.sidebar.text_input("🔍 Search Keyword (e.g. 'good', 'bad', 'मस्त'):")
 
 filtered_df = df.copy()
@@ -174,6 +244,17 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
 # TAB 1: Performance Trends
 with tab1:
     if not is_data_empty:
+        # FEATURE 2: Operational CSAT (Customer Satisfaction Score) Card Display
+        pos_reviews = (filtered_df['sentiment'] == 'Positive').sum()
+        total_reviews = len(filtered_df)
+        csat_score = (pos_reviews / total_reviews) * 100 if total_reviews > 0 else 0
+        
+        c_m1, c_m2, c_m3 = st.columns(3)
+        c_m1.metric(label="🎯 Brand CSAT Status Score", value=f"{csat_score:.1f} %", delta="Target > 75%")
+        c_m2.metric(label="✅ Active Approvals", value=int(pos_reviews))
+        c_m3.metric(label="📊 Sample Size Matrix", value=int(total_reviews))
+        st.divider()
+
         pos_rate = (filtered_df['sentiment'] == 'Positive').mean() * 100
         col_a, col_b = st.columns([1, 2])
         with col_a: 
@@ -189,7 +270,7 @@ with tab1:
     else:
         st.info("🔍 Filtered data not found.")
 
-# TAB 2: Live AI Predictor
+# TAB 2: Live AI Predictor & Bulk File Engine
 with tab2:
     st.subheader("🤖 Real-time Multilingual Inference")
 
@@ -200,11 +281,7 @@ with tab2:
 
     with col_m:
         v_res = speech_to_text(
-            language='en-IN',
-            start_prompt="🎙️",
-            stop_prompt="🛑",
-            just_once=True,
-            key='MIC_STABLE'
+            language='en-IN', start_prompt="🎙️", stop_prompt="🛑", just_once=True, key='MIC_STABLE'
         )
         if v_res:
             st.session_state.final_text_val = v_res
@@ -213,100 +290,18 @@ with tab2:
     with col_in:
         with st.form(key='my_predict_form', clear_on_submit=False):
             user_input_text = st.text_input(
-                "Review Box",
-                value=st.session_state.final_text_val,
-                placeholder="Write your review or click the mic...",
-                label_visibility="collapsed"
+                "Review Box", value=st.session_state.final_text_val,
+                placeholder="Write your review or click the mic...", label_visibility="collapsed"
             )
             submit_clicked = st.form_submit_button("Predict Sentiment & Intent")
 
     if submit_clicked:
         if user_input_text.strip():
-            lang_res = detect_language_smart(user_input_text)
-            intent_res = detect_intent(user_input_text)
-            
-            # 1. Clean punctuation entirely so boundaries (\b) match words perfectly
-            cleaned_lower = user_input_text.lower().strip()
-            cleaned_lower = re.sub(r'[^\w\s]', ' ', cleaned_lower)  # Replaces structural symbols with blank padding
-
-            # --- EMOJI TRACKING SYSTEM ---
-            strong_positive_emojis = ["😍", "👍", "❤️", "🔥", "😊", "✨", "😋", "🚀", "💰", "🥰", "👌"]
-            strong_negative_emojis = ["😡", "👎", "🤮", "💩", "❌", "🗑️", "😷", "💀", "🚫", "😫", "💢", "😞", "💔"]
-            
-            extracted_emojis = [char for char in user_input_text if char in emoji.EMOJI_DATA]
-            pos_emoji_count = sum(1 for e in extracted_emojis if e in strong_positive_emojis)
-            neg_emoji_count = sum(1 for e in extracted_emojis if e in strong_negative_emojis)
-
-            # --- FULL MULTILINGUAL DICTIONARIES ---
-            positive_words = [
-                "good","great","excellent","amazing","awesome","love","best","fantastic","perfect","nice",
-                "worth","chan","bhari","masta","mast","lay","awadla","khup","changla","accha","acha","achha",
-                "छान","मस्त","भारी","उत्तम","चांगला","आवडलं","अच्छा","शानदार","बढ़िया"
-            ]
-       
-            negative_words = [
-                "bad","worst","poor","terrible","waste","broken","useless","delay","kharab","vait",
-                "bekar","nko","navhta","jasta","sasta","nahi","vaya","खराब","वाईट","बेकार",
-                "निराश","घटिया"
-            ]
-
-            # Patch B: Add explicit romanized/latin-script string structures into higher override layer
-            negative_phrases = [
-                "not good", "not worth", "poor quality", "waste of money", 
-                "very bad", "bad product", "खराब", "वाईट", "बेकार",
-                "khup kharab", "khup vait", "complete waste", "paise बर्बाद", "paise waste"
-            ]
-
-            prediction = None
-            
-            # 2. Check explicit key phrases first
-            if any(phrase in cleaned_lower for phrase in negative_phrases):
-                prediction = "Negative"
-            else:
-                # 3. Clean word matrix counter loops
-                pos_count = 0
-                neg_count = 0
-                
-                for word in positive_words:
-                    if re.search(r'\b' + re.escape(word) + r'\b', cleaned_lower):
-                        pos_count += 1
-                        
-                for word in negative_words:
-                    if re.search(r'\b' + re.escape(word) + r'\b', cleaned_lower):
-                        neg_count += 1
-
-                # Append visual emoji counts to categorical integers
-                pos_count += pos_emoji_count
-                neg_count += neg_emoji_count
-
-                if pos_count > neg_count:
-                    prediction = "Positive"
-                elif neg_count > pos_count:
-                    prediction = "Negative"
-                elif len(extracted_emojis) > 0 and pos_emoji_count == 0 and neg_emoji_count == 0:
-                    prediction = "Neutral"
-
-            # 4. Fallback to Machine Learning Model if rules end in a flat tie
-            if prediction is None:
-                padded_text = "".join(f" {ch} " if ch in emoji.EMOJI_DATA else ch for ch in cleaned_lower)
-                input_vec = vectorizer.transform([padded_text])
-                
-                try:
-                    probs = model.predict_proba(input_vec)[0]
-                    if max(probs) < 0.55:
-                        prediction = "Neutral"
-                    else:
-                        prediction = model.predict(input_vec)[0]
-                except:
-                    prediction = model.predict(input_vec)[0]
-
-            # Sync results online
+            prediction, intent_res, lang_res = execute_prediction_pipeline(user_input_text)
             success = save_review_to_gsheet(user_input_text, prediction, intent_res, lang_res)
 
-            if success:
-                st.success("✅ Review Saved Successfully to Cloud Database!")
-            else:
-                st.warning("⚠️ Saved Locally to Session State Backup (Network/API Timeout)")
+            if success: st.success("✅ Review Saved Successfully to Cloud Database!")
+            else: st.warning("⚠️ Saved Locally to Session State Backup (Network/API Timeout)")
 
             r1, r2 = st.columns(2)
             with r1: st.info(f"Intent Domain: {intent_res}")
@@ -314,6 +309,43 @@ with tab2:
             st.session_state.final_text_val = ""
         else:
             st.warning("Please enter some text or use mic input.")
+
+    st.divider()
+    
+    # FEATURE 3: Bulk CSV / File Processing Engine Layer
+    st.subheader("🔀 Corporate Bulk Data Processing")
+    st.write("Upload an external spreadsheet (`.csv`) filled with hundreds of user comments to parse them simultaneously.")
+    
+    uploaded_file = st.file_uploader("Upload review file here:", type=["csv"])
+    if uploaded_file is not None:
+        bulk_raw = pd.read_csv(uploaded_file)
+        # Scan for an appropriate text column header name inside file dynamically
+        possible_cols = [c for c in bulk_raw.columns if 'review' in c.lower() or 'text' in c.lower()]
+        
+        if not possible_cols:
+            st.error("❌ Failed to parse. Please ensure your file has a column header named 'review_text' or 'text'.")
+        else:
+            target_col = possible_cols[0]
+            st.info(f"Processing data column: `{target_col}`")
+            
+            bulk_sentiments, bulk_intents, bulk_languages = [], [], []
+            
+            with st.spinner("Analyzing bulk matrices..."):
+                for idx, row in bulk_raw.iterrows():
+                    pred_s, pred_i, pred_l = execute_prediction_pipeline(str(row[target_col]))
+                    bulk_sentiments.append(pred_s)
+                    bulk_intents.append(pred_i)
+                    bulk_languages.append(pred_l)
+                    
+            bulk_raw['Predicted_Sentiment'] = bulk_sentiments
+            bulk_raw['Predicted_Intent'] = bulk_intents
+            bulk_raw['Detected_Language'] = bulk_languages
+            
+            st.success("🎉 Bulk Processing Completed Successfully!")
+            st.dataframe(bulk_raw[['http' not in str(c).lower() for c in bulk_raw.columns]], use_container_width=True)
+            
+            bulk_output = bulk_raw.to_csv(index=False).encode('utf-8-sig')
+            st.download_button("Download Bulk Processing Results", bulk_output, "bulk_analytics_output.csv", "text/csv")
 
 # TAB 3: Integrity & Emotions
 with tab3:
@@ -356,7 +388,17 @@ with tab4:
         st.dataframe(filtered_df[(filtered_df['detected_lang'].isin(sl)) & (filtered_df['sentiment'].isin(ss))][['review_text', 'detected_lang', 'sentiment', 'rating']], use_container_width=True)
 
         st.divider()
-        st.subheader("📂 All Real-time User Reviews (Cloud Database Log)")
+        
+        # FEATURE 4: Live Spreadsheet Operations Reset Mechanism
+        col_log_title, col_log_btn = st.columns([0.8, 0.2])
+        with col_log_title:
+            st.subheader("📂 All Real-time User Reviews (Cloud Database Log)")
+        with col_log_btn:
+            if st.button("🧹 Clear Session View"):
+                if "backup_list" in st.session_state:
+                    st.session_state.backup_list = []
+                st.rerun()
+                
         live_df = load_live_logs()
         if not live_df.empty:
             st.dataframe(live_df, use_container_width=True)
