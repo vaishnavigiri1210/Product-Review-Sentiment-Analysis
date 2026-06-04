@@ -17,9 +17,9 @@ from streamlit_mic_recorder import speech_to_text       # For mic input in Strea
 st.set_page_config(
     page_title="Product Review Sentiment & Intent Analysis", 
     layout="wide", 
-    page_icon=":material/analytics:"  # Sleek corporate favicon instead of emoji
+    page_icon="🏢"
 )
-st.title(":material/query_stats: Product Review Sentiment & Intent Analysis")
+st.title("🏛️ Product Review Sentiment & Intent Analysis")
 
 path = os.path.dirname(os.path.abspath(__file__))
 
@@ -210,7 +210,7 @@ def draw_gauge(score):
     return fig
 
 # 4. SIDEBAR CONTROL PANEL
-st.sidebar.title(":material/tune: BI Control Panel")
+st.sidebar.title("🛠️ BI Control Panel")
 
 # Search keyword
 search_term = st.sidebar.text_input("🔍 Search Keyword (e.g. 'good', 'bad', 'मस्त'):")
@@ -227,7 +227,7 @@ if search_term:
 st.sidebar.divider()
 
 # Live Demo Quick-Copy Tool 
-st.sidebar.subheader(":material/content_copy: Live Demo Copy-Paste Box")
+st.sidebar.subheader("📋 Live Demo Copy-Paste Box")
 test_options = {
     "Select a pre-made phrase...": "",
     "Marathi Mix (Positive)": "ekdum bhari quality! masta delivery hoti.",
@@ -244,13 +244,9 @@ st.sidebar.divider()
 csv_report = filtered_df.to_csv(index=False).encode('utf-8-sig')
 st.sidebar.download_button("Download Full Report", csv_report, "bi_analysis.csv", "text/csv")
 
-# 5. DASHBOARD TABS (Upgraded with native sleek typography symbols)
+# 5. DASHBOARD TABS
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
-    ":material/insert_chart: Market Performance", 
-    ":material/psychology: AI Predictor", 
-    ":material/shield: Integrity & Emotions", 
-    ":material/filter_alt: Advanced Filters", 
-    ":material/lightbulb: Strategic Insights"
+    "📈 Market Performance", "🤖 AI Predictor", "🕵️ Integrity & Emotions", "🎯 Advanced Filters", "💡 Strategic Insights"
 ])
 
 # TAB 1: Performance Trends
@@ -264,14 +260,14 @@ with tab1:
             st.subheader("Market Sentiment by Language")
             st.bar_chart(pd.crosstab(filtered_df['detected_lang'], filtered_df['sentiment']))
         st.divider()
-        st.subheader("📊 Rating-Sentiment Density Heatmap")
+        st.subheader("🔥 Rating-Sentiment Density Heatmap")
         fig_heat, ax_heat = plt.subplots(figsize=(8, 4))
         sns.heatmap(pd.crosstab(filtered_df['rating'], filtered_df['sentiment']), annot=True, fmt='d', cmap='YlGnBu', ax=ax_heat)
         st.pyplot(fig_heat)
 
 # TAB 2: Live AI Predictor
 with tab2:
-    st.subheader(":material/record_voice_over: Real-time Multilingual Inference")
+    st.subheader("🤖 Real-time Multilingual Inference")
 
     if "final_text_val" not in st.session_state:
         st.session_state.final_text_val = ""
@@ -312,7 +308,7 @@ with tab2:
             st.warning("Please enter some text or use mic input.")
 
     st.divider()
-    st.subheader(":material/layers: Corporate Bulk Data Processing")
+    st.subheader("🔀 Corporate Bulk Data Processing")
     st.write("Upload an external spreadsheet (`.csv`) filled with hundreds of user comments to parse them simultaneously.")
     
     uploaded_file = st.file_uploader("Upload review file here:", type=["csv"])
@@ -349,7 +345,7 @@ with tab2:
 with tab3:
     col_integrity, col_emotions = st.columns(2)
     with col_integrity:
-        st.subheader(":material/gavel: Integrity & Trust Analysis")
+        st.subheader("🕵️ Integrity & Trust Analysis")
         if 'is_fake' in df.columns and not df.empty:
             counts = df['is_fake'].value_counts()
             fig_p, ax_p = plt.subplots(figsize=(5,5))
@@ -363,7 +359,7 @@ with tab3:
         st.bar_chart(sincerity_series.value_counts())
 
     with col_emotions:
-        st.subheader(":material/mood: Emotional Insights")
+        st.subheader("🎭 Emotional Insights")
         def find_emojis(t): return [char for char in str(t) if char in emoji.EMOJI_DATA]
         emoji_list = filtered_df['review_text'].apply(find_emojis).sum()
         top_e = Counter(emoji_list).most_common(10)
@@ -379,7 +375,7 @@ with tab3:
 # TAB 4: Custom Filters & Live Production Logs
 with tab4:
     if not is_data_empty:
-        st.subheader(":material/manage_search: Deep Dive Explorer")
+        st.subheader("🎯 Deep Dive Explorer")
         f1, f2 = st.columns(2)
         with f1: sl = st.multiselect("Language:", filtered_df['detected_lang'].unique(), default=filtered_df['detected_lang'].unique())
         with f2: ss = st.multiselect("Sentiment:", filtered_df['sentiment'].unique(), default=filtered_df['sentiment'].unique())
@@ -389,10 +385,10 @@ with tab4:
         
         col_log_title, col_log_btn = st.columns([0.72, 0.28])
         with col_log_title:
-            st.subheader(":material/cloud_sync: All Real-time User Reviews (Cloud Database Log)")
+            st.subheader("📂 All Real-time User Reviews (Cloud Database Log)")
         with col_log_btn:
-            # Replaced plain emojis with crisp Material text symbols inside buttons
-            button_label = ":material/visibility: See Live Data" if st.session_state.hide_live_logs else ":material/mop: Clear Session View"
+            # Interactive state toggle changing dynamically between Clear and See Data modes
+            button_label = "👁️ See Live Data" if st.session_state.hide_live_logs else "🧹 Clear Session View"
             
             if st.button(button_label, use_container_width=True):
                 if not st.session_state.hide_live_logs:
@@ -412,7 +408,7 @@ with tab4:
 with tab5:
     if not is_data_empty:
         current_intents = filtered_df['review_text'].apply(detect_intent)
-        st.subheader(":material/lightbulb_circle: Identifying Business Pain-Points")
+        st.subheader("🔦 Identifying Business Pain-Points")
         c_ins1, c_ins2 = st.columns(2)
         with c_ins1:
             st.write("**Top Concerns (Negative Intents)**")
@@ -430,4 +426,4 @@ avg_rating = filtered_df['rating'].fillna(0).mean()
 m3.metric("Avg Rating", f"{avg_rating:.1f} ⭐" if not filtered_df.empty else "0.0 ⭐")
 m4.metric("Market Sentiment", "Positive" if (filtered_df['sentiment'] == 'Positive').mean() * 100 > 50 else "Needs Work")
 
-st.sidebar.caption("Predict, Review, Intent | Status: Online :material/circle:")
+st.sidebar.caption("Predict, Review, Intent | Status: Online 🟢")
