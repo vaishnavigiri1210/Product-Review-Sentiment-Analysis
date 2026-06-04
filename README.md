@@ -11,6 +11,7 @@ This project helps businesses understand customer opinions from product reviews 
 - Sentiment Analysis (Positive / Negative / Neutral)
 - Intent Detection
 - Language Detection
+- Bulk data Analysis & Prediction
 - Emoji Emotion Analysis
 - Fake Review Analysis
 - Real-time AI Prediction
@@ -32,6 +33,7 @@ The system supports multilingual and mixed-language reviews including:
 - Detects review intent
 - Supports multilingual reviews
 - Voice input using microphone
+- Bulk data Sentiment & Intent Analysis
 
 ## ✅ Language Detection
 Detects:
@@ -172,4 +174,3 @@ Dashboard Visualization
 - Deployment on AWS/Render
 - Advanced Analytics
 - Recommendation Engine
-
